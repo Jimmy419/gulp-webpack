@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>filled in radio</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Folder" fill="#231F1F">
+            <path d="M7,10 C8.65685425,10 10,8.65685425 10,7 C10,5.34314575 8.65685425,4 7,4 C5.34314575,4 4,5.34314575 4,7 C4,8.65685425 5.34314575,10 7,10 Z M7,14 C3.13400675,14 0,10.8659932 0,7 C0,3.13400675 3.13400675,0 7,0 C10.8659932,0 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 Z" id="filled-in-radio"></path>
+        </g>
+    </g>
+</svg>

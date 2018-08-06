@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>pause-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-copy-2" transform="translate(-1275.000000, -2536.000000)" fill="#333333">
+            <g id="pause-outline" transform="translate(1275.000000, 2536.000000)">
+                <path d="M27.314,4.686 C33.562,10.934 33.562,21.066 27.314,27.314 C24.19,30.438 20.096,32 16,32 C11.906,32 7.81,30.438 4.686,27.314 C-1.562,21.066 -1.562,10.934 4.686,4.686 C7.81,1.562 11.906,0 16,0 C20.096,0 24.19,1.562 27.314,4.686 Z M25.9,25.9 C31.358,20.442 31.358,11.56 25.9,6.1 C23.256,3.456 19.74,2 16,2 C12.26,2 8.744,3.456 6.1,6.1 C0.642,11.56 0.642,20.442 6.1,25.9 C8.744,28.544 12.26,30 16,30 C19.74,30 23.256,28.544 25.9,25.9 Z M12.0002,21.0002 L12.0002,11.0002 L14.0002,11.0002 L14.0002,21.0002 L12.0002,21.0002 Z M18.0002,21.0002 L18.0002,11.0002 L20.0002,11.0002 L20.0002,21.0002 L18.0002,21.0002 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

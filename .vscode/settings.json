@@ -1,0 +1,19 @@
+{
+  "atomKeymap.promptV3Features": true, //If want to use this feature, please install the AtomKeyMap plugin.
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "editor.renderWhitespace": "all",
+  "prettier.tabWidth": 4,
+  // Insert spaces when pressing Tab.
+  "editor.insertSpaces": true,
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+  "editor.detectIndentation": true,
+  "prettier.trailingComma": "es5",
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "left"
+}

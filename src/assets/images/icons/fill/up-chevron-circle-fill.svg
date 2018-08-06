@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Up Chevron Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Up-Chevron-Circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M32,16 C32,24.836 24.836,32 16,32 C7.164,32 0,24.836 0,16 C0,7.164 7.164,0 16,0 C24.836,0 32,7.164 32,16 Z M8.9856,16.3858 C8.2036,17.1678 8.2036,18.4338 8.9856,19.2138 C9.7676,19.9958 11.0336,19.9958 11.8136,19.2138 L15.9996,15.0278 L20.1856,19.2138 C20.9676,19.9958 22.2336,19.9958 23.0136,19.2138 C23.7956,18.4338 23.7956,17.1678 23.0136,16.3858 L15.9996,9.3718 L8.9856,16.3858 Z" id="Combined-Shape" fill="#231F20"></path>
+    </g>
+</svg>

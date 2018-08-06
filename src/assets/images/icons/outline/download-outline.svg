@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Download</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outline-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Download" fill="#212121">
+            <path d="M11.2503,17.9996 L11.2499,17.9996 L11.2499,16.1896 L7.3279,12.2666 C7.0349,11.9736 6.5599,11.9736 6.2669,12.2666 C5.9739,12.5596 5.9739,13.0346 6.2669,13.3276 L11.9999,19.0606 L17.7329,13.3276 C18.0259,13.0346 18.0259,12.5596 17.7329,12.2666 C17.4399,11.9736 16.9649,11.9736 16.6729,12.2666 L12.7503,16.1892 L12.7503,7.5005 L11.2503,7.5005 L11.2503,16.18925 L11.2503,17.9996 Z M1.5,24 L22.5,24 C23.328,24 24,23.328 24,22.5 L24,6 L12.75,6 L12.75,7.5 L22.5,7.5 L22.5,22.5 L1.5,22.5 L1.5,7.5 L11.25,7.5 L11.25,6 L0,6 L0,22.5 C0,23.328 0.672,24 1.5,24 Z M11.25,6 L12.75,6 L12.75,0 L11.25,0 L11.25,6 Z M11.25,7.5 L12.75,7.5 L12.75,6 L11.25,6 L11.25,7.5 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

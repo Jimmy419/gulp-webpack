@@ -1,0 +1,365 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 73px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+/*------------------------------------------------------------*
+font weigth/style/size settings
+*------------------------------------------------------------*/
+
+.a-normal,
+.a-regular {
+    font-weight: $regular !important;
+}
+
+.a-bold {
+    font-weight: $bold !important;
+}
+
+.a-font-italic {
+    font-style: italic !important;
+}
+
+.a-font-normal {
+    font-style: normal !important;
+}
+
+.a-font-12 {
+    font-size: 12px !important;
+}
+
+.a-caps {
+    text-transform: uppercase !important;
+}
+
+.a-nowrap {
+    white-space: nowrap !important;
+}
+
+.a-truncate {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.a-text-underline {
+    text-decoration: underline !important;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+/*------------------------------------------------------------*
+layout setting
+*------------------------------------------------------------*/
+
+.a-clearfix {
+    *zoom: 1 !important;
+}
+
+.a-clearfix:after,
+.a-clearfix:before {
+    display: table;
+    line-height: 0;
+    content: '';
+}
+
+.a-clearfix:after {
+    clear: both;
+}
+
+.a-d-inline-block {
+    display: inline-block !important;
+}
+
+.a-d-inline-flex {
+    display: inline-flex !important;
+}
+
+.a-d-flex {
+    display: flex !important;
+    .a-flex-auto {
+        flex: 0 0 auto !important;
+    }
+    .a-flex-stretch {
+        flex: 1 1 auto !important;
+    }
+}
+
+.a-flex-column {
+    flex-direction: column !important;
+}
+
+.a-flex-row {
+    flex-direction: row !important;
+}
+
+.a-flex-center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.a-align-items-center {
+    align-items: center !important;
+}
+
+.a-justify-content-center {
+    justify-content: center !important;
+}
+
+.a-justify-content-end {
+    justify-content: flex-end !important;
+}
+
+.a-pull-left {
+    float: left !important;
+}
+
+.a-pull-right {
+    float: right !important;
+}
+
+.a-text-left {
+    text-align: left !important;
+}
+
+.a-text-center {
+    text-align: center !important;
+}
+
+.a-text-right {
+    text-align: right !important;
+}
+
+/*------------------------------------------------------------*
+box styles setting(border,width,height,overflow)
+*------------------------------------------------------------*/
+
+.a-border-none {
+    border: 0 !important;
+}
+
+.a-border-radius-none {
+    border-radius: 0 !important;
+}
+
+.a-boxshadow-none {
+    box-shadow: none !important;
+}
+
+.a-overflow-x-auto {
+    overflow-x: auto !important;
+}
+
+.a-width-auto {
+    width: auto !important;
+}
+
+.a-min-width-unset {
+    min-width: unset !important;
+}
+
+.a-height-auto {
+    height: auto !important;
+}
+
+.a-pos-static {
+    position: static !important;
+}
+
+.a-pos-relative {
+    position: relative !important;
+}
+
+.a-pos-absolute {
+    position: absolute !important;
+    &.a-top-50 {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.a-top-zero {
+    top: 0 !important;
+}
+
+.a-margin-auto {
+    margin: auto !important;
+}
+
+.a-margin-top-zero {
+    margin-top: 0 !important;
+}
+
+.a-margin-none {
+    margin: 0 !important;
+}
+
+.a-margin-rt-10 {
+    margin-right: 10px !important;
+}
+
+.a-margin-tp-12 {
+    margin-top: 12px !important;
+}
+
+.a-padding-none {
+    padding: 0 !important;
+}
+
+.a-padding-50 {
+    padding: 50px !important;
+}
+
+/*------------------------------------------------------------*
+cursor setting
+*------------------------------------------------------------*/
+
+.a-cursor-pointer {
+    cursor: pointer !important;
+}
+
+/*------------------------------------------------------------*
+background color setting
+*------------------------------------------------------------*/
+
+.a-bg-infor {
+    background-color: #8052c4 !important;
+    border: #8052c4 !important;
+    &:focus,
+    &:hover {
+        background-color: #8052c4 !important;
+        border: #8052c4 !important;
+    }
+}
+
+.a-bg-warning {
+    background-color: #ffbf1f !important;
+    border: #ffbf1f !important;
+}
+
+.a-bg-error {
+    background-color: #c52a1a !important;
+    border: #c52a1a !important;
+}
+
+.a-bg-danger {
+    background-color: $color-danger !important;
+}
+
+.a-bg-success {
+    background-color: $state-success-color !important;
+    border: $state-success-color !important;
+}
+
+.a-bg-white {
+    background-color: $white !important;
+}
+
+.a-bg-gray {
+    background-color: $color-eee !important;
+}
+
+/*------------------------------------------------------------*
+background color setting
+*------------------------------------------------------------*/
+
+.a-color-error {
+    color: $state-error-color !important;
+}
+
+.a-color-dark {
+    color: $color-dark !important;
+}
+
+.a-color-danger {
+    color: $color-danger !important;
+}
+
+.a-color-warning {
+    color: $color-warning !important;
+}
+
+//needs to check if we need this color.........
+.a-color-secondary-warning {
+    color: $color-warning-secondary !important;
+}
+
+.a-color-9e9 {
+    color: $color-9e9 !important;
+}
+
+/*------------------------------------------------------------*
+others setting
+*------------------------------------------------------------*/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>hospital-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-copy-2" transform="translate(-699.000000, -2536.000000)" fill="#333333">
+            <g id="hospital-outline" transform="translate(699.000000, 2536.000000)">
+                <path d="M32,30.0002 L32,32.0002 L30,32.0002 L24.75,32.0002 L21,32.0002 L19,32.0002 L13,32.0002 L11,32.0002 L7.25,32.0002 L2,32.0002 L0,32.0002 L0,30.0002 L2,30.0002 L2,10.0002 C2,8.8962 2.896,8.0002 4,8.0002 L5.25,8.0002 L5.25,2.0002 C5.25,0.8962 6.146,0.0002 7.25,0.0002 L24.75,0.0002 C25.854,0.0002 26.75,0.8962 26.75,2.0002 L26.75,8.0002 L28,8.0002 C29.104,8.0002 30,8.8962 30,10.0002 L30,30.0002 L32,30.0002 Z M4,10.0002 L4,30.0002 L11,30.0002 L11,19.0002 L21,19.0002 L21,30.0002 L28,30.0002 L28,10.0002 L25,10.0002 L25,2.0002 L7,2.0002 L7,10.0002 L4,10.0002 Z M13,30.0002 L19,30.0002 L19,21.0002 L13,21.0002 L13,30.0002 Z M15,16 L15,11 L10,11 L10,9 L15,9 L15,4 L17,4 L17,9 L22,9 L22,11 L17,11 L17,16 L15,16 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

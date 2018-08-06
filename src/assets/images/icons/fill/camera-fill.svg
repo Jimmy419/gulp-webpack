@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Camera</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Camera" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M25.92,8 L30.0091806,8 C31.1028751,8 32,8.89299558 32,9.99456145 L32,27.0054385 C32,28.0976562 31.103789,29 29.9982567,29 L2.00174332,29 C0.889261723,29 5.70873506e-12,28.1070044 5.39598098e-12,27.0054385 L5.66291361e-13,9.99456145 C2.5619139e-13,8.90234375 0.891320204,8 1.9908194,8 L6.08,8 L9.45066667,3.564 C9.70133333,3.21066667 10.1066667,3 10.54,3 L21.46,3 C21.8933333,3 22.2986667,3.21066667 22.5493333,3.564 L25.92,8 Z M16,21 C18.2093333,21 20,19.2093333 20,17 C20,14.7906667 18.2093333,13 16,13 C13.7906667,13 12,14.7906667 12,17 C12,19.2093333 13.7906667,21 16,21 Z" id="Combined-Shape" fill="#212121"></path>
+    </g>
+</svg>

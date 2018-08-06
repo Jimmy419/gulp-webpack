@@ -1,0 +1,1423 @@
+@font-face {
+	font-family: 'appkit-font';
+	src: url('../font/appkit-font.eot?85204009');
+	src: url('../font/appkit-font.eot?85204009#iefix') format('embedded-opentype'), url('../font/appkit-font.woff2?85204009') format('woff2'), url('../font/appkit-font.woff?85204009') format('woff'), url('../font/appkit-font.ttf?85204009') format('truetype'), url('../font/appkit-font.svg?85204009#appkit-font') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'appkit-font';
+    src: url('../font/appkit-font.svg?85204009#appkit-font') format('svg');
+  }
+}
+*/
+
+[class^="appkit-icon-"]:before,
+[class*=" appkit-icon-"]:before {
+	font-family: "appkit-font";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.appkit-icon-add-fill:before {
+	content: '\21';
+}
+
+/* '!' */
+
+.appkit-icon-airplane-fill:before {
+	content: '\22';
+}
+
+/* '&quot;' */
+
+.appkit-icon-airplane-outline:before {
+	content: '\23';
+}
+
+/* '#' */
+
+.appkit-icon-alert-fill:before {
+	content: '\24';
+}
+
+/* '$' */
+
+.appkit-icon-alert-outline:before {
+	content: '\25';
+}
+
+/* '%' */
+
+.appkit-icon-arrow-decrease-fill:before {
+	content: '\26';
+}
+
+/* '&amp;' */
+
+.appkit-icon-arrow-decrease-outline:before {
+	content: '\27';
+}
+
+/* ''' */
+
+.appkit-icon-arrow-increase-fill:before {
+	content: '\28';
+}
+
+/* '(' */
+
+.appkit-icon-arrow-increase-outline:before {
+	content: '\29';
+}
+
+/* ')' */
+
+.appkit-icon-audience-fill:before {
+	content: '\2a';
+}
+
+/* '*' */
+
+.appkit-icon-audience-outline:before {
+	content: '\2b';
+}
+
+/* '+' */
+
+.appkit-icon-avatar-fill:before {
+	content: '\2c';
+}
+
+/* ',' */
+
+.appkit-icon-avatar-outline:before {
+	content: '\2d';
+}
+
+/* '-' */
+
+.appkit-icon-bar-graph-fill:before {
+	content: '\2e';
+}
+
+/* '.' */
+
+.appkit-icon-bar-graph-outline:before {
+	content: '\2f';
+}
+
+/* '/' */
+
+.appkit-icon-brightness-fill:before {
+	content: '\30';
+}
+
+/* '0' */
+
+.appkit-icon-brightness-outline:before {
+	content: '\31';
+}
+
+/* '1' */
+
+.appkit-icon-bubble-plot-fill:before {
+	content: '\32';
+}
+
+/* '2' */
+
+.appkit-icon-bubble-plot-outline:before {
+	content: '\33';
+}
+
+/* '3' */
+
+.appkit-icon-building-fill:before {
+	content: '\34';
+}
+
+/* '4' */
+
+.appkit-icon-building-outline:before {
+	content: '\35';
+}
+
+/* '5' */
+
+.appkit-icon-button-refresh-orange-fill:before {
+	content: '\36';
+}
+
+/* '6' */
+
+.appkit-icon-button-refresh-white-fill:before {
+	content: '\37';
+}
+
+/* '7' */
+
+.appkit-icon-calendar-fill:before {
+	content: '\38';
+}
+
+/* '8' */
+
+.appkit-icon-calendar-outline:before {
+	content: '\39';
+}
+
+/* '9' */
+
+.appkit-icon-camera-fill:before {
+	content: '\3a';
+}
+
+/* ':' */
+
+.appkit-icon-camera-outline:before {
+	content: '\3b';
+}
+
+/* ';' */
+
+.appkit-icon-center-map-fill:before {
+	content: '\3c';
+}
+
+/* '&lt;' */
+
+.appkit-icon-center-map-outline:before {
+	content: '\3d';
+}
+
+/* '=' */
+
+.appkit-icon-circle-checkmark-fill:before {
+	content: '\3e';
+}
+
+/* '&gt;' */
+
+.appkit-icon-circle-checkmark-outline:before {
+	content: '\3f';
+}
+
+/* '?' */
+
+.appkit-icon-circle-delete-fill:before {
+	content: '\40';
+}
+
+/* '@' */
+
+.appkit-icon-circle-delete-outline:before {
+	content: '\41';
+}
+
+/* 'A' */
+
+.appkit-icon-circle-minus-fill:before {
+	content: '\42';
+}
+
+/* 'B' */
+
+.appkit-icon-circle-minus-outline:before {
+	content: '\43';
+}
+
+/* 'C' */
+
+.appkit-icon-circle-more-fill:before {
+	content: '\44';
+}
+
+/* 'D' */
+
+.appkit-icon-circle-more-outline:before {
+	content: '\45';
+}
+
+/* 'E' */
+
+.appkit-icon-circle-plus-fill:before {
+	content: '\46';
+}
+
+/* 'F' */
+
+.appkit-icon-circle-plus-outline:before {
+	content: '\47';
+}
+
+/* 'G' */
+
+.appkit-icon-clinic-fill:before {
+	content: '\48';
+}
+
+/* 'H' */
+
+.appkit-icon-clinic-outline:before {
+	content: '\49';
+}
+
+/* 'I' */
+
+.appkit-icon-close-fill:before {
+	content: '\4a';
+}
+
+/* 'J' */
+
+.appkit-icon-close-outline:before {
+	content: '\4b';
+}
+
+/* 'K' */
+
+.appkit-icon-cloud-fill:before {
+	content: '\4c';
+}
+
+/* 'L' */
+
+.appkit-icon-cloud-outline:before {
+	content: '\4d';
+}
+
+/* 'M' */
+
+.appkit-icon-comment-fill:before {
+	content: '\4e';
+}
+
+/* 'N' */
+
+.appkit-icon-comment-outline:before {
+	content: '\4f';
+}
+
+/* 'O' */
+
+.appkit-icon-confirmed-fill:before {
+	content: '\50';
+}
+
+/* 'P' */
+
+.appkit-icon-confirmed-outline:before {
+	content: '\51';
+}
+
+/* 'Q' */
+
+.appkit-icon-convert-fill:before {
+	content: '\52';
+}
+
+/* 'R' */
+
+.appkit-icon-convert-outline:before {
+	content: '\53';
+}
+
+/* 'S' */
+
+.appkit-icon-delete-fill:before {
+	content: '\54';
+}
+
+/* 'T' */
+
+.appkit-icon-delete-outline:before {
+	content: '\55';
+}
+
+/* 'U' */
+
+.appkit-icon-doc-fill:before {
+	content: '\56';
+}
+
+/* 'V' */
+
+.appkit-icon-doc-outline:before {
+	content: '\57';
+}
+
+/* 'W' */
+
+.appkit-icon-door-closed-fill:before {
+	content: '\58';
+}
+
+/* 'X' */
+
+.appkit-icon-door-closed-outline:before {
+	content: '\59';
+}
+
+/* 'Y' */
+
+.appkit-icon-door-opened-fill:before {
+	content: '\5a';
+}
+
+/* 'Z' */
+
+.appkit-icon-door-opened-outline:before {
+	content: '\5b';
+}
+
+/* '[' */
+
+.appkit-icon-down-chevron-circle-fill:before {
+	content: '\5c';
+}
+
+/* '\' */
+
+.appkit-icon-down-chevron-circle-outline:before {
+	content: '\5d';
+}
+
+/* ']' */
+
+.appkit-icon-down-chevron-fill:before {
+	content: '\5e';
+}
+
+/* '^' */
+
+.appkit-icon-down-chevron-outline:before {
+	content: '\5f';
+}
+
+/* '_' */
+
+.appkit-icon-download-fill:before {
+	content: '\60';
+}
+
+/* '`' */
+
+.appkit-icon-download-outline:before {
+	content: '\61';
+}
+
+/* 'a' */
+
+.appkit-icon-download-save-fill:before {
+	content: '\62';
+}
+
+/* 'b' */
+
+.appkit-icon-download-save-outline:before {
+	content: '\63';
+}
+
+/* 'c' */
+
+.appkit-icon-download-simple-fill:before {
+	content: '\64';
+}
+
+/* 'd' */
+
+.appkit-icon-download-simple-outline:before {
+	content: '\65';
+}
+
+/* 'e' */
+
+.appkit-icon-downtrend-fill:before {
+	content: '\66';
+}
+
+/* 'f' */
+
+.appkit-icon-downtrend-outline:before {
+	content: '\67';
+}
+
+/* 'g' */
+
+.appkit-icon-duplicate-fill:before {
+	content: '\68';
+}
+
+/* 'h' */
+
+.appkit-icon-duplicate-outline:before {
+	content: '\69';
+}
+
+/* 'i' */
+
+.appkit-icon-edit-fill:before {
+	content: '\6a';
+}
+
+/* 'j' */
+
+.appkit-icon-edit-outline:before {
+	content: '\6b';
+}
+
+/* 'k' */
+
+.appkit-icon-email-fill:before {
+	content: '\6c';
+}
+
+/* 'l' */
+
+.appkit-icon-email-outline:before {
+	content: '\6d';
+}
+
+/* 'm' */
+
+.appkit-icon-end-process-fill:before {
+	content: '\6e';
+}
+
+/* 'n' */
+
+.appkit-icon-end-process-outline:before {
+	content: '\6f';
+}
+
+/* 'o' */
+
+.appkit-icon-expand-fill:before {
+	content: '\70';
+}
+
+/* 'p' */
+
+.appkit-icon-expand-outline:before {
+	content: '\71';
+}
+
+/* 'q' */
+
+.appkit-icon-file-fill:before {
+	content: '\72';
+}
+
+/* 'r' */
+
+.appkit-icon-file-outline:before {
+	content: '\73';
+}
+
+/* 's' */
+
+.appkit-icon-filter-fill:before {
+	content: '\74';
+}
+
+/* 't' */
+
+.appkit-icon-filter-outline:before {
+	content: '\75';
+}
+
+/* 'u' */
+
+.appkit-icon-folder-fill:before {
+	content: '\76';
+}
+
+/* 'v' */
+
+.appkit-icon-folder-open-fill:before {
+	content: '\77';
+}
+
+/* 'w' */
+
+.appkit-icon-folder-open-orange-fill:before {
+	content: '\78';
+}
+
+/* 'x' */
+
+.appkit-icon-folder-open-outline:before {
+	content: '\79';
+}
+
+/* 'y' */
+
+.appkit-icon-folder-outline:before {
+	content: '\7a';
+}
+
+/* 'z' */
+
+.appkit-icon-globe-fill:before {
+	content: '\7b';
+}
+
+/* '{' */
+
+.appkit-icon-globe-outline:before {
+	content: '\7c';
+}
+
+/* '|' */
+
+.appkit-icon-grid-view-fill:before {
+	content: '\7d';
+}
+
+/* '}' */
+
+.appkit-icon-hb-3qtr-lft-32:before {
+	content: '\7e';
+}
+
+/* '~' */
+
+.appkit-icon-grid-view-outline:before {
+	content: '\e800';
+}
+
+/* '' */
+
+.appkit-icon-hb-3qtr-rt-32:before {
+	content: '\e801';
+}
+
+/* '' */
+
+.appkit-icon-hb-empty-32:before {
+	content: '\e802';
+}
+
+/* '' */
+
+.appkit-icon-hb-full-32:before {
+	content: '\e803';
+}
+
+/* '' */
+
+.appkit-icon-hb-full-dot-32:before {
+	content: '\e804';
+}
+
+/* '' */
+
+.appkit-icon-hb-half-btm-32:before {
+	content: '\e805';
+}
+
+/* '' */
+
+.appkit-icon-hb-half-lft-32:before {
+	content: '\e806';
+}
+
+/* '' */
+
+.appkit-icon-hb-half-lt-32:before {
+	content: '\e807';
+}
+
+/* '' */
+
+.appkit-icon-hb-half-rt-32:before {
+	content: '\e808';
+}
+
+/* '' */
+
+.appkit-icon-hb-half-top-32:before {
+	content: '\e809';
+}
+
+/* '' */
+
+.appkit-icon-hb-qtr-lft-32:before {
+	content: '\e80a';
+}
+
+/* '' */
+
+.appkit-icon-hb-qtr-rt-32:before {
+	content: '\e80b';
+}
+
+/* '' */
+
+.appkit-icon-heart-fill:before {
+	content: '\e80c';
+}
+
+/* '' */
+
+.appkit-icon-heart-outline:before {
+	content: '\e80d';
+}
+
+/* '' */
+
+.appkit-icon-help-question-fill:before {
+	content: '\e80e';
+}
+
+/* '' */
+
+.appkit-icon-help-question-outline:before {
+	content: '\e80f';
+}
+
+/* '' */
+
+.appkit-icon-home-fill:before {
+	content: '\e810';
+}
+
+/* '' */
+
+.appkit-icon-home-outline:before {
+	content: '\e811';
+}
+
+/* '' */
+
+.appkit-icon-horizontal-more-fill:before {
+	content: '\e812';
+}
+
+/* '' */
+
+.appkit-icon-horizontal-more-outline:before {
+	content: '\e813';
+}
+
+/* '' */
+
+.appkit-icon-hospital-fill:before {
+	content: '\e814';
+}
+
+/* '' */
+
+.appkit-icon-hospital-outline:before {
+	content: '\e815';
+}
+
+/* '' */
+
+.appkit-icon-icon-file-fill:before {
+	content: '\e816';
+}
+
+/* '' */
+
+.appkit-icon-icon-file-outline:before {
+	content: '\e817';
+}
+
+/* '' */
+
+.appkit-icon-icon-spinner-outline:before {
+	content: '\e818';
+}
+
+/* '' */
+
+.appkit-icon-image-fill:before {
+	content: '\e819';
+}
+
+/* '' */
+
+.appkit-icon-image-outline:before {
+	content: '\e81a';
+}
+
+/* '' */
+
+.appkit-icon-information-fill:before {
+	content: '\e81b';
+}
+
+/* '' */
+
+.appkit-icon-information-outline:before {
+	content: '\e81c';
+}
+
+/* '' */
+
+.appkit-icon-left-chevron-circle-fill:before {
+	content: '\e81d';
+}
+
+/* '' */
+
+.appkit-icon-left-chevron-circle-outline:before {
+	content: '\e81e';
+}
+
+/* '' */
+
+.appkit-icon-left-chevron-fill:before {
+	content: '\e81f';
+}
+
+/* '' */
+
+.appkit-icon-left-chevron-outline:before {
+	content: '\e820';
+}
+
+/* '' */
+
+.appkit-icon-list-view-fill:before {
+	content: '\e821';
+}
+
+/* '' */
+
+.appkit-icon-list-view-outline:before {
+	content: '\e822';
+}
+
+/* '' */
+
+.appkit-icon-location-fill:before {
+	content: '\e823';
+}
+
+/* '' */
+
+.appkit-icon-location-outline:before {
+	content: '\e824';
+}
+
+/* '' */
+
+.appkit-icon-login-fill:before {
+	content: '\e825';
+}
+
+/* '' */
+
+.appkit-icon-login-outline:before {
+	content: '\e826';
+}
+
+/* '' */
+
+.appkit-icon-logout-fill:before {
+	content: '\e827';
+}
+
+/* '' */
+
+.appkit-icon-logout-outline:before {
+	content: '\e828';
+}
+
+/* '' */
+
+.appkit-icon-mark-fill:before {
+	content: '\e829';
+}
+
+/* '' */
+
+.appkit-icon-mark-outline:before {
+	content: '\e82a';
+}
+
+/* '' */
+
+.appkit-icon-menu-fill:before {
+	content: '\e82b';
+}
+
+/* '' */
+
+.appkit-icon-menu-outline:before {
+	content: '\e82c';
+}
+
+/* '' */
+
+.appkit-icon-menu-view-fill:before {
+	content: '\e82d';
+}
+
+/* '' */
+
+.appkit-icon-menu-view-outline:before {
+	content: '\e82e';
+}
+
+/* '' */
+
+.appkit-icon-minimize-fill:before {
+	content: '\e82f';
+}
+
+/* '' */
+
+.appkit-icon-minimize-outline:before {
+	content: '\e830';
+}
+
+/* '' */
+
+.appkit-icon-minus-fill:before {
+	content: '\e831';
+}
+
+/* '' */
+
+.appkit-icon-minus-outline:before {
+	content: '\e832';
+}
+
+/* '' */
+
+.appkit-icon-move-fill:before {
+	content: '\e833';
+}
+
+/* '' */
+
+.appkit-icon-move-outline:before {
+	content: '\e834';
+}
+
+/* '' */
+
+.appkit-icon-new-user-fill:before {
+	content: '\e835';
+}
+
+/* '' */
+
+.appkit-icon-new-user-outline:before {
+	content: '\e836';
+}
+
+/* '' */
+
+.appkit-icon-news-fill:before {
+	content: '\e837';
+}
+
+/* '' */
+
+.appkit-icon-news-outline:before {
+	content: '\e838';
+}
+
+/* '' */
+
+.appkit-icon-notification-fill:before {
+	content: '\e839';
+}
+
+/* '' */
+
+.appkit-icon-notification-outline:before {
+	content: '\e83a';
+}
+
+/* '' */
+
+.appkit-icon-pause-fill:before {
+	content: '\e83b';
+}
+
+/* '' */
+
+.appkit-icon-pause-outline:before {
+	content: '\e83c';
+}
+
+/* '' */
+
+.appkit-icon-pdf-fill:before {
+	content: '\e83d';
+}
+
+/* '' */
+
+.appkit-icon-pdf-outline:before {
+	content: '\e83e';
+}
+
+/* '' */
+
+.appkit-icon-person-fill:before {
+	content: '\e83f';
+}
+
+/* '' */
+
+.appkit-icon-person-outline:before {
+	content: '\e840';
+}
+
+/* '' */
+
+.appkit-icon-physician-fill:before {
+	content: '\e841';
+}
+
+/* '' */
+
+.appkit-icon-physician-outline:before {
+	content: '\e842';
+}
+
+/* '' */
+
+.appkit-icon-pie-chart-fill:before {
+	content: '\e843';
+}
+
+/* '' */
+
+.appkit-icon-pie-chart-outline:before {
+	content: '\e844';
+}
+
+/* '' */
+
+.appkit-icon-plus-outline:before {
+	content: '\e845';
+}
+
+/* '' */
+
+.appkit-icon-ppt-fill:before {
+	content: '\e846';
+}
+
+/* '' */
+
+.appkit-icon-ppt-outline:before {
+	content: '\e847';
+}
+
+/* '' */
+
+.appkit-icon-printer-fill:before {
+	content: '\e848';
+}
+
+/* '' */
+
+.appkit-icon-printer-outline:before {
+	content: '\e849';
+}
+
+/* '' */
+
+.appkit-icon-radio:before {
+	content: '\e84a';
+}
+
+/* '' */
+
+.appkit-icon-refresh-fill:before {
+	content: '\e84b';
+}
+
+/* '' */
+
+.appkit-icon-refresh-outline:before {
+	content: '\e84c';
+}
+
+/* '' */
+
+.appkit-icon-right-chevron-circle-fill:before {
+	content: '\e84d';
+}
+
+/* '' */
+
+.appkit-icon-right-chevron-circle-outline:before {
+	content: '\e84e';
+}
+
+/* '' */
+
+.appkit-icon-right-chevron-fill:before {
+	content: '\e84f';
+}
+
+/* '' */
+
+.appkit-icon-right-chevron-outline:before {
+	content: '\e850';
+}
+
+/* '' */
+
+.appkit-icon-save-fill:before {
+	content: '\e851';
+}
+
+/* '' */
+
+.appkit-icon-save-outline:before {
+	content: '\e852';
+}
+
+/* '' */
+
+.appkit-icon-search-fill:before {
+	content: '\e853';
+}
+
+/* '' */
+
+.appkit-icon-search-outline:before {
+	content: '\e854';
+}
+
+/* '' */
+
+.appkit-icon-settings-fill:before {
+	content: '\e855';
+}
+
+/* '' */
+
+.appkit-icon-settings-outline:before {
+	content: '\e856';
+}
+
+/* '' */
+
+.appkit-icon-share-fill:before {
+	content: '\e857';
+}
+
+/* '' */
+
+.appkit-icon-share-outline:before {
+	content: '\e858';
+}
+
+/* '' */
+
+.appkit-icon-sort-default-fill:before {
+	content: '\e859';
+}
+
+/* '' */
+
+.appkit-icon-sort-default-outline:before {
+	content: '\e85a';
+}
+
+/* '' */
+
+.appkit-icon-spark-line-fill:before {
+	content: '\e85b';
+}
+
+/* '' */
+
+.appkit-icon-spark-line-outline:before {
+	content: '\e85c';
+}
+
+/* '' */
+
+.appkit-icon-spiderchart-fill:before {
+	content: '\e85d';
+}
+
+/* '' */
+
+.appkit-icon-spiderchart-outline:before {
+	content: '\e85e';
+}
+
+/* '' */
+
+.appkit-icon-star-fill:before {
+	content: '\e85f';
+}
+
+/* '' */
+
+.appkit-icon-star-outline:before {
+	content: '\e860';
+}
+
+/* '' */
+
+.appkit-icon-survey-fill:before {
+	content: '\e861';
+}
+
+/* '' */
+
+.appkit-icon-survey-outline:before {
+	content: '\e862';
+}
+
+/* '' */
+
+.appkit-icon-table-data-fill:before {
+	content: '\e863';
+}
+
+/* '' */
+
+.appkit-icon-table-data-outline:before {
+	content: '\e864';
+}
+
+/* '' */
+
+.appkit-icon-target-fill:before {
+	content: '\e865';
+}
+
+/* '' */
+
+.appkit-icon-target-outline:before {
+	content: '\e866';
+}
+
+/* '' */
+
+.appkit-icon-thumbs-down-fill:before {
+	content: '\e867';
+}
+
+/* '' */
+
+.appkit-icon-thumbs-down-outline:before {
+	content: '\e868';
+}
+
+/* '' */
+
+.appkit-icon-thumbs-up-fill:before {
+	content: '\e869';
+}
+
+/* '' */
+
+.appkit-icon-thumbs-up-outline:before {
+	content: '\e86a';
+}
+
+/* '' */
+
+.appkit-icon-tick-fill:before {
+	content: '\e86b';
+}
+
+/* '' */
+
+.appkit-icon-tick-outline:before {
+	content: '\e86c';
+}
+
+/* '' */
+
+.appkit-icon-time-fill:before {
+	content: '\e86d';
+}
+
+/* '' */
+
+.appkit-icon-time-outline:before {
+	content: '\e86e';
+}
+
+/* '' */
+
+.appkit-icon-toggle-fill:before {
+	content: '\e86f';
+}
+
+/* '' */
+
+.appkit-icon-toggle-outline:before {
+	content: '\e870';
+}
+
+/* '' */
+
+.appkit-icon-up-chevron-circle-fill:before {
+	content: '\e871';
+}
+
+/* '' */
+
+.appkit-icon-up-chevron-circle-outline:before {
+	content: '\e872';
+}
+
+/* '' */
+
+.appkit-icon-up-chevron-fill:before {
+	content: '\e873';
+}
+
+/* '' */
+
+.appkit-icon-up-chevron-outline:before {
+	content: '\e874';
+}
+
+/* '' */
+
+.appkit-icon-upload-fill:before {
+	content: '\e875';
+}
+
+/* '' */
+
+.appkit-icon-upload-outline:before {
+	content: '\e876';
+}
+
+/* '' */
+
+.appkit-icon-upload-simple-fill:before {
+	content: '\e877';
+}
+
+/* '' */
+
+.appkit-icon-upload-simple-outline:before {
+	content: '\e878';
+}
+
+/* '' */
+
+.appkit-icon-uptrend-fill:before {
+	content: '\e879';
+}
+
+/* '' */
+
+.appkit-icon-uptrend-outline:before {
+	content: '\e87a';
+}
+
+/* '' */
+
+.appkit-icon-vertical-more-fill:before {
+	content: '\e87b';
+}
+
+/* '' */
+
+.appkit-icon-vertical-more-outline:before {
+	content: '\e87c';
+}
+
+/* '' */
+
+.appkit-icon-view-fill:before {
+	content: '\e87d';
+}
+
+/* '' */
+
+.appkit-icon-view-outline:before {
+	content: '\e87e';
+}
+
+/* '' */
+
+.appkit-icon-volume-down-fill:before {
+	content: '\e87f';
+}
+
+/* '' */
+
+.appkit-icon-volume-down-outline:before {
+	content: '\e880';
+}
+
+/* '' */
+
+.appkit-icon-volume-off-fill:before {
+	content: '\e881';
+}
+
+/* '' */
+
+.appkit-icon-volume-off-outline:before {
+	content: '\e882';
+}
+
+/* '' */
+
+.appkit-icon-volume-up-fill:before {
+	content: '\e883';
+}
+
+/* '' */
+
+.appkit-icon-volume-up-outline:before {
+	content: '\e884';
+}
+
+/* '' */
+
+.appkit-icon-xls-fill:before {
+	content: '\e885';
+}
+
+/* '' */
+
+.appkit-icon-xls-outline:before {
+	content: '\e886';
+}
+
+/* '' */

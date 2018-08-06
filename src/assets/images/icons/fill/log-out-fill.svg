@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Log out</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Log-out" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M25.038,9.0442 L32,16.0062 L25.05,22.9562 C24.27,23.7362 23.004,23.7362 22.222,22.9562 C21.442,22.1742 21.442,20.9082 22.222,20.1282 L24.344,18.0062 L13.146,18.0062 L13.146,14.0062 L24.344,14.0062 L22.21,11.8722 C21.428,11.0922 21.428,9.8262 22.21,9.0442 C22.992,8.2622 24.258,8.2622 25.038,9.0442 Z M16,22 L16.47,22 L20,25.53 L20,30 C20,31.104 19.104,32 18,32 L2,32 C0.896,32 -1.77635684e-15,31.104 -1.77635684e-15,30 L-1.77635684e-15,2 C-1.77635684e-15,0.896 0.896,0 2,0 L18,0 C19.104,0 20,0.896 20,2 L20,6.47 L16.47,10 L16,10 L16,4 L4,4 L4,28 L16,28 L16,22 Z" id="Logout" fill="#231F20"></path>
+    </g>
+</svg>

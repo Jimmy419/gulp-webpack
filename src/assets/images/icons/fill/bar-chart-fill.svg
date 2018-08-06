@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Bar Chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Bar-Chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24,32 L24,8 L32,8 L32,32 L24,32 Z M0,32 L0,16 L8,16 L8,32 L0,32 Z M11.99925,32 L11.99925,0 L19.99925,0 L19.99925,32 L11.99925,32 Z" id="Combined-Shape" fill="#231F20"></path>
+    </g>
+</svg>

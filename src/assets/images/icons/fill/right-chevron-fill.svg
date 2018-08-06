@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Right Chevron</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Right-Chevron" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M11.1212266,31.1210183 L26.242245,16 L11.1212266,0.878981688 C9.95058436,-0.292993896 8.05062395,-0.292993896 6.87864836,0.878981688 C5.70800608,2.05095727 5.70800608,3.94958438 6.87864836,5.12155997 L17.7584217,16 L6.87864836,26.87844 C6.29332722,27.4650945 6,28.2317452 6,28.9997292 C6,29.7677132 6.29332722,30.5356972 6.87864836,31.1210183 C8.05062395,32.2929939 9.95058436,32.2929939 11.1212266,31.1210183" id="Fill-1" fill="#212121"></path>
+    </g>
+</svg>

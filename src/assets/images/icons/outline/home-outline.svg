@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>home-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-copy-2" transform="translate(-619.000000, -2678.000000)" fill="#333333">
+            <g id="home-outline" transform="translate(619.000000, 2680.000000)">
+                <path d="M16,0 L32,16 L27,16 L27,28 L5,28 L5,16 L0,16 L16,0 Z M16,3 L5,14 L7,14 L7,26 L25,26 L25,14 L27,14 L16,3 Z" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

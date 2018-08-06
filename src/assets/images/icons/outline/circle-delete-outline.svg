@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_ol_Circle Delete</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_ol_Circle-Delete" fill="#333333">
+            <path d="M16,0 C24.8373333,0 32,7.164 32,16 C32,24.836 24.8373333,32 16,32 C7.164,32 0,24.836 0,16 C0,7.164 7.164,0 16,0 Z M16,30 C23.72,30 30,23.72 30,16 C30,8.28 23.72,2 16,2 C8.28,2 2,8.28 2,16 C2,23.72 8.28,30 16,30 Z M21.0004,9.586 L22.4150667,11.0006667 L17.4150667,16.0006667 L22.4150667,21.0006667 L21.0004,22.414 L16.0004,17.414 L11.0004,22.414 L9.58573333,21.0006667 L14.5857333,16.0006667 L9.58573333,11.0006667 L11.0004,9.586 L16.0004,14.586 L21.0004,9.586 Z"></path>
+        </g>
+    </g>
+</svg>

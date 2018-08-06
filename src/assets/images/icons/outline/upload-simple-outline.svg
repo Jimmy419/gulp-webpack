@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_ol_Upload_32</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_ol_Upload_32" fill="#999999">
+            <g transform="translate(5.250000, 0.000000)" id="Combined-Shape">
+                <path d="M2.03577113,6.85041048 C1.74198158,7.14420004 1.26570157,7.14420004 0.971912014,6.85041048 C0.678122454,6.55662092 0.678122454,6.08034092 0.971912014,5.78655136 L6.75946607,0 L12.5460174,5.78655136 C12.839807,6.08034092 12.839807,6.55662092 12.5460174,6.85041048 C12.399624,6.99680391 12.2071066,7.07100332 12.0145892,7.07100332 C11.8220718,7.07100332 11.6295544,6.99680391 11.483161,6.85041048 L7.51148712,2.8787366 L7.51148712,16.6296923 L6.00744501,16.6296923 L6.00744501,2.8787366 L2.03577113,6.85041048 Z M0,24 L0,22.4959579 L13.5183305,22.4959579 L13.5183305,24 L0,24 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Reset / Refresh</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outline-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reset-/-Refresh" fill="#212121">
+            <path d="M4.614,6.49 L4.239,6.865 L4.239,11.881 C4.239,17.328 8.672,21.761 14.119,21.761 C19.567,21.761 24,17.328 24,11.881 C24,6.433 19.567,2 14.119,2 L14.119,3.5 C18.74,3.5 22.5,7.26 22.5,11.881 C22.5,16.501 18.74,20.261 14.119,20.261 C9.499,20.261 5.739,16.501 5.739,11.881 L5.739,6.865 L5.364,6.49 L5.739,6.865 L5.739,6.058 L4.239,6.058 L4.239,6.865 L4.614,6.49 Z M5.739,6.0579 L5.739,6.8649 L8.698,9.8239 C8.844,9.9709 9.036,10.0439 9.228,10.0439 C9.42,10.0439 9.612,9.9709 9.759,9.8239 C10.051,9.5309 10.051,9.0569 9.759,8.7639 L4.989,3.9939 L0.219,8.7639 C-0.073,9.0569 -0.073,9.5309 0.219,9.8239 C0.512,10.1169 0.987,10.1169 1.28,9.8239 L4.239,6.8649 L4.239,6.0579 L5.739,6.0579 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

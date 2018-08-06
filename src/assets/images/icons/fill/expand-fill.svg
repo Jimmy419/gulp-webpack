@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Expand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Expand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 L13.9994751,0 L13.9994751,6.00177493 L5.99977501,6.00177493 L5.99977501,13.9994751 L0,13.9994751 L0,0 Z M0,17.9993251 L5.99977501,17.9993251 L5.99977501,26.0010249 L13.9994751,26.0010249 L13.9994751,31.9988 L0,31.9988 L0,17.9993251 Z M25.9982251,17.9993251 L32,17.9993251 L32,31.9988 L17.9985251,31.9988 L17.9985251,26.0010249 L25.9982251,26.0010249 L25.9982251,17.9993251 Z M17.9993251,0 L31.9988,0 L31.9988,13.9994751 L26.0010249,13.9994751 L26.0010249,6.00177493 L17.9993251,6.00177493 L17.9993251,0 Z" id="Shape" fill="#212121"></path>
+    </g>
+</svg>

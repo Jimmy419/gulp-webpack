@@ -1,0 +1,103 @@
+@mixin bp-mobile {
+    @media (max-width: #{$max-width}) {
+        @content;
+    }
+}
+
+@mixin mobile-aspect {
+    @media screen and (device-aspect-ratio: 40/71) {
+        @content;
+    }
+}
+
+/*----------------------------------------------------*
+**for different browser fun***********************begin
+*----------------------------------------------------*/
+
+@mixin prefixer ($property, $value, $prefixes) {
+    @each $prefix in $prefixes {
+        @if $prefix==webkit and $prefix-for-webkit==true {
+            -webkit-#{$property}: $value;
+        }
+        @else if $prefix==moz and $prefix-for-mozilla==true {
+            -moz-#{$property}: $value;
+        }
+        @else if $prefix==ms and $prefix-for-microsoft==true {
+            -ms-#{$property}: $value;
+        }
+        @else if $prefix==o and $prefix-for-opera==true {
+            -o-#{$property}: $value;
+        }
+        @else if $prefix==spec and $prefix-for-spec==true {
+            #{$property}: $value;
+        }
+        @else {
+            @warn "Unrecognized prefix: #{$prefix}";
+        }
+    }
+}
+
+@mixin box-shadow($shadow...) {
+    @include prefixer(box-shadow, $shadow, webkit moz o ms spec);
+}
+
+@mixin box-sizing($type:border-box) {
+    // border-box | padding-box | content-box
+    @include prefixer(box-sizing, $type, webkit moz o ms spec);
+}
+
+@mixin transform($property...) {
+    @include prefixer(transform, $property, webkit moz o ms spec);
+}
+
+@mixin transition($property...) {
+    @include prefixer(transition, $property, webkit moz o ms spec);
+}
+
+@mixin border-radius($width...) {
+    @include prefixer(border-radius, $width, webkit moz o ms spec);
+}
+
+@mixin screen-center($selfWidth, $selfHeight, $horizontalOffset, $verticalOffset) {
+    @include vertical-center($selfHeight, $verticalOffset);
+    @include horizontal-center($selfWidth, $horizontalOffset);
+}
+
+@mixin vertical-center($selfHeight, $verticalOffset) {
+    position: relative;
+    top: 50%;
+    margin-top: -($selfHeight + $verticalOffset)/2;
+}
+
+@mixin horizontal-center($selfWith, $horizontalOffset) {
+    position: relative;
+    left: 50%;
+    margin-left: -($selfWith + $horizontalOffset)/2; // self.width/2
+}
+
+@mixin screen($res-min, $res-max) {
+    @media screen and (min-width: $res-min) and (max-width: $res-max) {
+        @content;
+    }
+}
+
+@mixin appearance($property...) {
+    @include prefixer(appearance, $property, webkit moz o ms spec);
+}
+
+@mixin textEllipsis($lineHeight) {
+    &:after {
+        content: '. . .';
+        position: absolute;
+        display: inline-block;
+        background-color: $demo-fff;
+        right: 0;
+        bottom: 0;
+        width: 3.4rem;
+        height: $lineHeight;
+    }
+}
+
+/*----------------------------------------------------*
+**for different browser fun*************************end
+*----------------------------------------------------*/

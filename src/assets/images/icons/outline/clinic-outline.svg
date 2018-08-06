@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Building</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outline-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Building" fill="#231F1F">
+            <g id="Page-1" transform="translate(0.000000, 2.000000)">
+                <path d="M12.00015,0.00045 L0.00015,12.00045 L3.51465,12.00045 L3.51465,20.48595 L20.48415,20.48595 L20.48415,12.00045 L24.00015,12.00045 L12.00015,0.00045 Z M12.00015,2.12145 L20.37765,10.49895 L18.98565,10.49895 L18.98565,12.00045 L18.98565,18.98595 L5.01465,18.98595 L5.01465,12.00045 L5.01465,10.49895 L3.62115,10.49895 L12.00015,2.12145 Z" id="Fill-1"></path>
+                <polygon id="Fill-2" points="11.25015 7.5003 11.25015 11.2503 7.50015 11.2503 7.50015 12.7503 11.25015 12.7503 11.25015 16.5003 12.75015 16.5003 12.75015 12.7503 16.50015 12.7503 16.50015 11.2503 12.75015 11.2503 12.75015 7.5003"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

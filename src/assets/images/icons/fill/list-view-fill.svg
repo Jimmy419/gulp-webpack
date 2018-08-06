@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>List View</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="List-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M32,10 L8,10 L8,6 L32,6 L32,10 Z M4,10 L0,10 L0,6 L4,6 L4,10 Z M32,18 L8,18 L8,14 L32,14 L32,18 Z M4,18 L0,18 L0,14 L4,14 L4,18 Z M32,26 L8,26 L8,22 L32,22 L32,26 Z M4,26 L0,26 L0,22 L4,22 L4,26 Z" id="Combined-Shape" fill="#212121"></path>
+    </g>
+</svg>

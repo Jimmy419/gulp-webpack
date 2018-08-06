@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Door closed</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Door-closed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M27,30 C27.5522847,30 28,30.4477153 28,31 C28,31.5522847 27.5522847,32 27,32 L5,32 C4.44771525,32 4,31.5522847 4,31 C4,30.4477153 4.44771525,30 5,30 L6,30 L6,2 C6,0.8954305 6.8954305,-2.41183085e-16 8,-4.4408921e-16 L24,0 C25.1045695,-2.02906125e-16 26,0.8954305 26,2 L26,30 L27,30 Z M21,13 C20.4477153,13 20,13.4477153 20,14 L20,18 C20,18.5522847 20.4477153,19 21,19 C21.5522847,19 22,18.5522847 22,18 L22,14 C22,13.4477153 21.5522847,13 21,13 Z" id="ic_ol_door_closed_32" fill="#212121" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -1,0 +1,45 @@
+.a-checkbox {
+    input[type='checkbox'] {
+        display: none;
+    }
+    input[type='checkbox'] {
+        &+.a-checkbox-mark {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            border: 1px solid #9e9e9e;
+            border-radius: 2px;
+            cursor: pointer;
+            .appkiticon {
+                font-size: 10px;
+                color: $text-white;
+                display: none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &~.a-checkbox-text {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        &:checked+.a-checkbox-mark {
+            background: $default-color;
+            border: none;
+            .appkiticon {
+                display: inline-block;
+            }
+        }
+        &:disabled+.a-checkbox-mark {
+            border-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+        &:disabled~.a-checkbox-text {
+            color: #bdbdbd;
+            cursor: not-allowed;
+        }
+    }
+}

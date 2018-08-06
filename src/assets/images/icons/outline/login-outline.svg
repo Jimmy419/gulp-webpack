@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Login</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outline-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login" fill="#212121">
+            <path d="M5.9715,6.9306 L10.29,11.2491 L-1.77635684e-15,11.2491 L-1.77635684e-15,12.7491 L10.29,12.7491 L5.9715,17.0691 L7.0305,18.1296 L13.1595,11.9991 L7.0305,5.8701 L5.9715,6.9306 Z M22.50045,0 L10.50045,0 C9.67245,0 9.00045,0.672 9.00045,1.5 L9.00045,3.75 L10.50045,3.75 L10.50045,1.5 L22.50045,1.5 L22.50045,22.5 L10.50045,22.5 L10.50045,20.25 L9.00045,20.25 L9.00045,22.5 C9.00045,23.328 9.67245,24 10.50045,24 L22.50045,24 C23.32845,24 24.00045,23.328 24.00045,22.5 L24.00045,1.5 C24.00045,0.672 23.32845,0 22.50045,0 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

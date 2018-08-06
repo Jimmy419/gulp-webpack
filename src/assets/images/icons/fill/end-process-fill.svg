@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>End Process</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="End-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M22.9529252,6.21864765 C20.9912633,4.82165629 18.5915145,4 16,4 C9.373,4 4,9.373 4,16 C4,18.5915145 4.82165629,20.9912633 6.21864765,22.9529252 L22.9529252,6.21864765 Z M25.7813524,9.04707477 L9.04707477,25.7813524 C11.0087367,27.1783437 13.4084855,28 16,28 C22.627,28 28,22.627 28,16 C28,13.4084855 27.1783437,11.0087367 25.7813524,9.04707477 Z M0,16 C0,7.164 7.164,0 16,0 C24.836,0 32,7.164 32,16 C32,24.836 24.836,32 16,32 C7.164,32 0,24.836 0,16 Z" id="Combined-Shape" fill="#212121"></path>
+    </g>
+</svg>

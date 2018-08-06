@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M14,14 L14,0 L18,0 L18,14 L32,14 L32,18 L18,18 L18,32 L14,32 L14,18 L0,18 L0,14 L14,14 Z" id="Combined-Shape" fill="#333333"></path>
+    </g>
+</svg>

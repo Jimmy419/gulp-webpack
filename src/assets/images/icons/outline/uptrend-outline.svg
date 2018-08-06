@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>uptrend-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-copy-2" transform="translate(-1017.000000, -2615.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="uptrend-outline" transform="translate(1017.000000, 2619.000000)">
+                <path d="M16,0 L32,24 L0,24 L16,0 Z M16,3.60555128 L3.73703418,22 L28.2629658,22 L16,3.60555128 Z" id="icons/outline/Uptrend_32"></path>
+            </g>
+        </g>
+    </g>
+</svg>

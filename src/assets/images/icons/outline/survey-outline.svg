@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>survey-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-copy-2" transform="translate(-749.000000, -2615.000000)" fill="#333333">
+            <g id="survey-outline" transform="translate(752.000000, 2615.000000)">
+                <path d="M24,2 C25.1053333,2 26,2.896 26,4 L26,30 C26,31.104 25.1053333,32 24,32 L2,32 C0.896,32 0,31.104 0,30 L0,4 C0,2.896 0.896,2 2,2 L5,2 L5,4 L2,4 L2,30 L24,30 L24,4 L21,4 L21,2 L24,2 Z M7,2 L7,0 L19,0 L19,2 L7,2 Z M6.93333333,16 L19.0666667,16 C19.552,16 20,16.448 20,17 C20,17.552 19.552,18 19.0666667,18 L6.93333333,18 C6.448,18 6,17.552 6,17 C6,16.448 6.448,16 6.93333333,16 Z M6.93333333,11 L19.0666667,11 C19.552,11 20,11.448 20,12 C20,12.552 19.552,13 19.0666667,13 L6.93333333,13 C6.448,13 6,12.552 6,12 C6,11.448 6.448,11 6.93333333,11 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

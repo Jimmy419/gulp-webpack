@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>folder-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-copy-2" transform="translate(-839.000000, -2451.000000)" fill="#333333">
+            <g id="folder-outline" transform="translate(839.000000, 2452.000000)">
+                <path d="M30,6 C31.1053333,6 32,6.896 32,8 L32,28 C32,29.104 31.1053333,30 30,30 L2,30 C0.896,30 0,29.104 0,28 L0,6 L12,6 L26.1493333,6 L30,6 Z M2,28 L30,28 L30,8 L2,8 L2,28 Z M2,2 L2,4 L0,4 L0,2 C0,0.896 0.896,0 2,0 L10,0 C11.1053333,0 12,0.896 12,2 L12,4 L10,4 L10,2 L2,2 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

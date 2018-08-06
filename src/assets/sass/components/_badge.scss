@@ -1,0 +1,38 @@
+.a-badge {
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    background-color: $default-color;
+    color: $white;
+    @include border-radius(12px);
+    padding: 0 8px; // font-weight: $bold;
+    font-size: 12px;
+    &.a-badge-secondary {
+        color: $dark-grey-text;
+        background-color: $background-lightgray;
+    }
+    &.a-badge-light {
+        color: $primary-disabled-btn-text;
+        background-color: $background-lightgray;
+    }
+    &.a-badge-dark {
+        color: $white;
+        background-color: $dark-grey-text;
+    }
+    &.a-badge-warnging {
+        color: $dark-grey-text;
+        background-color: $fill-yellow-400;
+    }
+    &.a-badge-danger {
+        color: $white;
+        background-color: $fill-red-600;
+    }
+    &.a-badge-success {
+        color: $white;
+        background-color: $color-success;
+    }
+    &.a-badge-info {
+        color: $white;
+        background-color: $color-infor;
+    }
+}

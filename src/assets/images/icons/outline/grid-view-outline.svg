@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Grid View Outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Outline-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Grid-View" fill="#231F1F">
+            <g id="Grid-View-Outline">
+                <path d="M0,10.5 L10.5,10.5 L10.5,0 L0,0 L0,10.5 Z M1.5,9 L9,9 L9,1.5 L1.5,1.5 L1.5,9 Z" id="Fill-1"></path>
+                <path d="M13.5,10.5 L24,10.5 L24,0 L13.5,0 L13.5,10.5 Z M15,9 L22.5,9 L22.5,1.5 L15,1.5 L15,9 Z" id="Fill-2"></path>
+                <path d="M0,24 L10.5,24 L10.5,13.5 L0,13.5 L0,24 Z M1.5,22.5 L9,22.5 L9,15 L1.5,15 L1.5,22.5 Z" id="Fill-3"></path>
+                <path d="M13.5,24 L24,24 L24,13.5 L13.5,13.5 L13.5,24 Z M15,22.5 L22.5,22.5 L22.5,15 L15,15 L15,22.5 Z" id="Fill-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

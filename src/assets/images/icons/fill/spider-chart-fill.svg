@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Spider Chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Spider-Chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15.9979979,0.800000012 L31.9959958,12.4232259 L25.8853044,31.2300003 L6.11069145,31.2300003 L0,12.4232259 L15.9979979,0.800000012 Z M15.9979979,7.10798393 L5.99924921,14.3725001 L9.81843137,26.1267341 L22.1775644,26.1267341 L25.9967466,14.3725001 L15.9979979,7.10798393 Z M8.47107583,15.1756452 L15.9979979,9.70701624 L23.52492,15.1756452 L20.6498916,24.0240728 L11.3461042,24.0240728 L8.47107583,15.1756452 Z M13.4704502,16.8000404 L14.4358875,19.771351 L17.5601083,19.771351 L18.5255456,16.8000404 L15.9979979,14.9636695 L13.4704502,16.8000404 Z" id="spiderchart-outline-copy" fill="#212121" fill-rule="nonzero"></path>
+    </g>
+</svg>

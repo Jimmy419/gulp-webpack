@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Volumn off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Volumn-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,11.0081774 L7,21.0173252 C7,22.1218947 7.8954305,23.0173252 9,23.0173252 L12,23.0173252 L23.4359484,30.8290685 C23.8919917,31.1405856 24.5142224,31.023424 24.8257395,30.5673806 C24.939266,30.4011843 25,30.2045986 25,30.003329 L25,2 C25,1.44771525 24.5522847,1 24,1 C23.79828,1 23.6012758,1.06100586 23.4348581,1.17500627 L12,9.00817745 L9,9.00817745 C7.8954305,9.00817745 7,9.90360795 7,11.0081774 Z" id="volume_off" fill="#333333" fill-rule="nonzero"></path>
+    </g>
+</svg>

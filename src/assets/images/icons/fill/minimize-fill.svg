@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Minimize</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Minimize" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18.00035,0 L24.0002,0 L24.0002,8.00179996 L32,8.00179996 L32,13.99965 L18.00035,13.99965 L18.00035,0 Z M18.00035,17.99955 L32,17.99955 L32,24.0014 L24.0002,24.0014 L24.0002,31.9992 L18.00035,31.9992 L18.00035,17.99955 Z M0.000799980001,17.99955 L14.00045,17.99955 L14.00045,31.9992 L8.00059999,31.9992 L8.00059999,23.9994 L0.000799980001,23.9994 L0.000799980001,17.99955 Z M7.9998,0 L14.00165,0 L14.00165,13.99965 L0,13.99965 L0,7.9998 L7.9998,7.9998 L7.9998,0 Z" fill="#212121"></path>
+    </g>
+</svg>

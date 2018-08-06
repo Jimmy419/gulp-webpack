@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle Delete</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Circle-Delete" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16.0002,0 C24.8362,0 32.0002,7.164 32.0002,16 C32.0002,24.836 24.8362,32 16.0002,32 C7.16286667,32 0.0002,24.836 0.0002,16 C0.0002,7.164 7.16286667,0 16.0002,0 Z M23.8282,21 L18.8282,16 L23.8282,11 L21.0002,8.172 L16.0002,13.172 L11.0002,8.172 L8.1722,11 L13.1722,16 L8.1722,21 L11.0002,23.828 L16.0002,18.828 L21.0002,23.828 L23.8282,21 Z" id="Combined-Shape" fill="#212121"></path>
+    </g>
+</svg>

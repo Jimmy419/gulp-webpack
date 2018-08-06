@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>News</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="News" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M26.914,32 L5.088,32 C3.936,32 3,31.044 3,29.866 L3,2.134 C3,0.956 3.936,0 5.088,0 L26.914,0 C28.066,0 29,0.956 29,2.134 L29,29.866 C29,31.044 28.066,32 26.914,32 Z M7.001,16 L25.001,16 L25.001,12 L7.001,12 L7.001,16 Z M7.001,24 L25.001,24 L25.001,20 L7.001,20 L7.001,24 Z M7.001,8 L15.001,8 L15.001,4 L7.001,4 L7.001,8 Z" id="Combined-Shape" fill="#231F20"></path>
+    </g>
+</svg>

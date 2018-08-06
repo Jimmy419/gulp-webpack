@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Survey</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Survey" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M27,2 C28.104,2 29,2.896 29,4 L29,30 C29,31.104 28.104,32 27,32 L5,32 C3.896,32 3,31.104 3,30 L3,4 C3,2.896 3.896,2 5,2 L8,2 L8,4 L8,8 L10,8 L22,8 L24,8 L24,4 L24,2 L27,2 Z M7,24 L25,24 L25,20 L7,20 L7,24 Z M7,16 L25,16 L25,12 L7,12 L7,16 Z M12,0 L20,0 L20,2 L20,4 L12,4 L12,2 L12,0 Z" fill="#231F20"></path>
+    </g>
+</svg>

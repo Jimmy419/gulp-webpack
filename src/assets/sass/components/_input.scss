@@ -1,0 +1,351 @@
+::placeholder {
+    color: $color-9e9;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color-9e9;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color-9e9;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.a-form-label {
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: $regular;
+    color: $color-dark;
+    margin-bottom: 10px;
+}
+
+.a-text-input {
+    height: 34px;
+    @include border-radius(2px);
+    background-color: $color-f5f;
+    padding: 0 10px;
+    color: $text-gray;
+    font-size: 14px;
+    &:focus {
+        border: 1px solid $color-orange;
+        background-color: $white;
+    }
+    &.a-input-lg {
+        height: 50px;
+        &:focus {
+            border: 2px solid $color-orange;
+        }
+    }
+    &.a-input-secondary {
+        background-color: $white;
+        &:focus {
+            border: 2px solid $color-orange;
+        }
+    }
+}
+
+.a-input-with-icon {
+    position: relative;
+    .a-text-input {
+        width: 100%;
+    }
+    .a-icon {
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        @include transform(translate(0, -50%))
+    }
+    &.a-lf {
+        .a-text-input {
+            padding-left: 36px;
+        }
+        .a-icon {
+            left: 10px;
+        }
+    }
+    &.a-rt {
+        .a-text-input {
+            padding-right: 36px;
+        }
+        .a-icon {
+            right: 10px;
+        }
+    }
+    &.a-both {
+        .a-text-input {
+            padding: 0 36px;
+        }
+        .a-icon {
+            &.a-icon-lf {
+                left: 10px;
+            }
+            &.a-icon-rt {
+                right: 10px;
+            }
+        }
+    }
+    &.a-input-lg {
+        .a-icon {
+            font-size: 24px;
+        }
+        .a-text-input {
+            height: 50px;
+        }
+        &.a-lf {
+            .a-text-input {
+                padding-left: 44px;
+            }
+        }
+        &.a-rt {
+            .a-text-input {
+                padding-right: 44px;
+            }
+        }
+        &.a-both {
+            .a-text-input {
+                padding: 0 44px;
+            }
+        }
+    }
+}
+
+.a-text-field {
+    resize: none;
+    color: $text-gray;
+    line-height: 1.64;
+    padding: 6px 10px;
+    @include border-radius(2px);
+    font-size: 14px;
+    background-color: $color-f5f;
+    &:focus {
+        border: 2px solid $color-orange;
+        background-color: $white;
+    }
+    &.a-field-secondary {
+        background-color: $white;
+    }
+}
+
+.a-input-number-box {
+    display: flex;
+    align-items: center;
+    .a-input-label {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        color: $color-dark;
+    }
+    .a-input-container {
+        flex: 1 1 auto;
+        position: relative;
+        .a-text-input {
+            width: 100%;
+            color: $text-gray;
+        }
+        .a-icon {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+    &.a-type-lg {
+        .a-input-container {
+            .a-text-input {
+                height: 50px;
+            }
+        }
+    }
+    &.a-type-one {
+        .a-input-container {
+            .a-text-input {
+                padding: 0 50px;
+                text-align: center;
+            }
+            .a-icon {
+                width: 25px;
+                top: 50%;
+                @include border-radius(2px);
+                height: 25px;
+                @include transform(translate(0, -50%));
+                font-size: 12px;
+                color: $color-bdb;
+                &:hover {
+                    background-color: $white;
+                    color: $color-616;
+                }
+                &:active {
+                    background-color: $color-orange;
+                    color: $white;
+                }
+                &.a-icon-up {
+                    left: 5px;
+                }
+                &.a-icon-down {
+                    right: 5px;
+                }
+            }
+        }
+        &.a-input-number-secondary {
+            .a-input-container {
+                .a-text-input {
+                    background-color: $white;
+                }
+                .a-icon {
+                    &:hover {
+                        background-color: $color-f5f;
+                    }
+                    &:active {
+                        background-color: $color-orange;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.a-type-lg {
+            .a-input-container {
+                .a-text-input {
+                    padding: 0 55px;
+                }
+                .a-icon {
+                    &.a-icon-up {
+                        left: 10px;
+                    }
+                    &.a-icon-down {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &.a-type-two {
+        .a-input-container {
+            .a-text-input {
+                padding-left: 10px;
+                padding-right: 37px;
+            }
+            .a-icon {
+                font-size: 7px;
+                width: 8px;
+                height: 5px;
+                color: $color-bdb;
+                &:hover {
+                    color: $color-616;
+                }
+                &:active {
+                    color: $color-orange;
+                }
+                &.a-icon-up {
+                    right: 10px;
+                    top: 8px;
+                }
+                &.a-icon-down {
+                    right: 10px;
+                    bottom: 8px;
+                }
+            }
+        }
+        &.a-input-number-secondary {
+            .a-input-container {
+                .a-text-input {
+                    background-color: $white;
+                }
+            }
+        }
+        &.a-type-lg {
+            .a-input-container {
+                .a-text-input {
+                    padding-right: 50px;
+                }
+                .a-icon {
+                    font-size: 10px;
+                    width: 10px;
+                    height: 7px;
+                    &.a-icon-up {
+                        right: 20px;
+                        top: 14px;
+                    }
+                    &.a-icon-down {
+                        right: 20px;
+                        bottom: 14px;
+                    }
+                }
+            }
+        }
+    }
+    &.a-type-three {
+        .a-input-container {
+            .a-text-input {
+                padding-left: 10px;
+                padding-right: 80px;
+            }
+            .a-icon {
+                width: 25px;
+                top: 50%;
+                @include border-radius(2px);
+                height: 25px;
+                @include transform(translate(0, -50%));
+                font-size: 12px;
+                color: $color-bdb;
+                &:hover {
+                    background-color: $white;
+                    color: $color-616;
+                }
+                &:active {
+                    background-color: $color-orange;
+                    color: $white;
+                }
+                &.a-icon-up {
+                    right: 35px;
+                }
+                &.a-icon-down {
+                    right: 5px;
+                }
+            }
+        }
+        &.a-input-number-secondary {
+            .a-input-container {
+                .a-text-input {
+                    background-color: $white;
+                }
+                .a-icon {
+                    &:hover {
+                        background-color: $color-f5f;
+                    }
+                    &:active {
+                        background-color: $color-orange;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.a-type-lg {
+            .a-input-container {
+                .a-text-input {
+                    padding-right: 85px;
+                }
+                .a-icon {
+                    &.a-icon-up {
+                        right: 40px;
+                    }
+                    &.a-icon-down {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

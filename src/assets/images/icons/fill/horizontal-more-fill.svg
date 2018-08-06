@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Horizontal More</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Horizontal-More" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,12 C6.20933333,12 8,13.7906667 8,16 C8,18.2093333 6.20933333,20 4,20 C1.79066667,20 0,18.2093333 0,16 C0,13.7906667 1.79066667,12 4,12 Z M16,12 C18.2093333,12 20,13.7906667 20,16 C20,18.2093333 18.2093333,20 16,20 C13.7906667,20 12,18.2093333 12,16 C12,13.7906667 13.7906667,12 16,12 Z M28,12 C30.2093333,12 32,13.7906667 32,16 C32,18.2093333 30.2093333,20 28,20 C25.7906667,20 24,18.2093333 24,16 C24,13.7906667 25.7906667,12 28,12 Z" fill="#212121"></path>
+    </g>
+</svg>

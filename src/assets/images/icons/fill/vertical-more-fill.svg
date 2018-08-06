@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Vertical More</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Vertical-More" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,8 C13.7906667,8 12,6.20933333 12,4 C12,1.79066667 13.7906667,0 16,0 C18.2093333,0 20,1.79066667 20,4 C20,6.20933333 18.2093333,8 16,8 Z M16,12 C18.2093333,12 20,13.7906667 20,16 C20,18.2093333 18.2093333,20 16,20 C13.7906667,20 12,18.2093333 12,16 C12,13.7906667 13.7906667,12 16,12 Z M16,24 C18.2093333,24 20,25.7906667 20,28 C20,30.2093333 18.2093333,32 16,32 C13.7906667,32 12,30.2093333 12,28 C12,25.7906667 13.7906667,24 16,24 Z" fill="#212121"></path>
+    </g>
+</svg>

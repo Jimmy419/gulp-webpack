@@ -1,0 +1,190 @@
+.a-pagination {
+    display: flex;
+    align-items: center;
+    /*
+     * baseline component of page size
+     */
+    @at-root {
+        .a-current-page {
+            max-width: 48px;
+            color: #424242;
+            text-align: center;
+            border-radius: 2px;
+            &:focus {
+                border: 1px solid #d04a02;
+            }
+        }
+        .a-number {
+            /*
+             * .a-number-[size] classes for different size of page number
+             */
+            &.a-number-sm {
+                font-size: .75rem;
+                line-height: .75rem;
+                .a-current-page {
+                    padding: 5px 0;
+                    height: 24px;
+                    margin-right: 5px;
+                }
+            }
+            &.a-number-md {
+                font-size: .875rem;
+                line-height: .875rem;
+                .a-current-page {
+                    height: 30px;
+                    padding: .5rem 0;
+                    margin-right: 5px;
+                }
+            }
+            &.a-number-lg {
+                font-size: .875rem;
+                line-height: .875rem;
+                .a-current-page {
+                    height: 34px;
+                    padding: .625rem 0;
+                    margin-right: 10px;
+                }
+            }
+            /*
+             * .light, .dark class for input background color
+             */
+            &.light {
+                .a-current-page {
+                    background-color: #ffffff;
+                }
+            }
+            &.dark {
+                .a-current-page {
+                    background-color: #f5f5f5;
+                }
+            }
+        }
+    }
+    /*
+     * styles for different size and color of pagination
+     */
+    &.a-pagination-sm {
+        >li {
+            height: 34px;
+            margin-right: 1px;
+            border-radius: 2px;
+            &.a-page-link {
+                width: 34px;
+            }
+            &.a-page-number {
+                padding: 5px 10px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &.a-pagination-lg {
+        >li {
+            height: 50px;
+            margin-right: 1px;
+            &.a-page-link {
+                width: 50px;
+            }
+            &.a-page-number {
+                padding: 10px 10px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &.light {
+        >li {
+            background-color: #ffffff;
+        }
+        .a-page-link {
+            &:hover {
+                background-color: #f5f5f5;
+            }
+            &:active {
+                background-color: #eeeeee;
+            }
+        }
+    }
+    &.dark {
+        >li {
+            background-color: #eeeeee;
+        }
+        .a-page-link {
+            &:hover {
+                background-color: #f5f5f5;
+            }
+            &:active {
+                background-color: #e0e0e0;
+            }
+        }
+    }
+    /*
+     * styles for page link (prev/nex button)
+     */
+    .a-page-link {
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            background-color: #f5f5f5;
+        }
+        .appkiticon {
+            display: inline-block;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #bdbdbd;
+        }
+    }
+    /*
+     * styles for carousel pagination
+     */
+    &.a-pagination-carousel {
+        margin-bottom: 0;
+        >li {
+            margin-right: 0;
+            margin-left: 0;
+            a {
+                display: inline-block;
+                box-shadow: none;
+                padding: 0;
+                background-color: #bdbdbd;
+                border-radius: 50%;
+                &.active {
+                    background: #d14c00;
+                }
+            }
+        }
+        &.a-pagination-carousel-sm {
+            >li {
+                a {
+                    width: 6px;
+                    height: 6px;
+                    margin-right: 5px;
+                }
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &.a-pagination-carousel-lg {
+            >li {
+                a {
+                    width: 8px;
+                    height: 8px;
+                    margin-right: 10px;
+                }
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

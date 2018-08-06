@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Printer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Printer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,30 L8,22 L24,22 L24,30 L8,30 Z M30,10 C31.104,10 32,10.896 32,12 L32,26 L28,26 L28,17.916 L4,17.916 L4,26 L0,26 L0,12 C0,10.896 0.896,10 2,10 L30,10 Z M24,4 L24,8 L8,8 L8,4 C8,2.896 8.896,2 10,2 L22,2 C23.104,2 24,2.896 24,4 Z" id="Combined-Shape" fill="#212121"></path>
+    </g>
+</svg>

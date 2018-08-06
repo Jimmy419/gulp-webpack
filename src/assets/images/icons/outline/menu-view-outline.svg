@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-view-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-copy-2" transform="translate(-1063.000000, -2536.000000)" fill="#333333">
+            <g id="menu-view-outline" transform="translate(1063.000000, 2543.000000)">
+                <path d="M0,10 L32,10 L32,8.00133333 L0,8.00133333 L0,10 Z M0,2 L32,2 L32,0 L0,0 L0,2 Z M0,18 L32,18 L32,16 L0,16 L0,18 Z" id="Menu-View-Outline"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cloud" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,27 C3.13400675,27 0,23.8659932 0,20 C0,17.2033498 1.64003851,14.7897511 4.01081417,13.6685053 C4.18144384,11.0616254 6.34996272,9 9,9 C9.78910961,9 10.5355236,9.18280179 11.1992049,9.50836838 C12.7541527,6.81364799 15.6652763,5 19,5 C23.860365,5 27.8208715,8.85275186 27.9940921,13.670828 C30.3622239,14.7930819 32,17.2052794 32,20 C32,23.8659932 28.8659932,27 25,27 L7,27 Z" id="Combined-Shape" fill="#212121"></path>
+    </g>
+</svg>

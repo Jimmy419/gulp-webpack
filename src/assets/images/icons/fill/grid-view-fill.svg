@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Grid View</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Grid-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,14 L0,0 L14,0 L14,14 L0,14 Z M18,14 L18,0 L32,0 L32,14 L18,14 Z M0,32 L0,18 L14,18 L14,32 L0,32 Z M18,32 L18,18 L32,18 L32,32 L18,32 Z" fill="#212121"></path>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle Plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Circle-Plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M27.3126465,4.68585357 C33.5624512,10.9336583 33.5624512,21.0653417 27.3126465,27.3131465 C21.0648417,33.5609512 10.9351583,33.5609512 4.68735352,27.3131465 C-1.56245117,21.0653417 -1.56245117,10.9336583 4.68735352,4.68585357 C10.9351583,-1.56195119 21.0648417,-1.56195119 27.3126465,4.68585357 Z M24,17.984127 L24,14.015873 L17.9833535,14.015873 L17.9833535,8 L14.0146621,8 L14.0146621,14.015873 L8,14.015873 L8,17.984127 L14.0146621,17.984127 L14.0146621,24 L17.9833535,24 L17.9833535,17.984127 L24,17.984127 Z" fill="#212121"></path>
+    </g>
+</svg>
