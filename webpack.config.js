@@ -29,9 +29,12 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader'
-        ]
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "../images/[name].[ext]"
+          }
+        }
       },
       {
         test: /\.(ttf|eot|woff|woff2|svg)$/,
@@ -51,16 +54,21 @@ module.exports = {
           }
         }],
       },
-      {
-        test: /\.(png|jp(e*)g|svg)$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            limit: 8000, // Convert images < 8kb to base64 strings
-            name: 'images/[hash]-[name].[ext]'
-          }
-        }]
-      }
+      // {
+      //   test: /\.png$/i,
+      //   loader: 'url?mimetype=image/png&name=imgs/[name].[ext]?[hash]',
+      //   exclude: /image/
+      // }
+      // {
+      //   test: /\.(png|jp(e*)g|svg)$/,
+      //   use: [{
+      //     loader: 'url-loader',
+      //     options: {
+      //       limit: 8000, // Convert images < 8kb to base64 strings
+      //       name: 'images/[hash]-[name].[ext]'
+      //     }
+      //   }]
+      // }
     ]
   },
 
