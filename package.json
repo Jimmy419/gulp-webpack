@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "webpack": "webpack --mode none"
+    "webpack": "rm -rf dist && webpack --mode none",
+    "devone": "webpack --mode none"
   },
   "author": "",
   "license": "ISC",

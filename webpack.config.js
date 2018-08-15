@@ -1,17 +1,17 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack = require('webpack');
 module.exports = {
   entry: {
-    "main": './src/assets/build.js'
+    main: './src/assets/build.js'
   },
   output: {
     path: __dirname + '/dist/js',
     filename: 'build.js'
   },
-  externals: {
-    'jquery': "$"
-  },
-
+  // externals: {
+  //   'jquery': "$"
+  // },
   module: {
     rules: [{
         test: /\.css$/,
@@ -53,30 +53,33 @@ module.exports = {
             minimize: true
           }
         }],
-      },
-      // {
-      //   test: /\.png$/i,
-      //   loader: 'url?mimetype=image/png&name=imgs/[name].[ext]?[hash]',
-      //   exclude: /image/
-      // }
-      // {
-      //   test: /\.(png|jp(e*)g|svg)$/,
-      //   use: [{
-      //     loader: 'url-loader',
-      //     options: {
-      //       limit: 8000, // Convert images < 8kb to base64 strings
-      //       name: 'images/[hash]-[name].[ext]'
-      //     }
-      //   }]
-      // }
+      }
     ]
   },
-
   plugins: [
     new ExtractTextPlugin("../css/styles.css"),
     new HtmlWebpackPlugin({
       filename: __dirname + '/dist/index.html',
       template: __dirname + '/src/index.html'
-    })
+    }),
+    // new webpack.ProvidePlugin({
+    //   $: 'jquery'
+    // }),
+
+
+    /*------------------------------------------------------*
+    提取main,user两个branch的公共代码放入common.js中（方法一）
+    *-------------------------------------------------------*/
+    // new webpack.optimize.CommonsChunkPlugin("common.js", ["main"]),
+
+
+
+    /*------------------------------------------------------*
+    提取main,user两个branch的公共代码放入common.js中（推荐方法）
+    *-------------------------------------------------------*/
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   name:"common",
+    //   chunks:["main","user"]
+    // })
   ]
 }
