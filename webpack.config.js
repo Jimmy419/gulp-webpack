@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/dist/js',
-    filename: 'build.js'
+    filename: '[name].js'
   },
 
 
@@ -64,6 +64,26 @@ module.exports = {
       }
     ]
   },
+
+
+
+  /*------------------------------------------------------*
+  将所用从node_module里面引用的内容打包成vendor.js
+  *-------------------------------------------------------*/
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
+    }
+  },
+
+
+
   plugins: [
     new ExtractTextPlugin("../css/styles.css"),
     new HtmlWebpackPlugin({
