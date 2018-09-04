@@ -1,6 +1,10 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const uglify = require('uglifyjs-webpack-plugin');
+const optimizeCss = require('optimize-css-assets-webpack-plugin');
 var webpack = require('webpack');
+
+
 module.exports = {
   entry: {
     main: './src/assets/build.js'
@@ -25,15 +29,25 @@ module.exports = {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: "css-loader"
+          use: {
+            loader: "css-loader",
+            options: {
+              minimize: true
+            }
+          }
         })
       },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
-        })
+          use: [{
+            loader: 'css-loader',
+            options: {
+              minimize: true
+            }
+          }, 'sass-loader']
+        }),
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -66,11 +80,12 @@ module.exports = {
   },
 
 
-
-  /*------------------------------------------------------*
-  将所用从node_module里面引用的内容打包成vendor.js
-  *-------------------------------------------------------*/
   optimization: {
+
+
+    /*------------------------------------------------------*
+    将所用从node_module里面引用的内容打包成vendor.js
+    *-------------------------------------------------------*/
     splitChunks: {
       cacheGroups: {
         commons: {
@@ -79,9 +94,14 @@ module.exports = {
           chunks: 'all'
         }
       }
-    }
-  },
+    },
 
+
+    /*------------------------------------------------------*
+    压缩css
+    *-------------------------------------------------------*/
+    minimizer: [new optimizeCss({})]
+  },
 
 
   plugins: [
@@ -90,6 +110,27 @@ module.exports = {
       filename: __dirname + '/dist/index.html',
       template: __dirname + '/src/index.html'
     }),
+
+
+    /*------------------------------------------------------*
+    压缩css
+    *-------------------------------------------------------*/
+    new optimizeCss({
+      assetNameRegExp: /\.style\.css$/g,
+      cssProcessor: require('cssnano'),
+      cssProcessorOptions: {
+        discardComments: {
+          removeAll: true
+        }
+      },
+      canPrint: true
+    }),
+
+
+    /*------------------------------------------------------*
+    压缩js
+    *-------------------------------------------------------*/
+    new uglify()
 
 
     /*------------------------------------------------------*
