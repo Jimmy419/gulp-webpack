@@ -1,0 +1,231 @@
+@import './date-picker/cell.scss';
+@import './date-picker/datepicker.scss';
+@import './date-picker/navigation.scss';
+@import './date-picker/timepicker.scss';
+
+.a-datepicker {
+
+    /*----------------------------------------------------------------
+     * Common styles start
+     * Size of datepicker
+     *--------------------------------------------------------------*/
+    &.a-single {
+        width: 210px;
+
+        &.a-lg {
+            width: 350px;
+        }
+    }
+
+    /*----------------------------------------------------------------
+     * Common styles end
+     *--------------------------------------------------------------*/
+
+    /*----------------------------------------------------------------
+    * air-picker section start
+    * Styles for single datepicker, override air-picker styles
+    *---------------------------------------------------------------*/
+    .air-picker {
+        width: 100%;
+        border-radius: 10px;
+        border: 0;
+        box-shadow: $box-shadow-medium;
+        overflow: hidden;
+        font-family: inherit;
+
+
+        /*---------------------------------
+        * air datepicker navbar start
+        *-------------------------------*/
+        .datepicker--nav {
+            padding: 0;
+            border: 0;
+            height: 34px;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .datepicker--nav-title {
+            font-size: 14px;
+            color: $text-dark;
+            font-weight: 500;
+
+            &:hover {
+                background-color: unset;
+            }
+        }
+
+        .datepicker--nav-action {
+            width: 16px;
+            height: 16px;
+
+            &:hover {
+                background-color: unset;
+            }
+
+            color: #9e9e9e;
+            font-size: 10px;
+        }
+
+        /*---------------------------------
+        * air datepicker navbar end
+        *-------------------------------*/
+
+        .datepicker--content {
+            padding: 0;
+        }
+
+        .datepicker--cells-months,
+        .datepicker--cells-years,
+        .datepicker--years {
+            height: auto;
+        }
+
+        /*-----------------------------------
+        * air datepicker weekdays name start
+        *---------------------------------*/
+        .datepicker--day-name {
+            color: $text-dark;
+            font-weight: 500;
+            font-size: 12px;
+            height: 30px;
+            font-size: 12px;
+        }
+
+        .datepicker--days-names {
+            margin: 0;
+        }
+
+        /*-----------------------------------
+        * air datepicker weekdays name start
+        *---------------------------------*/
+
+        .datepicker--cell {
+            height: 30px;
+            border-radius: 0;
+            border: 0;
+            font-size: 12px;
+            color: $text-dark;
+
+            &.-focus- {
+                background-color: unset;
+                color: unset;
+            }
+
+            &.-disabled- {
+                background-color: $bg-light-grey;
+                color: #9e9e9e; //PENDING ON ALVIN
+                cursor: not-allowed;
+            }
+
+            &.-other-month- {
+                background-color: $bg-light-grey;
+            }
+
+            &:not(.-other-month-):not(.-disabled-) {
+                &.-current- {
+                    background-color: #ffe6a2;
+                    box-shadow: none;
+
+                    &.-in-range-:not(.-selected-) {
+                        color: $text-dark;
+                    }
+                }
+
+                &.-in-range- {
+                    background-color: #f6dbcb;
+                }
+
+                &.-selected- {
+                    background-color: $color-primary;
+                    color: $white;
+                    font-weight: 500;
+                }
+
+                &.-range-to-:not(.-selected-),
+                &.-range-from-:not(.-selected-) {
+                    background-color: #f6dbcb;
+                }
+            }
+        }
+    }
+
+    &.a-lg {
+
+        .air-picker {
+
+            .datepicker--content {
+                padding-bottom: 10px;
+            }
+
+            .datepicker--day-name {
+                height: 50px;
+            }
+
+            .datepicker--nav {
+                height: 50px;
+            }
+
+            .datepicker--nav-title {
+                font-size: 16px;
+            }
+
+            .datepicker--nav-action {
+                font-size: 12px;
+                width: 24px;
+                height: 24px;
+            }
+
+            .datepicker--cell {
+                height: 44px;
+                margin: 3px 0;
+                font-size: 16px;
+
+                &.-selected- {
+                    border-radius: 5px;
+                }
+
+
+                &.-range-from- {
+                    border-radius: 5px 0 0 5px;
+
+                    &.-range-to- {
+                        border-radius: 5px;
+                    }
+                }
+
+                &.-range-to- {
+                    border-radius: 0 5px 5px 0;
+
+                    &.-range-from- {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.a-title-left {
+        .datepicker--nav {
+            position: relative;
+        }
+
+        .datepicker--nav-action:first-of-type {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 16px;
+        }
+
+        &.a-lg {
+            .datepicker--nav-action:first-of-type {
+                right: 44px;
+            }
+        }
+    }
+
+    /*----------------------------------------------------------------
+    * air-picker section end
+    * Styles for single datepicker, override air-picker styles
+    *--------------------------------------------------------------*/
+}

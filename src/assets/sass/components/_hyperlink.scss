@@ -1,0 +1,28 @@
+a.a-link:not([href]):not([tabindex]),
+.a-link {
+    color: $color-primary;
+    font-weight: $regular;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+    }
+
+    &.a-secondary-link {
+        color: $color-dark;
+
+        &:hover {
+            color: $color-primary;
+            text-decoration: underline;
+        }
+    }
+
+    &.a-underline {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

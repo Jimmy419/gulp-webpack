@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow-left-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Arrow-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M28.1715729,15 L17.1507576,3.97918472 C16.7602333,3.58866043 16.7602333,2.95549545 17.1507576,2.56497116 C17.5412819,2.17444687 18.1744469,2.17444687 18.5649712,2.56497116 L32,16 L18.5649712,29.4350288 C18.1744469,29.8255531 17.5412819,29.8255531 17.1507576,29.4350288 C16.7602333,29.0445046 16.7602333,28.4113396 17.1507576,28.0208153 L28.1715729,17 L1,17 C0.44771525,17 6.76353751e-17,16.5522847 0,16 C-6.76353751e-17,15.4477153 0.44771525,15 1,15 L28.1715729,15 Z" id="Combined-Shape-Copy" fill="#212121" transform="translate(16.000000, 16.000000) scale(-1, 1) translate(-16.000000, -16.000000) "></path>
+    </g>
+</svg>

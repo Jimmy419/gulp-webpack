@@ -1,0 +1,69 @@
+.a-star-ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        margin-right: 3px;
+        cursor: pointer;
+    }
+
+    i:last-child {
+        margin-right: 5px;
+    }
+
+    span {
+        margin-left: 11px;
+    }
+
+    &.a-ratings-sm {
+        .icon-rating-fill {
+            font-size: 16px;
+        }
+    }
+
+    &.a-ratings-md {
+        .icon-rating-fill {
+            font-size: 30px;
+        }
+    }
+
+    &.a-ratings-primary {
+        .icon-rating-fill {
+            color: $color-secondary;
+
+            &.active {
+                color: $color-primary
+            }
+            &.hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &.a-ratings-secondary {
+        .icon-rating-fill {
+            color: $color-secondary;
+
+            &.active {
+                color: #FFB230;
+            }
+            &.hover {
+                color: #FFB230;
+            }
+        }
+    }
+
+    &.a-ratings-tertiary {
+        .icon-rating-fill {
+            color: $color-secondary;
+
+            &.active {
+                color: $color-dark;
+            }
+            &.hover {
+                color: $color-dark;
+            }
+        }
+    }
+}

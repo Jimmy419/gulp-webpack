@@ -1,263 +1,562 @@
 .a-btn {
     @include border-radius(2px);
-    padding: 0 10px;
-    height: 24px;
-    background-color: $primary-btn-bg;
-    color: $text-white;
-    display: inline-flex;
     align-items: center;
     cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    height: 24px;
     font-size: 12px;
-    &:hover {
-        background-color: $primary-btn-hover;
+    font-weight: $medium;
+    padding: 0 10px;
+    line-height: 1;
+    font-family: 'Neue Helvetica';
+
+    .a-btn-icon {
+        margin-right: 5px;
+        font-size: 12px;
     }
-    &:focus {
-        outline: none;
-    }
-    &:active {
-        background-color: $primary-btn-active;
-    }
-    &:disabled {
-        background-color: $primary-disabled-btn-bg;
-        cursor: default;
-        color: $primary-disabled-btn-text;
-        &:hover {
-            background-color: $primary-disabled-btn-bg;
-        }
-        &:focus {
-            outline: none;
-        }
-        &:active {
-            background-color: $primary-disabled-btn-bg;
-        }
-    }
-    &.a-btn-error {
-        background-color: $state-error-color;
-        &:hover {
-            background-color: $state-error-hover;
-        }
-        &:focus {
-            outline: none;
-        }
-        &:active {
-            background-color: $state-error-active;
-        }
-        &:disabled {
-            background-color: $primary-disabled-btn-bg;
-            cursor: default;
-            color: $primary-disabled-btn-text;
-            &:hover {
-                background-color: $primary-disabled-btn-bg;
-            }
-            &:focus {
-                outline: none;
-            }
-            &:active {
-                background-color: $primary-disabled-btn-bg;
-            }
-        }
-    }
-    &.a-btn-gray {
-        background-color: $primary-disabled-btn-bg;
-        color: $dark-grey-text;
-        &:hover {
-            background-color: $bg-light-grey;
-        }
-        &:focus {
-            outline: none;
-        }
-        &:active {
-            background-color: $background-lightgray;
-        }
-        &:disabled {
-            background-color: $primary-disabled-btn-bg;
-            cursor: default;
-            color: $primary-disabled-btn-text;
-            &:hover {
-                background-color: $primary-disabled-btn-bg;
-            }
-            &:focus {
-                outline: none;
-            }
-            &:active {
-                background-color: $primary-disabled-btn-bg;
-            }
-        }
-    }
+
+    /*----------------*
+    button size
+    *----------------*/
     &.a-btn-sm {
         height: 24px;
         font-size: 12px;
-        .a-icon {
+
+        .a-btn-icon {
             margin-right: 5px;
             font-size: 12px;
         }
     }
+
     &.a-btn-md {
         height: 30px;
         font-size: 12px;
-        .a-icon {
+
+        .a-btn-icon {
             margin-right: 5px;
             font-size: 12px;
         }
     }
+
     &.a-btn-lg {
         height: 34px;
         font-size: 14px;
-        .a-icon {
+        padding: 0 20px;
+
+        .a-btn-icon {
             margin-right: 10px;
             font-size: 18px;
         }
     }
+
     &.a-btn-xl {
         font-size: 16px;
         height: 50px;
         padding: 0 20px;
-        .a-icon {
-            margin-right: 10px;
-            font-size: 18px;
-        }
-    }
-}
 
-.a-btn-secondary {
-    @include border-radius(2px);
-    padding: 0 9px;
-    cursor: pointer;
-    height: 24px;
-    background-color: $white;
-    border: 1px solid $secondary-btn-border;
-    color: $primary-btn-bg;
-    display: inline-flex;
-    align-items: center;
-    font-size: 12px;
-    &:hover {
-        background-color: $secondary-btn-hover;
+        .a-btn-icon {
+            margin-right: 10px;
+            font-size: 18px;
+        }
     }
-    &:focus {
-        outline: none;
-    }
-    &:active {
-        background-color: $secondary-btn-active;
-    }
-    &.active {
-        color: $white;
-        border: 1px solid $primary-btn-bg;
+
+    /*----------------*
+    primary button
+    *----------------*/
+    &.a-btn-primary {
         background-color: $primary-btn-bg;
-    }
-    &:disabled {
-        border-color: $secondary-disabled-btn-border;
-        cursor: default;
-        background-color: $white;
-        color: $secondary-disabled-btn-text;
+        color: $text-white;
+
         &:hover {
-            background-color: $white;
+            background-color: $btn-primary-hover;
         }
+
         &:focus {
             outline: none;
         }
+
         &:active {
-            background-color: $white;
+            background-color: $primary-btn-active;
         }
-    }
-    &.a-btn-error {
-        background-color: $white;
-        color: $state-error-color;
-        border-color: $state-error-border;
-        &:hover {
-            background-color: $state-error-secondary-hover;
-        }
-        &:focus {
-            outline: none;
-        }
-        &:active {
-            background-color: $state-error-secondary-active;
-        }
-        &.active {
-            color: $white;
-            border: 1px solid $state-error-color;
-            background-color: $state-error-color;
-        }
-        &:disabled {
-            border-color: $secondary-disabled-btn-border;
+
+        &.a-no-interaction {
             cursor: default;
-            background-color: $white;
-            color: $secondary-disabled-btn-text;
+
             &:hover {
-                background-color: $white;
+                background-color: $primary-btn-bg;
             }
-            &:focus {
-                outline: none;
-            }
+
             &:active {
-                background-color: $white;
+                background-color: $primary-btn-bg;
             }
         }
-    }
-    &.a-btn-gray {
-        background-color: $white;
-        color: $dark-grey-text;
-        border-color: $primary-disabled-btn-text;
-        &:hover {
-            background-color: $bg-light-grey;
-        }
-        &:focus {
-            outline: none;
-        }
-        &:active {
+
+        &:disabled {
             background-color: $primary-disabled-btn-bg;
-        }
-        &.active {
-            color: $white;
-            border: 1px solid $hallow-grey-bg;
-            background-color: $hallow-grey-bg;
-        }
-        &:disabled {
-            border-color: $secondary-disabled-btn-border;
             cursor: default;
-            background-color: $white;
-            color: $secondary-disabled-btn-text;
+            color: $primary-disabled-btn-text;
+
             &:hover {
-                background-color: $white;
+                background-color: $primary-disabled-btn-bg;
             }
+
             &:focus {
                 outline: none;
             }
+
             &:active {
-                background-color: $white;
+                background-color: $primary-disabled-btn-bg;
+            }
+        }
+
+        &.a-btn-negative {
+            background-color: $state-negative-color;
+
+            &:hover {
+                background-color: $state-negative-hover;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: $state-negative-active;
+            }
+
+            &.a-no-interaction {
+                &:hover {
+                    background-color: $state-negative-color;
+                }
+
+                &:active {
+                    background-color: $state-negative-color;
+                }
+            }
+
+            &:disabled {
+                background-color: $primary-disabled-btn-bg;
+                cursor: default;
+                color: $primary-disabled-btn-text;
+
+                &:hover {
+                    background-color: $primary-disabled-btn-bg;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:active {
+                    background-color: $primary-disabled-btn-bg;
+                }
+            }
+        }
+
+        &.a-btn-gray {
+            background-color: $primary-disabled-btn-bg;
+            color: $dark-grey-text;
+
+            &:hover {
+                background-color: $bg-light-grey;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: $background-lightgray;
+            }
+
+            &.a-no-interaction {
+                &:hover {
+                    background-color: $primary-disabled-btn-bg;
+                }
+
+                &:active {
+                    background-color: $primary-disabled-btn-bg;
+                }
+            }
+
+            &:disabled {
+                background-color: $primary-disabled-btn-bg;
+                cursor: default;
+                color: $primary-disabled-btn-text;
+
+                &:hover {
+                    background-color: $primary-disabled-btn-bg;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:active {
+                    background-color: $primary-disabled-btn-bg;
+                }
             }
         }
     }
-    &.a-btn-sm {
-        height: 24px;
-        font-size: 12px;
-        .a-icon {
-            margin-right: 5px;
-            font-size: 12px;
+
+    /*----------------*
+    secondary button
+    *----------------*/
+    &.a-btn-secondary {
+        background-color: transparent;
+        border: 1px solid $secondary-btn-border;
+        color: $primary-btn-bg;
+        padding: 0 9px;
+
+        &:hover {
+            background-color: $secondary-btn-hover;
         }
-    }
-    &.a-btn-md {
-        height: 30px;
-        font-size: 12px;
-        .a-icon {
-            margin-right: 5px;
-            font-size: 12px;
+
+        &:focus {
+            outline: none;
         }
-    }
-    &.a-btn-lg {
-        height: 34px;
-        font-size: 14px;
-        .a-icon {
-            margin-right: 10px;
-            font-size: 18px;
+
+        &:active {
+            background-color: $secondary-btn-active;
         }
+
+        &.a-btn-lg {
+            padding: 0 19px;
+        }
+
+        &.a-btn-xl {
+            padding: 0 19px;
+        }
+
+        &.a-no-interaction {
+            cursor: default;
+
+            &:hover {
+                background-color: $color-white;
+            }
+
+            &:active {
+                background-color: $color-white;
+            }
+        }
+
+        &.active {
+            color: $color-white;
+            border: 1px solid $primary-btn-bg;
+            background-color: $primary-btn-bg;
+        }
+
+        &:disabled {
+            background-color: $color-white;
+            border-color: $secondary-disabled-btn-border;
+            cursor: default;
+            color: $secondary-disabled-btn-text;
+
+            &:hover {
+                background-color: $color-white;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: $color-white;
+            }
+        }
+
+        &.a-btn-negative {
+            background-color: $color-white;
+            border-color: $state-negative-border;
+            color: $state-negative-color;
+
+            &:hover {
+                background-color: $state-negative-secondary-hover;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: $state-negative-secondary-active;
+            }
+
+            &.a-no-interaction {
+                &:hover {
+                    background-color: $color-white;
+                }
+
+                &:active {
+                    background-color: $color-white;
+                }
+            }
+
+            &.active {
+                background-color: $state-negative-color;
+                border: 1px solid $state-negative-color;
+                color: $color-white;
+            }
+
+            &:disabled {
+                border-color: $secondary-disabled-btn-border;
+                cursor: default;
+                background-color: $color-white;
+                color: $secondary-disabled-btn-text;
+
+                &:hover {
+                    background-color: $color-white;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:active {
+                    background-color: $color-white;
+                }
+            }
+        }
+
+        &.a-btn-gray {
+            background-color: $color-white;
+            border-color: $primary-disabled-btn-text;
+            color: $dark-grey-text;
+
+            &:hover {
+                background-color: $bg-light-grey;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: $primary-disabled-btn-bg;
+            }
+
+            &.a-no-interaction {
+                &:hover {
+                    background-color: $color-white;
+                }
+
+                &:active {
+                    background-color: $color-white;
+                }
+            }
+
+            &.active {
+                background-color: $hallow-grey-bg;
+                border: 1px solid $hallow-grey-bg;
+                color: $color-white;
+            }
+
+            &:disabled {
+                background-color: $color-white;
+                border-color: $secondary-disabled-btn-border;
+                cursor: default;
+                color: $secondary-disabled-btn-text;
+
+                &:hover {
+                    background-color: $color-white;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:active {
+                    background-color: $color-white;
+                }
+            }
+        }
+
+        // &.a-btn-white {
+        //     border-color: $color-white;
+        //     color: $color-white;
+        //     &:hover {
+        //         background-color: $bg-light-grey;
+        //     }
+        //     &:focus {
+        //         outline: none;
+        //     }
+        //     &:active {
+        //         background-color: $primary-disabled-btn-bg;
+        //     }
+        //     &.a-no-interaction {
+        //         &:hover {
+        //             background-color: $color-white;
+        //         }
+        //         &:active {
+        //             background-color: $color-white;
+        //         }
+        //     }
+        //     &.active {
+        //         background-color: $hallow-grey-bg;
+        //         border: 1px solid $hallow-grey-bg;
+        //         color: $color-white;
+        //     }
+        //     &:disabled {
+        //         background-color: $color-white;
+        //         border-color: $secondary-disabled-btn-border;
+        //         cursor: default;
+        //         color: $secondary-disabled-btn-text;
+        //         &:hover {
+        //             background-color: $color-white;
+        //         }
+        //         &:focus {
+        //             outline: none;
+        //         }
+        //         &:active {
+        //             background-color: $color-white;
+        //         }
+        //     }
+        // }
     }
-    &.a-btn-xl {
-        font-size: 16px;
-        height: 50px;
-        padding: 0 19px;
-        .a-icon {
-            margin-right: 10px;
-            font-size: 18px;
+
+    /*----------------*
+    transparent button
+    *----------------*/
+    &.a-btn-transparent {
+        background-color: transparent;
+        color: $btn-primary;
+        padding: 0 10px;
+
+        &:hover {
+            background-color: $btn-primary-hover;
+            color: $color-white;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            background-color: $btn-primary-press;
+            color: $color-white;
+        }
+
+        &.a-no-interaction {
+            cursor: default;
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            &:active {
+                background-color: transparent;
+            }
+        }
+
+        &:disabled {
+            background-color: transparent;
+            cursor: default;
+            color: $btn-disabled;
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: transparent;
+            }
+        }
+
+        &.a-btn-negative {
+            color: $btn-negative;
+
+            &:hover {
+                background-color: $btn-negative;
+                color: $color-white;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: $btn-negative-press;
+                color: $color-white;
+            }
+
+            &.a-no-interaction {
+                &:hover {
+                    background-color: transparent;
+                    color: $btn-negative;
+                }
+
+                &:active {
+                    background-color: transparent;
+                    color: $btn-negative;
+                }
+            }
+
+            &:disabled {
+                background-color: transparent;
+                cursor: default;
+                color: $btn-disabled;
+
+                &:hover {
+                    background-color: transparent;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:active {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        &.a-btn-gray {
+            color: $btn-gray-text;
+
+            &:hover {
+                background-color: $btn-gray-hover;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: $btn-gray-press;
+            }
+
+            &.a-no-interaction {
+                &:hover {
+                    background-color: transparent;
+                }
+
+                &:active {
+                    background-color: transparent;
+                }
+            }
+
+            &:disabled {
+                background-color: transparent;
+                cursor: default;
+                color: $btn-disabled;
+
+                &:hover {
+                    background-color: transparent;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:active {
+                    background-color: transparent;
+                }
+            }
         }
     }
 }
@@ -272,96 +571,192 @@
     background-color: $primary-btn-bg;
     @include box-shadow(0 7px 18px 1px rgba(0, 0, 0, 0.16));
     cursor: pointer;
-    color: $white;
-    .a-icon {
+    color: $color-white;
+
+    .a-btn-icon {
         font-size: 24px;
     }
+
     &:hover {
-        background-color: $primary-btn-hover;
+        background-color: $btn-primary-hover;
     }
+
     &:focus {
         outline: none;
     }
+
     &:active {
         background-color: $primary-btn-active;
     }
+
     &:disabled {
         cursor: default;
         background-color: $primary-disabled-btn-bg;
         color: $primary-disabled-btn-text;
+
         &:hover {
             cursor: default;
             background-color: $primary-disabled-btn-bg;
             color: $primary-disabled-btn-text;
         }
+
         &:focus {
             outline: none;
         }
+
         &:active {
             cursor: default;
             background-color: $primary-disabled-btn-bg;
             color: $primary-disabled-btn-text;
         }
     }
-    &.a-btn-error {
-        background-color: $state-error-color;
+
+    &.a-btn-negative {
+        background-color: $state-negative-color;
+
         &:hover {
-            background-color: $state-error-hover;
+            background-color: $state-negative-hover;
         }
+
         &:focus {
             outline: none;
         }
+
         &:active {
-            background-color: $state-error-active;
+            background-color: $state-negative-active;
         }
+
         &:disabled {
             background-color: $primary-disabled-btn-bg;
             cursor: default;
             color: $primary-disabled-btn-text;
+
             &:hover {
                 background-color: $primary-disabled-btn-bg;
             }
+
             &:focus {
                 outline: none;
             }
+
             &:active {
                 background-color: $primary-disabled-btn-bg;
             }
         }
     }
+
     &.a-btn-gray {
         background-color: $primary-disabled-btn-bg;
         color: $dark-grey-text;
+
         &:hover {
             background-color: $bg-light-grey;
         }
+
         &:focus {
             outline: none;
         }
+
         &:active {
             background-color: $background-lightgray;
         }
+
         &:disabled {
             background-color: $primary-disabled-btn-bg;
             cursor: default;
             color: $primary-disabled-btn-text;
+
             &:hover {
                 background-color: $primary-disabled-btn-bg;
             }
+
             &:focus {
                 outline: none;
             }
+
             &:active {
                 background-color: $primary-disabled-btn-bg;
             }
+        }
+    }
+
+    &.a-btn-sm {
+        width: 48px;
+        height: 48px;
+
+        .a-btn-icon {
+            font-size: 16px;
         }
     }
 }
 
 .a-btn-group {
+    /*----------------*
+    default style
+    *----------------*/
     display: inline-flex;
     position: relative;
-    background-color: $white;
+    background-color: $color-white;
+
+    .a-btn-group-item {
+        z-index: 1;
+        background: transparent;
+        @include border-radius(0);
+        align-items: center;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        height: 24px;
+        font-size: 12px;
+        font-weight: $medium;
+        border: 1px solid $secondary-btn-border;
+        color: $primary-btn-bg;
+        padding: 0 9px;
+
+        .a-ellipsis {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        &:not(:last-child) {
+            &:not(.active) {
+                border-right: 0;
+            }
+        }
+
+        &:first-child {
+            @include border-radius(2px 0 0 2px);
+        }
+
+        &:last-child {
+            @include border-radius(0 2px 2px 0);
+        }
+
+        &:hover {
+            background-color: $secondary-btn-hover;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            background-color: $secondary-btn-active;
+        }
+
+        &.active {
+            background: transparent;
+            transition: $transition-color;
+            color: $color-white;
+            border-color: $primary-btn-bg;
+
+            &+button {
+                border-left-width: 0;
+            }
+        }
+    }
+
     .a-btn-group-bg {
         position: absolute;
         top: 0;
@@ -369,47 +764,107 @@
         height: 100%;
         background-color: $primary-btn-bg;
         transition: $transition-all;
+
         &.a-first-active {
             @include border-radius(2px 0 0 2px);
         }
+
         &.a-last-active {
             @include border-radius(0 2px 2px 0);
         }
+
         &+button {
             @include border-radius(2px 0 0 2px);
         }
     }
-    &.a-btngroup-error {
+
+    /*----------------*
+    style for theme
+    *----------------*/
+    &.a-btngroup-negative {
         .a-btn-group-bg {
-            background-color: $state-error-color;
+            background-color: $state-negative-color;
+        }
+
+        .a-btn-group-item {
+            border-color: $btn-negative;
+            color: $state-negative-color;
+
+            &:hover {
+                background-color: $state-negative-secondary-hover;
+            }
+
+            &:active {
+                background-color: $state-negative-secondary-active;
+            }
+
+            &.active {
+                background: transparent;
+                color: $color-white;
+                border-color: $state-negative-color;
+            }
         }
     }
+
     &.a-btngroup-gray {
         .a-btn-group-bg {
             background-color: $hallow-grey-bg;
         }
+
+        .a-btn-group-item {
+            border-color: $primary-disabled-btn-text;
+            color: $dark-grey-text;
+
+            &:hover {
+                background-color: $bg-light-grey;
+            }
+
+            &:active {
+                background-color: $primary-disabled-btn-bg;
+            }
+
+            &.active {
+                background: transparent;
+                border-color: $hallow-grey-bg;
+                color: $color-white;
+            }
+        }
     }
-    &>.a-btn-secondary {
-        z-index: 1;
-        background: transparent;
-        @include border-radius(0);
-        &:not(:last-child) {
-            &:not(.active) {
-                border-right: 0;
-            }
+
+    /*----------------*
+    style for size
+    *----------------*/
+    &.a-btngroup-sm {
+        .a-btn-group-item {
+            height: 24px;
+            font-size: 12px;
+            max-width: 285px;
         }
-        &:first-child {
-            @include border-radius(2px 0 0 2px);
+    }
+
+    &.a-btngroup-md {
+        .a-btn-group-item {
+            height: 30px;
+            font-size: 12px;
+            max-width: 285px;
         }
-        &:last-child {
-            @include border-radius(0 2px 2px 0);
+    }
+
+    &.a-btngroup-lg {
+        .a-btn-group-item {
+            height: 34px;
+            padding: 0 19px;
+            font-size: 14px;
+            max-width: 285px;
         }
-        &.active {
-            background: transparent;
-            transition: $transition-color;
-            &+button {
-                border-left-width: 0;
-            }
+    }
+
+    &.a-btngroup-xl {
+        .a-btn-group-item {
+            height: 50px;
+            padding: 0 19px;
+            font-size: 16px;
+            max-width: 390px;
         }
     }
 }

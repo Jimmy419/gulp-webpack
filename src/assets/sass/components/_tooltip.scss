@@ -1,0 +1,94 @@
+.tooltip {
+    font-family: ''Neue Helvetica'';
+
+    .tooltip-inner {
+        box-shadow: $box-shadow-medium;
+        border-radius: 2px;
+        font-family: ''Neue Helvetica'';
+        background-color: $color-dark;
+        color: $color-white;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    &.tooltip-lg {
+        .tooltip-inner {
+            border-radius: 4px;
+        }
+    }
+
+    &.bs-tooltip-top {
+        .arrow {
+            &::before {
+                border-top-color: $color-dark;
+            }
+        }
+    }
+
+    &.bs-tooltip-right {
+        .arrow {
+            &::before {
+                border-right-color: $color-dark;
+            }
+        }
+    }
+
+    &.bs-tooltip-bottom {
+        .arrow {
+            &::before {
+                border-bottom-color: $color-dark;
+            }
+        }
+    }
+
+    &.bs-tooltip-left {
+        .arrow {
+            &::before {
+                border-left-color: $color-dark;
+            }
+        }
+    }
+
+    &.show {
+        opacity: 1;
+    }
+
+    &.a-white {
+        .tooltip-inner {
+            background-color: $color-white;
+            color: $color-dark;
+        }
+
+        &.bs-tooltip-top {
+            .arrow {
+                &::before {
+                    border-top-color: $color-white;
+                }
+            }
+        }
+
+        &.bs-tooltip-right {
+            .arrow {
+                &::before {
+                    border-right-color: $color-white;
+                }
+            }
+        }
+
+        &.bs-tooltip-bottom {
+            .arrow {
+                &::before {
+                    border-bottom-color: $color-white;
+                }
+            }
+        }
+
+        &.bs-tooltip-left {
+            .arrow {
+                &::before {
+                    border-left-color: $color-white;
+                }
+            }
+        }
+    }
+}

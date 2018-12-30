@@ -2,7 +2,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: 'Neue Helvetica';
 }
 
 body {
@@ -13,6 +13,8 @@ body {
     padding: 0;
     height: 100%;
     overflow: auto;
+    font-family: 'Neue Helvetica';
+    color: $color-dark;
 }
 
 * {
@@ -37,123 +39,467 @@ dd {
     list-style: none;
 }
 
-h1 {
+/*-----------------------------------------------------------*
+text/typography
+*-----------------------------------------------------------*/
+.a-h1 {
+    font-weight: $medium;
+    color: $text-dark;
     font-size: 45px;
-    font-weight: 500;
     line-height: 73px;
 }
 
-h2 {
+.a-h2 {
+    font-weight: $medium;
+    color: $text-dark;
     font-size: 28px;
-    font-weight: 500;
     line-height: 45px;
 }
 
-h3 {
+.a-h3 {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: $medium;
+    color: $text-dark;
     line-height: 36px;
 }
 
-h4 {
+.a-h4 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $medium;
+    color: $text-dark;
     line-height: 29px;
 }
 
-h5 {
+.a-h5 {
+    font-weight: $medium;
+    color: $color-dark;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.a-h6 {
+    font-weight: $medium;
+    color: $color-dark;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 23px;
+    line-height: 24px;
 }
 
-h6 {
+.a-p3 {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.a-p4 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.a-text-xl {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+.a-text-lg {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 44px;
+}
+
+.a-text-md {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.a-text-sm {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.a-text-heading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.a-text-subheading {
     font-size: 12px;
-    font-weight: 500;
-    line-height: 19px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.a-text-body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.a-text-caption {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/*-----------------------------------------------------------*
+text/typography
+*-----------------------------------------------------------*/
+
+/*-----------------------------------------------------------*
+border
+*-----------------------------------------------------------*/
+.a-border-primary {
+    border-color: $color-primary !important;
+}
+
+.a-border-secondary {
+    border-color: $color-secondary !important;
+}
+
+.a-border-success {
+    border-color: $color-success !important;
+}
+
+.a-border-danger {
+    border-color: $color-danger !important;
+}
+
+.a-border-warning {
+    border-color: $color-warning !important;
+}
+
+.a-border-info {
+    border-color: $color-info !important;
+}
+
+.a-border-light {
+    border-color: $color-light !important;
+}
+
+.a-border-9e9 {
+    border-color: $color-9e9 !important;
+}
+
+/*-----------------------------------------------------------*
+clearfix
+*-----------------------------------------------------------*/
+// .a-clearfix {
+//     *zoom: 1 !important;
+// }
+// .a-clearfix:after,
+// .a-clearfix:before {
+//     display: table;
+//     line-height: 0;
+//     content: '';
+// }
+// .a-clearfix:after {
+//     clear: both;
+// }
+/*------------------------------------------------------------*
+Colors
+*------------------------------------------------------------*/
+/**---------font color-------------**/
+.a-text-error {
+    color: $color-error !important;
+}
+
+.a-text-dark {
+    color: $color-dark !important;
+}
+
+.a-text-danger {
+    color: $color-danger !important;
+}
+
+.a-text-warning {
+    color: $color-warning !important;
+}
+
+.a-text-gray {
+    color: $text-gray !important;
+}
+
+.a-text-bdb {
+    color: $color-bdb !important;
+}
+
+.a-text-d8d {
+    color: $color-d8d !important;
+}
+
+.a-text-edb {
+    color: $color-edb !important;
+}
+
+//needs to check if we need this color.........
+.a-color-secondary-warning {
+    color: $color-warning-secondary !important;
+}
+
+.a-text-9e9 {
+    color: $color-9e9 !important;
+}
+
+.a-text-616 {
+    color: $color-616 !important;
+}
+
+.a-text-757 {
+    color: $color-757 !important;
+}
+
+.a-text-secondary {
+    color: $color-secondary !important;
+}
+
+/**---------background color-------------**/
+.a-bg-primary {
+    background-color: $color-primary !important;
+}
+
+.a-bg-warning {
+    background-color: $color-warning !important;
+}
+
+.a-bg-danger {
+    background-color: $color-danger !important;
+}
+
+.a-bg-success {
+    background-color: $color-success !important;
+}
+
+.a-bg-white {
+    background-color: $color-white !important;
+}
+
+.a-bg-gray {
+    background-color: $color-eee !important;
+}
+
+.a-bg-dark {
+    background-color: $color-dark !important;
+}
+
+.a-bg-df5 {
+    background-color: $color-df5 !important;
+}
+
+.a-bg-f5f {
+    background-color: $color-f5f !important;
+}
+
+//orange
+.a-bg-orange-darker {
+    background-color: $color-orange-darker !important;
+}
+
+.a-bg-orange-dark {
+    background-color: $color-orange-dark !important;
+}
+
+.a-bg-orange {
+    background-color: $color-orange !important;
+}
+
+.a-bg-orange-light {
+    background-color: $color-orange-light !important;
+}
+
+.a-bg-orange-lighter {
+    background-color: $color-orange-lighter !important;
+}
+
+//tangerine
+.a-bg-tangerine-darker {
+    background-color: $color-tangerine-darker !important;
+}
+
+.a-bg-tangerine-dark {
+    background-color: $color-tangerine-dark !important;
+}
+
+.a-bg-tangerine {
+    background-color: $color-tangerine !important;
+}
+
+.a-bg-tangerine-light {
+    background-color: $color-tangerine-light !important;
+}
+
+.a-bg-tangerine-lighter {
+    background-color: $color-tangerine-lighter !important;
+}
+
+//yellow
+.a-bg-yellow-darker {
+    background-color: $color-yellow-darker !important;
+}
+
+.a-bg-yellow-dark {
+    background-color: $color-yellow-dark !important;
+}
+
+.a-bg-yellow {
+    background-color: $color-yellow !important;
+}
+
+.a-bg-yellow-light {
+    background-color: $color-yellow-light !important;
+}
+
+.a-bg-yellow-lighter {
+    background-color: $color-yellow-lighter !important;
+}
+
+//red
+.a-bg-red-darker {
+    background-color: $color-red-darker !important;
+}
+
+.a-bg-red-dark {
+    background-color: $color-red-dark !important;
+}
+
+.a-bg-red {
+    background-color: $color-red !important;
+}
+
+.a-bg-red-light {
+    background-color: $color-red-light !important;
+}
+
+.a-bg-red-lighter {
+    background-color: $color-red-lighter !important;
+}
+
+//rose
+.a-bg-rose-darker {
+    background-color: $color-rose-darker !important;
+}
+
+.a-bg-rose-dark {
+    background-color: $color-rose-dark !important;
+}
+
+.a-bg-rose {
+    background-color: $color-rose !important;
+}
+
+.a-bg-rose-light {
+    background-color: $color-rose-light !important;
+}
+
+.a-bg-rose-lighter {
+    background-color: $color-rose-lighter !important;
+}
+
+//grey
+.a-bg-grey-darker {
+    background-color: $color-grey-darker !important;
+}
+
+.a-bg-grey-dark {
+    background-color: $color-grey-dark !important;
+}
+
+.a-bg-grey {
+    background-color: $color-grey !important;
+}
+
+.a-bg-grey-light {
+    background-color: $color-grey-light !important;
+}
+
+.a-bg-grey-lighter {
+    background-color: $color-grey-lighter !important;
+}
+
+//purple
+.a-bg-purple-darker {
+    background-color: $color-purple-darker !important;
+}
+
+.a-bg-purple-dark {
+    background-color: $color-purple-dark !important;
+}
+
+.a-bg-purple {
+    background-color: $color-purple !important;
+}
+
+.a-bg-purple-light {
+    background-color: $color-purple-light !important;
+}
+
+.a-bg-purple-lighter {
+    background-color: $color-purple-lighter !important;
+}
+
+//blue
+.a-bg-blue-darker {
+    background-color: $color-blue-darker !important;
+}
+
+.a-bg-blue-dark {
+    background-color: $color-blue-dark !important;
+}
+
+.a-bg-blue {
+    background-color: $color-blue !important;
+}
+
+.a-bg-blue-light {
+    background-color: $color-blue-light !important;
+}
+
+.a-bg-blue-lighter {
+    background-color: $color-blue-lighter !important;
+}
+
+//green
+.a-bg-green-darker {
+    background-color: $color-green-darker !important;
+}
+
+.a-bg-green-dark {
+    background-color: $color-green-dark !important;
+}
+
+.a-bg-green {
+    background-color: $color-green !important;
+}
+
+.a-bg-green-light {
+    background-color: $color-green-light !important;
+}
+
+.a-bg-green-lighter {
+    background-color: $color-green-lighter !important;
+}
+
+
+/*------------------------------------------------------------*
+Cursor setting
+*------------------------------------------------------------*/
+.a-cursor-pointer {
+    cursor: pointer !important;
 }
 
 /*------------------------------------------------------------*
-font weigth/style/size settings
+Display
 *------------------------------------------------------------*/
-
-.a-normal,
-.a-regular {
-    font-weight: $regular !important;
-}
-
-.a-bold {
-    font-weight: $bold !important;
-}
-
-.a-font-italic {
-    font-style: italic !important;
-}
-
-.a-font-normal {
-    font-style: normal !important;
-}
-
-.a-font-12 {
-    font-size: 12px !important;
-}
-
-.a-caps {
-    text-transform: uppercase !important;
-}
-
-.a-nowrap {
-    white-space: nowrap !important;
-}
-
-.a-truncate {
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-}
-
-.a-text-underline {
-    text-decoration: underline !important;
-    &:hover {
-        text-decoration: none !important;
-    }
-}
-
-/*------------------------------------------------------------*
-layout setting
-*------------------------------------------------------------*/
-
-.a-clearfix {
-    *zoom: 1 !important;
-}
-
-.a-clearfix:after,
-.a-clearfix:before {
-    display: table;
-    line-height: 0;
-    content: '';
-}
-
-.a-clearfix:after {
-    clear: both;
-}
-
-.a-d-inline-block {
-    display: inline-block !important;
-}
-
-.a-d-inline-flex {
-    display: inline-flex !important;
-}
-
 .a-d-flex {
     display: flex !important;
-    .a-flex-auto {
-        flex: 0 0 auto !important;
-    }
-    .a-flex-stretch {
-        flex: 1 1 auto !important;
-    }
+}
+
+.a-flex-auto {
+    flex: 0 0 auto !important;
+}
+
+.a-flex-stretch {
+    flex: 1 1 auto !important;
 }
 
 .a-flex-column {
@@ -164,14 +510,18 @@ layout setting
     flex-direction: row !important;
 }
 
-.a-flex-center {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
+// .a-flex-center {
+//     display: flex !important;
+//     align-items: center !important;
+//     justify-content: center !important;
+// }
 
 .a-align-items-center {
     align-items: center !important;
+}
+
+.a-align-items-stretch {
+    align-items: stretch !important;
 }
 
 .a-justify-content-center {
@@ -182,184 +532,376 @@ layout setting
     justify-content: flex-end !important;
 }
 
-.a-pull-left {
-    float: left !important;
+/*------------------------------------------------------------*
+Font weigth/style/size settings
+*------------------------------------------------------------*/
+.a-text-underline {
+    text-decoration: underline !important;
 }
 
-.a-pull-right {
-    float: right !important;
+.font-weight-medium,
+.a-medium {
+    font-weight: $medium !important;
 }
 
-.a-text-left {
-    text-align: left !important;
+.a-font-normal {
+    font-style: normal !important;
 }
 
-.a-text-center {
-    text-align: center !important;
+.a-font-8 {
+    font-size: 8px !important;
 }
 
-.a-text-right {
-    text-align: right !important;
+.a-font-xs {
+    font-size: 10px !important;
+}
+
+.a-font-sm {
+    font-size: 12px !important;
+}
+
+.a-font-md {
+    font-size: 14px !important;
+}
+
+.a-font-lg {
+    font-size: 16px !important;
 }
 
 /*------------------------------------------------------------*
-box styles setting(border,width,height,overflow)
+Link color
 *------------------------------------------------------------*/
 
-.a-border-none {
-    border: 0 !important;
+
+/*------------------------------------------------------------*
+opacity util classes
+*------------------------------------------------------------*/
+.a-opacity-50 {
+    opacity: 0.5 !important;
 }
 
-.a-border-radius-none {
-    border-radius: 0 !important;
+/*------------------------------------------------------------*
+Shadows
+*------------------------------------------------------------*/
+.a-shadow-xs {
+    box-shadow: $box-shadow-default !important;
 }
 
-.a-boxshadow-none {
-    box-shadow: none !important;
+.a-shadow-sm {
+    box-shadow: $box-shadow-small !important;
 }
 
-.a-overflow-x-auto {
-    overflow-x: auto !important;
+.a-shadow-md {
+    box-shadow: $box-shadow-medium !important;
 }
 
-.a-width-auto {
-    width: auto !important;
+.a-shadow-lg {
+    box-shadow: $box-shadow-large !important;
 }
 
-.a-min-width-unset {
-    min-width: unset !important;
+/*------------------------------------------------------------*
+spaces setting
+*------------------------------------------------------------*/
+//margin
+.a-m-5 {
+    margin: 5px !important;
 }
 
-.a-height-auto {
-    height: auto !important;
+.a-mx-5 {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
 }
 
-.a-pos-static {
-    position: static !important;
+.a-my-5 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }
 
-.a-pos-relative {
-    position: relative !important;
+.a-ml-5 {
+    margin-left: 5px !important;
 }
 
-.a-pos-absolute {
-    position: absolute !important;
-    &.a-top-50 {
-        top: 50%;
-        transform: translateY(-50%);
-    }
+.a-mr-5 {
+    margin-right: 5px !important;
 }
 
-.a-top-zero {
-    top: 0 !important;
+.a-mt-5 {
+    margin-top: 5px !important;
 }
 
-.a-margin-auto {
-    margin: auto !important;
+.a-mb-5 {
+    margin-bottom: 5px !important;
 }
 
-.a-margin-top-zero {
-    margin-top: 0 !important;
+.a-m-10 {
+    margin: 10px !important;
 }
 
-.a-margin-none {
-    margin: 0 !important;
-}
-
-.a-margin-rt-10 {
+.a-mx-10 {
+    margin-left: 10px !important;
     margin-right: 10px !important;
 }
 
-.a-margin-tp-12 {
-    margin-top: 12px !important;
+.a-my-10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
-.a-padding-none {
-    padding: 0 !important;
+.a-ml-10 {
+    margin-left: 10px !important;
 }
 
-.a-padding-50 {
+.a-mr-10 {
+    margin-right: 10px !important;
+}
+
+.a-mt-10 {
+    margin-top: 10px !important;
+}
+
+.a-mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.a-m-20 {
+    margin: 20px !important;
+}
+
+.a-mx-20 {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.a-my-20 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.a-ml-20 {
+    margin-left: 20px !important;
+}
+
+.a-mr-20 {
+    margin-right: 20px !important;
+}
+
+.a-mt-20 {
+    margin-top: 20px !important;
+}
+
+.a-mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.a-m-30 {
+    margin: 30px !important;
+}
+
+.a-mx-30 {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+.a-my-30 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.a-ml-30 {
+    margin-left: 30px !important;
+}
+
+.a-mr-30 {
+    margin-right: 30px !important;
+}
+
+.a-mt-30 {
+    margin-top: 30px !important;
+}
+
+.a-mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.a-m-50 {
+    margin: 50px !important;
+}
+
+.a-mx-50 {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
+.a-my-50 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.a-ml-50 {
+    margin-left: 50px !important;
+}
+
+.a-mr-50 {
+    margin-right: 50px !important;
+}
+
+.a-mt-50 {
+    margin-top: 50px !important;
+}
+
+.a-mb-50 {
+    margin-bottom: 50px !important;
+}
+
+//padding
+.a-p-10 {
+    padding: 10px !important;
+}
+
+.a-px-10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.a-py-10 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.a-pl-10 {
+    padding-left: 10px !important;
+}
+
+.a-pr-10 {
+    padding-right: 10px !important;
+}
+
+.a-pt-10 {
+    padding-top: 10px !important;
+}
+
+.a-pb-10 {
+    padding-bottom: 10px !important;
+}
+
+.a-p-20 {
+    padding: 20px !important;
+}
+
+.a-px-20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.a-py-20 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.a-pl-20 {
+    padding-left: 20px !important;
+}
+
+.a-pr-20 {
+    padding-right: 20px !important;
+}
+
+.a-pt-20 {
+    padding-top: 20px !important;
+}
+
+.a-pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.a-p-30 {
+    padding: 30px !important;
+}
+
+.a-px-30 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.a-py-30 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.a-pl-30 {
+    padding-left: 30px !important;
+}
+
+.a-pr-30 {
+    padding-right: 30px !important;
+}
+
+.a-pt-30 {
+    padding-top: 30px !important;
+}
+
+.a-pb-30 {
+    padding-bottom: 30px !important;
+}
+
+.a-p-50 {
     padding: 50px !important;
 }
 
-/*------------------------------------------------------------*
-cursor setting
-*------------------------------------------------------------*/
+.a-px-50 {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
 
-.a-cursor-pointer {
-    cursor: pointer !important;
+.a-py-50 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.a-pl-50 {
+    padding-left: 50px !important;
+}
+
+.a-pr-50 {
+    padding-right: 50px !important;
+}
+
+.a-pt-50 {
+    padding-top: 50px !important;
+}
+
+.a-pb-50 {
+    padding-bottom: 50px !important;
 }
 
 /*------------------------------------------------------------*
-background color setting
+transition util classes
 *------------------------------------------------------------*/
-
-.a-bg-infor {
-    background-color: #8052c4 !important;
-    border: #8052c4 !important;
-    &:focus,
-    &:hover {
-        background-color: #8052c4 !important;
-        border: #8052c4 !important;
-    }
+.a-transition-500ms {
+    transition: all 500ms;
 }
 
-.a-bg-warning {
-    background-color: #ffbf1f !important;
-    border: #ffbf1f !important;
-}
-
-.a-bg-error {
-    background-color: #c52a1a !important;
-    border: #c52a1a !important;
-}
-
-.a-bg-danger {
-    background-color: $color-danger !important;
-}
-
-.a-bg-success {
-    background-color: $state-success-color !important;
-    border: $state-success-color !important;
-}
-
-.a-bg-white {
-    background-color: $white !important;
-}
-
-.a-bg-gray {
-    background-color: $color-eee !important;
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /*------------------------------------------------------------*
-background color setting
+alignment util classes
 *------------------------------------------------------------*/
-
-.a-color-error {
-    color: $state-error-color !important;
+.a-flex-left {
+    margin-right: auto !important;
 }
 
-.a-color-dark {
-    color: $color-dark !important;
+.a-flex-right {
+    margin-left: auto !important;
 }
 
-.a-color-danger {
-    color: $color-danger !important;
-}
-
-.a-color-warning {
-    color: $color-warning !important;
-}
-
-//needs to check if we need this color.........
-.a-color-secondary-warning {
-    color: $color-warning-secondary !important;
-}
-
-.a-color-9e9 {
-    color: $color-9e9 !important;
-}
 
 /*------------------------------------------------------------*
-others setting
+overflow util classes
 *------------------------------------------------------------*/
+.a-overflow-visible {
+    overflow: visible !important;
+}

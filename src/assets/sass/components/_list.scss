@@ -1,0 +1,101 @@
+.a-list {
+    overflow: auto;
+
+    .a-list-item {
+        min-height: 34px;
+        font-size: 14px;
+        line-height: 1;
+        background-color: $white;
+        padding: 10px;
+        color: $text-dark;
+
+        &.a-border-bt {
+            border-bottom: 1px solid $color-eee;
+        }
+
+        .a-control-icon {
+            margin-right: 10px;
+            color: $color-primary;
+            cursor: pointer;
+
+            &.icon-down-chevron-fill {
+                &[aria-expanded='true'] {
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    label {
+        margin: 0;
+    }
+
+    &.drag-list {
+        padding: 0;
+
+        .a-list-item {
+            align-items: center;
+            cursor: move;
+            display: flex;
+
+            &.dragElem {
+                opacity: 1;
+            }
+
+            &.over {
+                color: transparent;
+            }
+
+            &.sortable-drag {
+                border-radius: 2px;
+                @include box-shadow($box-shadow-medium);
+                border: solid 2px $color-primary;
+            }
+
+            &.sortable-chosen.over {
+                background: transparent;
+            }
+        }
+    }
+
+    /*---------------------------------------------*
+    uncommon style**begin
+    *---------------------------------------------*/
+    .a-px-10 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .a-mr-10 {
+        margin-right: 10px;
+    }
+
+    .a-mt-10 {
+        margin-top: 10px;
+    }
+
+    /*---------------------------------------------*
+    uncommon style**end
+    *---------------------------------------------*/
+}
+
+.a-round-image {
+    @include border-radius(50%);
+    background: $color-d8d;
+
+    &.a-image-32 {
+        width: 32px;
+        height: 32px;
+    }
+
+    &.a-image-48 {
+        width: 48px;
+        height: 48px;
+    }
+
+    &.a-image-64 {
+        width: 64px;
+        height: 64px;
+    }
+}

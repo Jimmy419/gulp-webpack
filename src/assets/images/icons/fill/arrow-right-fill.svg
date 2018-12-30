@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow-right-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Arrow-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24.3431458,14 L16.4436508,6.10050506 C15.6626022,5.31945648 15.6626022,4.05312652 16.4436508,3.27207794 C17.2246994,2.49102936 18.4910294,2.49102936 19.2720779,3.27207794 L32,16 L19.2720779,28.7279221 C18.4910294,29.5089706 17.2246994,29.5089706 16.4436508,28.7279221 C15.6626022,27.9468735 15.6626022,26.6805435 16.4436508,25.8994949 L24.3431458,18 L2,18 C0.8954305,18 1.3527075e-16,17.1045695 0,16 C-1.3527075e-16,14.8954305 0.8954305,14 2,14 L24.3431458,14 Z" fill="#212121" fill-rule="nonzero"></path>
+    </g>
+</svg>

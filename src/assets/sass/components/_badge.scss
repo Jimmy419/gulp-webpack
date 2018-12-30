@@ -2,37 +2,45 @@
     height: 24px;
     display: inline-flex;
     align-items: center;
-    background-color: $default-color;
-    color: $white;
+    background-color: $color-primary;
+    color: $color-white;
     @include border-radius(12px);
     padding: 0 8px; // font-weight: $bold;
     font-size: 12px;
+    font-weight: $bold;
+
     &.a-badge-secondary {
-        color: $dark-grey-text;
-        background-color: $background-lightgray;
+        color: $badge-text-dark;
+        background-color: $badge-bg-secondary;
     }
+
     &.a-badge-light {
-        color: $primary-disabled-btn-text;
-        background-color: $background-lightgray;
+        color: $badge-text-light;
+        background-color: $badge-bg-light;
     }
+
     &.a-badge-dark {
-        color: $white;
-        background-color: $dark-grey-text;
+        color: $color-white;
+        background-color: $badge-bg-dark;
     }
+
     &.a-badge-warnging {
-        color: $dark-grey-text;
-        background-color: $fill-yellow-400;
+        color: $badge-text-dark;
+        background-color: $badge-bg-warning;
     }
+
     &.a-badge-danger {
-        color: $white;
-        background-color: $fill-red-600;
+        color: $color-white;
+        background-color: $badge-bg-danger;
     }
+
     &.a-badge-success {
-        color: $white;
-        background-color: $color-success;
+        color: $color-white;
+        background-color: $badge-bg-success;
     }
+
     &.a-badge-info {
-        color: $white;
-        background-color: $color-infor;
+        color: $color-white;
+        background-color: $badge-bg-info;
     }
 }

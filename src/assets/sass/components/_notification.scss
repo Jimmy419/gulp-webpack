@@ -1,0 +1,205 @@
+.a-notification {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    background-color: $color-primary;
+    font-weight: normal;
+    color: $text-white;
+    max-height: 100rem;
+    padding: 0 20px;
+    transition-timing-function: ease-in-out;
+    z-index: 99;
+    box-shadow: $box-shadow-default;
+    position: relative;
+
+    .notification-content {
+        font-size: 14px;
+        line-height: 24px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+        padding: 13px 32px 13px 0;
+
+        .a-link {
+            color: inherit;
+        }
+    }
+
+    .close-btn {
+        flex: 0 0 12px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 12px;
+        line-height: 12px;
+        font-size: 12px;
+        cursor: pointer;
+
+        &.gray {
+            color: #9e9e9e;
+        }
+    }
+
+    /*-----------------------------------------------------* 
+    * global notification styles 
+    * will stick on the top of screen
+    *-----------------------------------------------------*/
+    &.global {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(0);
+        z-index: 999999;
+    }
+
+    /*-----------------------------------------------------*
+    * show/hide styles
+    * use with transition attribute to control the animation
+    *-----------------------------------------------------*/
+    &.a-notification-hide {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &.a-notification-show {
+        opacity: 1;
+        max-height: 10rem;
+        z-index: 999;
+    }
+
+    /*-----------------------------------------------------*
+    * categorize notifications with info/danger
+    * styles for different background color and font color
+    *-----------------------------------------------------*/
+    &.dark {
+        background-color: $color-dark;
+        color: $white;
+
+        .a-countdown-wrapper .a-circle {
+            stroke: $white;
+        }
+    }
+
+    &.warning {
+        background-color: $state-warning-color;
+        color: $color-dark;
+
+        .a-countdown-wrapper .a-circle {
+            stroke: $white;
+        }
+    }
+
+    &.negative {
+        background-color: #c62b12;
+        color: $white;
+
+        .a-countdown-wrapper .a-circle {
+            stroke: $white;
+        }
+    }
+
+    &.success {
+        background-color: $state-success-color;
+        color: $white;
+
+        .a-countdown-wrapper .a-circle {
+            stroke: $white;
+        }
+    }
+
+    /*----------------------------------------------------*
+    * auto close notification
+    * timer is the circle countdown animation 
+    *----------------------------------------------------*/
+    .a-countdown-wrapper {
+        svg {
+            transform: rotate(-90deg);
+        }
+
+        .a-circle {
+            fill: transparent;
+            stroke: $white;
+            stroke-width: 12px;
+            stroke-dasharray: 38px;
+            stroke-dashoffset: 38px;
+
+            &.animated {
+                animation: appkit-rotate-notification 10s linear;
+            }
+        }
+
+        @keyframes appkit-rotate-notification {
+            from {
+                stroke-dashoffset: 76px;
+            }
+
+            to {
+                stroke-dashoffset: 38px;
+            }
+        }
+    }
+
+    /*----------------------------------------------------*
+    * expandable notification
+    * styles for expanded content
+    *----------------------------------------------------*/
+    &.expandable {
+        position: relative;
+
+        .notification-content {
+            .appkiticon {
+                font-size: 12px;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+        }
+
+        &.open {
+            .a-expanded-content {
+                max-height: 100rem;
+            }
+        }
+    }
+
+    .a-expanded-content {
+        flex: 1 0 100%;
+        width: 100%;
+        text-align: center;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 999999;
+        max-height: 0;
+        overflow: hidden;
+        color: #424242;
+
+        .a-padding-box {
+            padding: 50px 0 70px 0;
+        }
+
+        .a-shadow-bottom {
+            box-shadow: $box-shadow-default;
+            margin-top: -1px;
+            margin-bottom: 2px;
+        }
+
+        .details {
+            margin-top: 30px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .btns-wrapper {
+            margin-top: 30px;
+
+            .a-btn {
+                margin: 0 5px;
+            }
+        }
+    }
+}

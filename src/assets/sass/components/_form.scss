@@ -1,0 +1,565 @@
+::placeholder {
+    color: $color-9e9;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color-9e9 !important;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color-9e9 !important;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+
+    &::-ms-clear {
+        display: none;
+    }
+}
+
+.a-form-label {
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: $regular;
+    color: $text-dark;
+    margin-bottom: 10px;
+}
+
+.a-form-error {
+    color: $field-error-color;
+    line-height: 19px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.a-text-input {
+    width: 100%;
+    height: 34px;
+    @include border-radius(2px);
+    background-color: $field-primary-bg;
+    color: $text-dark;
+    padding: 0 10px;
+    font-size: 14px;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $field-focus-border;
+        background-color: $color-white;
+    }
+
+    &.a-input-lg {
+        height: 50px;
+        font-size: 16px;
+
+        &:focus {
+            box-shadow: 0 0 0 2px $field-focus-border;
+        }
+    }
+
+    &.a-input-secondary {
+        background-color: $color-white;
+
+        &:focus {
+            box-shadow: 0 0 0 2px $field-focus-border;
+        }
+    }
+
+    &.a-input-error {
+        box-shadow: 0 0 0 2px $field-error-color;
+
+        &:focus {
+            box-shadow: 0 0 0 2px $field-error-color;
+        }
+    }
+}
+
+.a-input-with-icon {
+    position: relative;
+    display: inline-block;
+
+    .a-text-input {
+        width: 100%;
+    }
+
+    .a-icon {
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        @include transform(translate(0, -50%))
+    }
+
+    &.a-lf {
+        .a-text-input {
+            padding-left: 36px;
+        }
+
+        .a-icon {
+            left: 10px;
+        }
+    }
+
+    &.a-rt {
+        .a-text-input {
+            padding-right: 36px;
+        }
+
+        .a-icon {
+            right: 10px;
+        }
+    }
+
+    &.a-both {
+        .a-text-input {
+            padding: 0 36px;
+        }
+
+        .a-icon {
+            &.a-icon-lf {
+                left: 10px;
+            }
+
+            &.a-icon-rt {
+                right: 10px;
+            }
+        }
+    }
+
+    &.a-input-lg {
+        .a-icon {
+            font-size: 24px;
+        }
+
+        .a-text-input {
+            height: 50px;
+        }
+
+        &.a-lf {
+            .a-text-input {
+                padding-left: 44px;
+            }
+        }
+
+        &.a-rt {
+            .a-text-input {
+                padding-right: 44px;
+            }
+        }
+
+        &.a-both {
+            .a-text-input {
+                padding: 0 44px;
+            }
+        }
+    }
+
+    // &.a-input-error {
+    //     .a-text-input {
+    //         border: 2px solid $field-error-color;
+    //     }
+    // }
+}
+
+.a-text-field {
+    resize: none;
+    color: $text-dark;
+    line-height: 1.64;
+    padding: 6px 10px;
+    width: 100%;
+    @include border-radius(2px);
+    font-size: 14px;
+    background-color: $field-primary-bg;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $field-focus-border;
+        background-color: $color-white;
+    }
+
+    &.a-field-secondary {
+        background-color: $color-white;
+    }
+
+    &.a-text-field-lg {
+        font-size: 16px;
+        line-height: 1.63;
+    }
+}
+
+.a-input-number-box {
+    display: flex;
+    align-items: center;
+
+    .a-input-label {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        color: $text-dark;
+    }
+
+    .a-input-container {
+        flex: 1 1 auto;
+        position: relative;
+
+        .a-text-input {
+            width: 100%;
+        }
+
+        .a-icon {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+
+    &.a-type-lg {
+        .a-input-container {
+            .a-text-input {
+                height: 50px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &.a-type-one {
+        .a-input-container {
+            .a-text-input {
+                padding: 0 50px;
+                text-align: center;
+            }
+
+            .a-icon {
+                width: 25px;
+                top: 50%;
+                @include border-radius(2px);
+                height: 25px;
+                @include transform(translate(0, -50%));
+                font-size: 12px;
+                color: $field-icon-color;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $field-icon-hover
+                }
+
+                &:active {
+                    background-color: $field-icon-orange;
+                    color: $color-white;
+                }
+
+                &.disabled {
+                    cursor: default;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $field-icon-color;
+                    }
+
+                    &:active {
+                        background-color: transparent;
+                        color: $field-icon-color;
+                    }
+                }
+
+                &.a-icon-up {
+                    right: 5px;
+                }
+
+                &.a-icon-down {
+                    left: 5px;
+                }
+            }
+        }
+
+        &.a-input-number-secondary {
+            .a-input-container {
+                .a-text-input {
+                    background-color: $color-white;
+                }
+
+                .a-icon {
+                    &:hover {
+                        background-color: $field-icon-hover2;
+                    }
+
+                    &:active {
+                        background-color: $field-icon-orange;
+                        color: $color-white;
+                    }
+
+                    &.disabled {
+                        cursor: default;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: $field-icon-color;
+                        }
+
+                        &:active {
+                            background-color: transparent;
+                            color: $field-icon-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.a-type-lg {
+            .a-input-container {
+                .a-text-input {
+                    padding: 0 55px;
+                }
+
+                .a-icon {
+                    &.a-icon-up {
+                        right: 10px;
+                    }
+
+                    &.a-icon-down {
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.a-type-two {
+        .a-input-container {
+            .a-text-input {
+                padding-left: 10px;
+                padding-right: 37px;
+            }
+
+            .a-icon {
+                font-size: 7px;
+                width: 8px;
+                height: 5px;
+                color: $field-icon-color;
+
+                &:hover {
+                    color: $field-icon-hover
+                }
+
+                &:active {
+                    color: $field-icon-orange;
+                }
+
+                &.disabled {
+                    cursor: default;
+
+                    &:hover {
+                        color: $field-icon-color;
+                    }
+
+                    &:active {
+                        color: $field-icon-color;
+                    }
+                }
+
+                &.a-icon-up {
+                    right: 10px;
+                    top: 8px;
+                }
+
+                &.a-icon-down {
+                    right: 10px;
+                    bottom: 8px;
+                }
+            }
+        }
+
+        &.a-input-number-secondary {
+            .a-input-container {
+                .a-text-input {
+                    background-color: $color-white;
+                }
+            }
+        }
+
+        &.a-type-lg {
+            .a-input-container {
+                .a-text-input {
+                    padding-right: 50px;
+                }
+
+                .a-icon {
+                    font-size: 10px;
+                    width: 10px;
+                    height: 7px;
+
+                    &.a-icon-up {
+                        right: 20px;
+                        top: 14px;
+                    }
+
+                    &.a-icon-down {
+                        right: 20px;
+                        bottom: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.a-type-three {
+        .a-input-container {
+            .a-text-input {
+                padding-left: 10px;
+                padding-right: 80px;
+            }
+
+            .a-icon {
+                width: 25px;
+                top: 50%;
+                @include border-radius(2px);
+                height: 25px;
+                @include transform(translate(0, -50%));
+                font-size: 12px;
+                color: $field-icon-color;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $field-icon-hover
+                }
+
+                &:active {
+                    background-color: $field-icon-orange;
+                    color: $color-white;
+                }
+
+                &.disabled {
+                    cursor: default;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $field-icon-color;
+                    }
+
+                    &:active {
+                        background-color: transparent;
+                        color: $field-icon-color;
+                    }
+                }
+
+                &.a-icon-down {
+                    right: 35px;
+                }
+
+                &.a-icon-up {
+                    right: 5px;
+                }
+            }
+        }
+
+        &.a-input-number-secondary {
+            .a-input-container {
+                .a-text-input {
+                    background-color: $color-white;
+                }
+
+                .a-icon {
+                    &:hover {
+                        background-color: $field-icon-hover2;
+                    }
+
+                    &:active {
+                        background-color: $field-icon-orange;
+                        color: $color-white;
+                    }
+
+                    &.disabled {
+                        cursor: default;
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+
+                        &:active {
+                            background-color: transparent;
+                            color: $field-icon-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.a-type-lg {
+            .a-input-container {
+                .a-text-input {
+                    padding-right: 85px;
+                }
+
+                .a-icon {
+                    &.a-icon-down {
+                        right: 40px;
+                    }
+
+                    &.a-icon-up {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------*
+textarea with length validation
+*------------------------------------------*/
+.a-form-tooltip {
+    position: relative;
+
+    .a-tooltip-box {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(100%, -50%);
+        display: none;
+        padding-left: 20px;
+
+        .a-tooltip-shadow {
+            min-width: 240px;
+            padding: 10px 20px;
+            @include border-radius(2px);
+            @include box-shadow($box-shadow-medium);
+        }
+    }
+
+    &:hover {
+        .a-tooltip-box {
+            display: block;
+        }
+    }
+}
+
+/*------------------------------------------*
+textarea with length validation
+*------------------------------------------*/
+.a-textarea-box {
+    .a-textarea-footer {
+        margin-top: 12px;
+
+        .a-validation-box {
+            color: $color-dark;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.a-field-length-validation {
+    &.a-error-overflow {
+        .a-validation-box {
+            color: $color-error;
+        }
+    }
+}

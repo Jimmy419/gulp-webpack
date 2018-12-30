@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+  <head><!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="UTF-8"><style>/*
+ * Bootstrap v2.2.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+.span12 {
+  width: 940px;
+}
+.span11 {
+  width: 860px;
+}
+.span10 {
+  width: 780px;
+}
+.span9 {
+  width: 700px;
+}
+.span8 {
+  width: 620px;
+}
+.span7 {
+  width: 540px;
+}
+.span6 {
+  width: 460px;
+}
+.span5 {
+  width: 380px;
+}
+.span4 {
+  width: 300px;
+}
+.span3 {
+  width: 220px;
+}
+.span2 {
+  width: 140px;
+}
+.span1 {
+  width: 60px;
+}
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+small {
+  font-size: 85%;
+}
+h1 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
+h1 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 38.5px;
+}
+h1 small {
+  font-size: 24.5px;
+}
+body {
+  margin-top: 90px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  z-index: 10;
+}
+.footer {
+  color: #ddd;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+.the-icons {
+  font-size: 14px;
+  line-height: 24px;
+}
+.switch {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  color: #666;
+}
+.switch input {
+  margin-right: 0.3em;
+}
+.codesOn .i-name {
+  display: none;
+}
+.codesOn .i-code {
+  display: inline;
+}
+.i-code {
+  display: none;
+}
+@font-face {
+      font-family: 'appkit-font';
+      src: url('./font/appkit-font.eot?40020400');
+      src: url('./font/appkit-font.eot?40020400#iefix') format('embedded-opentype'),
+           url('./font/appkit-font.woff?40020400') format('woff'),
+           url('./font/appkit-font.ttf?40020400') format('truetype'),
+           url('./font/appkit-font.svg?40020400#appkit-font') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .demo-icon
+    {
+      font-family: "appkit-font";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+     </style>
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/" + font.fontname + "-ie7.css"><![endif]-->
+    <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+      
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div class="container header">
+      <h1>appkit-font <small>font demo</small></h1>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
+      </label>
+    </div>
+    <div class="container" id="icons">
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x21"><i class="demo-icon icon-add-user-fill">&#x21;</i> <span class="i-name">icon-add-user-fill</span><span class="i-code">0x21</span></div>
+        <div class="the-icons span3" title="Code: 0x22"><i class="demo-icon icon-add-user-outline">&#x22;</i> <span class="i-name">icon-add-user-outline</span><span class="i-code">0x22</span></div>
+        <div class="the-icons span3" title="Code: 0x23"><i class="demo-icon icon-airplane-fill">&#x23;</i> <span class="i-name">icon-airplane-fill</span><span class="i-code">0x23</span></div>
+        <div class="the-icons span3" title="Code: 0x24"><i class="demo-icon icon-airplane-outline">&#x24;</i> <span class="i-name">icon-airplane-outline</span><span class="i-code">0x24</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x25"><i class="demo-icon icon-alert-fill">&#x25;</i> <span class="i-name">icon-alert-fill</span><span class="i-code">0x25</span></div>
+        <div class="the-icons span3" title="Code: 0x26"><i class="demo-icon icon-alert-outline">&#x26;</i> <span class="i-name">icon-alert-outline</span><span class="i-code">0x26</span></div>
+        <div class="the-icons span3" title="Code: 0x27"><i class="demo-icon icon-archive-fill">&#x27;</i> <span class="i-name">icon-archive-fill</span><span class="i-code">0x27</span></div>
+        <div class="the-icons span3" title="Code: 0x28"><i class="demo-icon icon-archive-outline">&#x28;</i> <span class="i-name">icon-archive-outline</span><span class="i-code">0x28</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x29"><i class="demo-icon icon-arrow-decrease-fill">&#x29;</i> <span class="i-name">icon-arrow-decrease-fill</span><span class="i-code">0x29</span></div>
+        <div class="the-icons span3" title="Code: 0x2a"><i class="demo-icon icon-arrow-decrease-outline">&#x2a;</i> <span class="i-name">icon-arrow-decrease-outline</span><span class="i-code">0x2a</span></div>
+        <div class="the-icons span3" title="Code: 0x2b"><i class="demo-icon icon-arrow-increase-fill">&#x2b;</i> <span class="i-name">icon-arrow-increase-fill</span><span class="i-code">0x2b</span></div>
+        <div class="the-icons span3" title="Code: 0x2c"><i class="demo-icon icon-arrow-increase-outline">&#x2c;</i> <span class="i-name">icon-arrow-increase-outline</span><span class="i-code">0x2c</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x2d"><i class="demo-icon icon-audience-fill">&#x2d;</i> <span class="i-name">icon-audience-fill</span><span class="i-code">0x2d</span></div>
+        <div class="the-icons span3" title="Code: 0x2e"><i class="demo-icon icon-audience-outline">&#x2e;</i> <span class="i-name">icon-audience-outline</span><span class="i-code">0x2e</span></div>
+        <div class="the-icons span3" title="Code: 0x2f"><i class="demo-icon icon-avatar-outline">&#x2f;</i> <span class="i-name">icon-avatar-outline</span><span class="i-code">0x2f</span></div>
+        <div class="the-icons span3" title="Code: 0x30"><i class="demo-icon icon-avatar-fill">&#x30;</i> <span class="i-name">icon-avatar-fill</span><span class="i-code">0x30</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x31"><i class="demo-icon icon-bar-chart-fill">&#x31;</i> <span class="i-name">icon-bar-chart-fill</span><span class="i-code">0x31</span></div>
+        <div class="the-icons span3" title="Code: 0x32"><i class="demo-icon icon-bar-chart-outline">&#x32;</i> <span class="i-name">icon-bar-chart-outline</span><span class="i-code">0x32</span></div>
+        <div class="the-icons span3" title="Code: 0x33"><i class="demo-icon icon-brightness-fill">&#x33;</i> <span class="i-name">icon-brightness-fill</span><span class="i-code">0x33</span></div>
+        <div class="the-icons span3" title="Code: 0x34"><i class="demo-icon icon-brightness-outline">&#x34;</i> <span class="i-name">icon-brightness-outline</span><span class="i-code">0x34</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x35"><i class="demo-icon icon-bubble-plot-fill">&#x35;</i> <span class="i-name">icon-bubble-plot-fill</span><span class="i-code">0x35</span></div>
+        <div class="the-icons span3" title="Code: 0x36"><i class="demo-icon icon-bubble-plot-outline">&#x36;</i> <span class="i-name">icon-bubble-plot-outline</span><span class="i-code">0x36</span></div>
+        <div class="the-icons span3" title="Code: 0x37"><i class="demo-icon icon-building-fill">&#x37;</i> <span class="i-name">icon-building-fill</span><span class="i-code">0x37</span></div>
+        <div class="the-icons span3" title="Code: 0x38"><i class="demo-icon icon-building-outline">&#x38;</i> <span class="i-name">icon-building-outline</span><span class="i-code">0x38</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x39"><i class="demo-icon icon-calendar-fill">&#x39;</i> <span class="i-name">icon-calendar-fill</span><span class="i-code">0x39</span></div>
+        <div class="the-icons span3" title="Code: 0x3a"><i class="demo-icon icon-calendar-outline">&#x3a;</i> <span class="i-name">icon-calendar-outline</span><span class="i-code">0x3a</span></div>
+        <div class="the-icons span3" title="Code: 0x3b"><i class="demo-icon icon-camera-fill">&#x3b;</i> <span class="i-name">icon-camera-fill</span><span class="i-code">0x3b</span></div>
+        <div class="the-icons span3" title="Code: 0x3c"><i class="demo-icon icon-camera-outline">&#x3c;</i> <span class="i-name">icon-camera-outline</span><span class="i-code">0x3c</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x3d"><i class="demo-icon icon-center-map-fill">&#x3d;</i> <span class="i-name">icon-center-map-fill</span><span class="i-code">0x3d</span></div>
+        <div class="the-icons span3" title="Code: 0x3e"><i class="demo-icon icon-check-mark-fill">&#x3e;</i> <span class="i-name">icon-check-mark-fill</span><span class="i-code">0x3e</span></div>
+        <div class="the-icons span3" title="Code: 0x3f"><i class="demo-icon icon-center-map-outline">&#x3f;</i> <span class="i-name">icon-center-map-outline</span><span class="i-code">0x3f</span></div>
+        <div class="the-icons span3" title="Code: 0x40"><i class="demo-icon icon-check-mark-outline">&#x40;</i> <span class="i-name">icon-check-mark-outline</span><span class="i-code">0x40</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x41"><i class="demo-icon icon-circle-checkmark-fill">&#x41;</i> <span class="i-name">icon-circle-checkmark-fill</span><span class="i-code">0x41</span></div>
+        <div class="the-icons span3" title="Code: 0x42"><i class="demo-icon icon-circle-checkmark-outline">&#x42;</i> <span class="i-name">icon-circle-checkmark-outline</span><span class="i-code">0x42</span></div>
+        <div class="the-icons span3" title="Code: 0x43"><i class="demo-icon icon-circle-delete-fill">&#x43;</i> <span class="i-name">icon-circle-delete-fill</span><span class="i-code">0x43</span></div>
+        <div class="the-icons span3" title="Code: 0x44"><i class="demo-icon icon-circle-delete-outline">&#x44;</i> <span class="i-name">icon-circle-delete-outline</span><span class="i-code">0x44</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x45"><i class="demo-icon icon-circle-minus-fill">&#x45;</i> <span class="i-name">icon-circle-minus-fill</span><span class="i-code">0x45</span></div>
+        <div class="the-icons span3" title="Code: 0x46"><i class="demo-icon icon-circle-minus-outline">&#x46;</i> <span class="i-name">icon-circle-minus-outline</span><span class="i-code">0x46</span></div>
+        <div class="the-icons span3" title="Code: 0x47"><i class="demo-icon icon-circle-more-fill">&#x47;</i> <span class="i-name">icon-circle-more-fill</span><span class="i-code">0x47</span></div>
+        <div class="the-icons span3" title="Code: 0x48"><i class="demo-icon icon-circle-more-outline">&#x48;</i> <span class="i-name">icon-circle-more-outline</span><span class="i-code">0x48</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x49"><i class="demo-icon icon-circle-plus-fill">&#x49;</i> <span class="i-name">icon-circle-plus-fill</span><span class="i-code">0x49</span></div>
+        <div class="the-icons span3" title="Code: 0x4a"><i class="demo-icon icon-circle-plus-outline">&#x4a;</i> <span class="i-name">icon-circle-plus-outline</span><span class="i-code">0x4a</span></div>
+        <div class="the-icons span3" title="Code: 0x4b"><i class="demo-icon icon-circle-save-fill">&#x4b;</i> <span class="i-name">icon-circle-save-fill</span><span class="i-code">0x4b</span></div>
+        <div class="the-icons span3" title="Code: 0x4c"><i class="demo-icon icon-circle-save-outline">&#x4c;</i> <span class="i-name">icon-circle-save-outline</span><span class="i-code">0x4c</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x4d"><i class="demo-icon icon-clinic-fill">&#x4d;</i> <span class="i-name">icon-clinic-fill</span><span class="i-code">0x4d</span></div>
+        <div class="the-icons span3" title="Code: 0x4e"><i class="demo-icon icon-clinic-outline">&#x4e;</i> <span class="i-name">icon-clinic-outline</span><span class="i-code">0x4e</span></div>
+        <div class="the-icons span3" title="Code: 0x4f"><i class="demo-icon icon-close-fill">&#x4f;</i> <span class="i-name">icon-close-fill</span><span class="i-code">0x4f</span></div>
+        <div class="the-icons span3" title="Code: 0x50"><i class="demo-icon icon-close-outline">&#x50;</i> <span class="i-name">icon-close-outline</span><span class="i-code">0x50</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x51"><i class="demo-icon icon-cloud-fill">&#x51;</i> <span class="i-name">icon-cloud-fill</span><span class="i-code">0x51</span></div>
+        <div class="the-icons span3" title="Code: 0x52"><i class="demo-icon icon-cloud-outline">&#x52;</i> <span class="i-name">icon-cloud-outline</span><span class="i-code">0x52</span></div>
+        <div class="the-icons span3" title="Code: 0x53"><i class="demo-icon icon-comment-fill">&#x53;</i> <span class="i-name">icon-comment-fill</span><span class="i-code">0x53</span></div>
+        <div class="the-icons span3" title="Code: 0x54"><i class="demo-icon icon-comment-outline">&#x54;</i> <span class="i-name">icon-comment-outline</span><span class="i-code">0x54</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x55"><i class="demo-icon icon-confirmed-fill">&#x55;</i> <span class="i-name">icon-confirmed-fill</span><span class="i-code">0x55</span></div>
+        <div class="the-icons span3" title="Code: 0x56"><i class="demo-icon icon-confirmed-outline">&#x56;</i> <span class="i-name">icon-confirmed-outline</span><span class="i-code">0x56</span></div>
+        <div class="the-icons span3" title="Code: 0x57"><i class="demo-icon icon-convert-fill">&#x57;</i> <span class="i-name">icon-convert-fill</span><span class="i-code">0x57</span></div>
+        <div class="the-icons span3" title="Code: 0x58"><i class="demo-icon icon-convert-outline">&#x58;</i> <span class="i-name">icon-convert-outline</span><span class="i-code">0x58</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x59"><i class="demo-icon icon-delete-fill">&#x59;</i> <span class="i-name">icon-delete-fill</span><span class="i-code">0x59</span></div>
+        <div class="the-icons span3" title="Code: 0x5a"><i class="demo-icon icon-delete-outline">&#x5a;</i> <span class="i-name">icon-delete-outline</span><span class="i-code">0x5a</span></div>
+        <div class="the-icons span3" title="Code: 0x5b"><i class="demo-icon icon-doc-fill">&#x5b;</i> <span class="i-name">icon-doc-fill</span><span class="i-code">0x5b</span></div>
+        <div class="the-icons span3" title="Code: 0x5c"><i class="demo-icon icon-doc-outline">&#x5c;</i> <span class="i-name">icon-doc-outline</span><span class="i-code">0x5c</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x5d"><i class="demo-icon icon-door-closed-fill">&#x5d;</i> <span class="i-name">icon-door-closed-fill</span><span class="i-code">0x5d</span></div>
+        <div class="the-icons span3" title="Code: 0x5e"><i class="demo-icon icon-door-closed-outline">&#x5e;</i> <span class="i-name">icon-door-closed-outline</span><span class="i-code">0x5e</span></div>
+        <div class="the-icons span3" title="Code: 0x5f"><i class="demo-icon icon-door-opened-fill">&#x5f;</i> <span class="i-name">icon-door-opened-fill</span><span class="i-code">0x5f</span></div>
+        <div class="the-icons span3" title="Code: 0x60"><i class="demo-icon icon-door-opened-outline">&#x60;</i> <span class="i-name">icon-door-opened-outline</span><span class="i-code">0x60</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x61"><i class="demo-icon icon-down-chevron-circle-fill">&#x61;</i> <span class="i-name">icon-down-chevron-circle-fill</span><span class="i-code">0x61</span></div>
+        <div class="the-icons span3" title="Code: 0x62"><i class="demo-icon icon-down-chevron-circle-outline">&#x62;</i> <span class="i-name">icon-down-chevron-circle-outline</span><span class="i-code">0x62</span></div>
+        <div class="the-icons span3" title="Code: 0x63"><i class="demo-icon icon-down-chevron-fill">&#x63;</i> <span class="i-name">icon-down-chevron-fill</span><span class="i-code">0x63</span></div>
+        <div class="the-icons span3" title="Code: 0x64"><i class="demo-icon icon-down-chevron-outline">&#x64;</i> <span class="i-name">icon-down-chevron-outline</span><span class="i-code">0x64</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x65"><i class="demo-icon icon-download-fill">&#x65;</i> <span class="i-name">icon-download-fill</span><span class="i-code">0x65</span></div>
+        <div class="the-icons span3" title="Code: 0x66"><i class="demo-icon icon-download-light-fill">&#x66;</i> <span class="i-name">icon-download-light-fill</span><span class="i-code">0x66</span></div>
+        <div class="the-icons span3" title="Code: 0x67"><i class="demo-icon icon-upload-light-outline">&#x67;</i> <span class="i-name">icon-upload-light-outline</span><span class="i-code">0x67</span></div>
+        <div class="the-icons span3" title="Code: 0x68"><i class="demo-icon icon-download-outline">&#x68;</i> <span class="i-name">icon-download-outline</span><span class="i-code">0x68</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x69"><i class="demo-icon icon-downtrend-fill">&#x69;</i> <span class="i-name">icon-downtrend-fill</span><span class="i-code">0x69</span></div>
+        <div class="the-icons span3" title="Code: 0x6a"><i class="demo-icon icon-downtrend-outline">&#x6a;</i> <span class="i-name">icon-downtrend-outline</span><span class="i-code">0x6a</span></div>
+        <div class="the-icons span3" title="Code: 0x6b"><i class="demo-icon icon-duplicate-fill">&#x6b;</i> <span class="i-name">icon-duplicate-fill</span><span class="i-code">0x6b</span></div>
+        <div class="the-icons span3" title="Code: 0x6c"><i class="demo-icon icon-duplicate-outline">&#x6c;</i> <span class="i-name">icon-duplicate-outline</span><span class="i-code">0x6c</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x6d"><i class="demo-icon icon-edit-fill">&#x6d;</i> <span class="i-name">icon-edit-fill</span><span class="i-code">0x6d</span></div>
+        <div class="the-icons span3" title="Code: 0x6e"><i class="demo-icon icon-edit-outline">&#x6e;</i> <span class="i-name">icon-edit-outline</span><span class="i-code">0x6e</span></div>
+        <div class="the-icons span3" title="Code: 0x6f"><i class="demo-icon icon-email-outline">&#x6f;</i> <span class="i-name">icon-email-outline</span><span class="i-code">0x6f</span></div>
+        <div class="the-icons span3" title="Code: 0x70"><i class="demo-icon icon-email-fill">&#x70;</i> <span class="i-name">icon-email-fill</span><span class="i-code">0x70</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x71"><i class="demo-icon icon-end-process-fill">&#x71;</i> <span class="i-name">icon-end-process-fill</span><span class="i-code">0x71</span></div>
+        <div class="the-icons span3" title="Code: 0x72"><i class="demo-icon icon-end-process-outline">&#x72;</i> <span class="i-name">icon-end-process-outline</span><span class="i-code">0x72</span></div>
+        <div class="the-icons span3" title="Code: 0x73"><i class="demo-icon icon-expand-fill">&#x73;</i> <span class="i-name">icon-expand-fill</span><span class="i-code">0x73</span></div>
+        <div class="the-icons span3" title="Code: 0x74"><i class="demo-icon icon-expand-outline">&#x74;</i> <span class="i-name">icon-expand-outline</span><span class="i-code">0x74</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x75"><i class="demo-icon icon-file-fill">&#x75;</i> <span class="i-name">icon-file-fill</span><span class="i-code">0x75</span></div>
+        <div class="the-icons span3" title="Code: 0x76"><i class="demo-icon icon-file-outline">&#x76;</i> <span class="i-name">icon-file-outline</span><span class="i-code">0x76</span></div>
+        <div class="the-icons span3" title="Code: 0x77"><i class="demo-icon icon-filter-fill">&#x77;</i> <span class="i-name">icon-filter-fill</span><span class="i-code">0x77</span></div>
+        <div class="the-icons span3" title="Code: 0x78"><i class="demo-icon icon-filter-outline">&#x78;</i> <span class="i-name">icon-filter-outline</span><span class="i-code">0x78</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x79"><i class="demo-icon icon-folder-closed-fill">&#x79;</i> <span class="i-name">icon-folder-closed-fill</span><span class="i-code">0x79</span></div>
+        <div class="the-icons span3" title="Code: 0x7a"><i class="demo-icon icon-folder-closed-outline">&#x7a;</i> <span class="i-name">icon-folder-closed-outline</span><span class="i-code">0x7a</span></div>
+        <div class="the-icons span3" title="Code: 0x7b"><i class="demo-icon icon-folder-opened-fill">&#x7b;</i> <span class="i-name">icon-folder-opened-fill</span><span class="i-code">0x7b</span></div>
+        <div class="the-icons span3" title="Code: 0x7c"><i class="demo-icon icon-folder-opened-outline">&#x7c;</i> <span class="i-name">icon-folder-opened-outline</span><span class="i-code">0x7c</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0x7d"><i class="demo-icon icon-globe-fill">&#x7d;</i> <span class="i-name">icon-globe-fill</span><span class="i-code">0x7d</span></div>
+        <div class="the-icons span3" title="Code: 0x7e"><i class="demo-icon icon-globe-outline">&#x7e;</i> <span class="i-name">icon-globe-outline</span><span class="i-code">0x7e</span></div>
+        <div class="the-icons span3" title="Code: 0xe800"><i class="demo-icon icon-grid-view-fill">&#xe800;</i> <span class="i-name">icon-grid-view-fill</span><span class="i-code">0xe800</span></div>
+        <div class="the-icons span3" title="Code: 0xe801"><i class="demo-icon icon-grid-view-outline">&#xe801;</i> <span class="i-name">icon-grid-view-outline</span><span class="i-code">0xe801</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe802"><i class="demo-icon icon-hb-3qtr-lft">&#xe802;</i> <span class="i-name">icon-hb-3qtr-lft</span><span class="i-code">0xe802</span></div>
+        <div class="the-icons span3" title="Code: 0xe803"><i class="demo-icon icon-hb-3qtr-rt">&#xe803;</i> <span class="i-name">icon-hb-3qtr-rt</span><span class="i-code">0xe803</span></div>
+        <div class="the-icons span3" title="Code: 0xe804"><i class="demo-icon icon-hb-empty">&#xe804;</i> <span class="i-name">icon-hb-empty</span><span class="i-code">0xe804</span></div>
+        <div class="the-icons span3" title="Code: 0xe805"><i class="demo-icon icon-hb-full-dot">&#xe805;</i> <span class="i-name">icon-hb-full-dot</span><span class="i-code">0xe805</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe806"><i class="demo-icon icon-hb-full">&#xe806;</i> <span class="i-name">icon-hb-full</span><span class="i-code">0xe806</span></div>
+        <div class="the-icons span3" title="Code: 0xe807"><i class="demo-icon icon-hb-half-btm">&#xe807;</i> <span class="i-name">icon-hb-half-btm</span><span class="i-code">0xe807</span></div>
+        <div class="the-icons span3" title="Code: 0xe808"><i class="demo-icon icon-hb-half-lft">&#xe808;</i> <span class="i-name">icon-hb-half-lft</span><span class="i-code">0xe808</span></div>
+        <div class="the-icons span3" title="Code: 0xe809"><i class="demo-icon icon-hb-half-rt">&#xe809;</i> <span class="i-name">icon-hb-half-rt</span><span class="i-code">0xe809</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe80a"><i class="demo-icon icon-hb-half-top">&#xe80a;</i> <span class="i-name">icon-hb-half-top</span><span class="i-code">0xe80a</span></div>
+        <div class="the-icons span3" title="Code: 0xe80b"><i class="demo-icon icon-hb-qtr-lft">&#xe80b;</i> <span class="i-name">icon-hb-qtr-lft</span><span class="i-code">0xe80b</span></div>
+        <div class="the-icons span3" title="Code: 0xe80c"><i class="demo-icon icon-hb-qtr-rt">&#xe80c;</i> <span class="i-name">icon-hb-qtr-rt</span><span class="i-code">0xe80c</span></div>
+        <div class="the-icons span3" title="Code: 0xe80d"><i class="demo-icon icon-help-question-fill">&#xe80d;</i> <span class="i-name">icon-help-question-fill</span><span class="i-code">0xe80d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe80e"><i class="demo-icon icon-help-question-outline">&#xe80e;</i> <span class="i-name">icon-help-question-outline</span><span class="i-code">0xe80e</span></div>
+        <div class="the-icons span3" title="Code: 0xe80f"><i class="demo-icon icon-home-fill">&#xe80f;</i> <span class="i-name">icon-home-fill</span><span class="i-code">0xe80f</span></div>
+        <div class="the-icons span3" title="Code: 0xe810"><i class="demo-icon icon-home-outline">&#xe810;</i> <span class="i-name">icon-home-outline</span><span class="i-code">0xe810</span></div>
+        <div class="the-icons span3" title="Code: 0xe811"><i class="demo-icon icon-horizontal-more-fill">&#xe811;</i> <span class="i-name">icon-horizontal-more-fill</span><span class="i-code">0xe811</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe812"><i class="demo-icon icon-horizontal-more-outline">&#xe812;</i> <span class="i-name">icon-horizontal-more-outline</span><span class="i-code">0xe812</span></div>
+        <div class="the-icons span3" title="Code: 0xe813"><i class="demo-icon icon-hospital-fill">&#xe813;</i> <span class="i-name">icon-hospital-fill</span><span class="i-code">0xe813</span></div>
+        <div class="the-icons span3" title="Code: 0xe814"><i class="demo-icon icon-hospital-outline">&#xe814;</i> <span class="i-name">icon-hospital-outline</span><span class="i-code">0xe814</span></div>
+        <div class="the-icons span3" title="Code: 0xe815"><i class="demo-icon icon-image-fill">&#xe815;</i> <span class="i-name">icon-image-fill</span><span class="i-code">0xe815</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe816"><i class="demo-icon icon-image-outline">&#xe816;</i> <span class="i-name">icon-image-outline</span><span class="i-code">0xe816</span></div>
+        <div class="the-icons span3" title="Code: 0xe817"><i class="demo-icon icon-information-fill">&#xe817;</i> <span class="i-name">icon-information-fill</span><span class="i-code">0xe817</span></div>
+        <div class="the-icons span3" title="Code: 0xe818"><i class="demo-icon icon-information-outline">&#xe818;</i> <span class="i-name">icon-information-outline</span><span class="i-code">0xe818</span></div>
+        <div class="the-icons span3" title="Code: 0xe819"><i class="demo-icon icon-left-chevron-circle-fill">&#xe819;</i> <span class="i-name">icon-left-chevron-circle-fill</span><span class="i-code">0xe819</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe81a"><i class="demo-icon icon-left-chevron-circle-outline">&#xe81a;</i> <span class="i-name">icon-left-chevron-circle-outline</span><span class="i-code">0xe81a</span></div>
+        <div class="the-icons span3" title="Code: 0xe81b"><i class="demo-icon icon-left-chevron-fill">&#xe81b;</i> <span class="i-name">icon-left-chevron-fill</span><span class="i-code">0xe81b</span></div>
+        <div class="the-icons span3" title="Code: 0xe81c"><i class="demo-icon icon-left-chevron-outline">&#xe81c;</i> <span class="i-name">icon-left-chevron-outline</span><span class="i-code">0xe81c</span></div>
+        <div class="the-icons span3" title="Code: 0xe81d"><i class="demo-icon icon-like-fill">&#xe81d;</i> <span class="i-name">icon-like-fill</span><span class="i-code">0xe81d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe81e"><i class="demo-icon icon-like-outline">&#xe81e;</i> <span class="i-name">icon-like-outline</span><span class="i-code">0xe81e</span></div>
+        <div class="the-icons span3" title="Code: 0xe81f"><i class="demo-icon icon-list-view-fill">&#xe81f;</i> <span class="i-name">icon-list-view-fill</span><span class="i-code">0xe81f</span></div>
+        <div class="the-icons span3" title="Code: 0xe820"><i class="demo-icon icon-list-view-outline">&#xe820;</i> <span class="i-name">icon-list-view-outline</span><span class="i-code">0xe820</span></div>
+        <div class="the-icons span3" title="Code: 0xe821"><i class="demo-icon icon-location-fill">&#xe821;</i> <span class="i-name">icon-location-fill</span><span class="i-code">0xe821</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe822"><i class="demo-icon icon-location-outline">&#xe822;</i> <span class="i-name">icon-location-outline</span><span class="i-code">0xe822</span></div>
+        <div class="the-icons span3" title="Code: 0xe823"><i class="demo-icon icon-log-out-outline">&#xe823;</i> <span class="i-name">icon-log-out-outline</span><span class="i-code">0xe823</span></div>
+        <div class="the-icons span3" title="Code: 0xe824"><i class="demo-icon icon-login-fill">&#xe824;</i> <span class="i-name">icon-login-fill</span><span class="i-code">0xe824</span></div>
+        <div class="the-icons span3" title="Code: 0xe825"><i class="demo-icon icon-login-outline">&#xe825;</i> <span class="i-name">icon-login-outline</span><span class="i-code">0xe825</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe826"><i class="demo-icon icon-logout-fill">&#xe826;</i> <span class="i-name">icon-logout-fill</span><span class="i-code">0xe826</span></div>
+        <div class="the-icons span3" title="Code: 0xe827"><i class="demo-icon icon-menu-fill">&#xe827;</i> <span class="i-name">icon-menu-fill</span><span class="i-code">0xe827</span></div>
+        <div class="the-icons span3" title="Code: 0xe828"><i class="demo-icon icon-menu-outline">&#xe828;</i> <span class="i-name">icon-menu-outline</span><span class="i-code">0xe828</span></div>
+        <div class="the-icons span3" title="Code: 0xe829"><i class="demo-icon icon-minimize-fill">&#xe829;</i> <span class="i-name">icon-minimize-fill</span><span class="i-code">0xe829</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe82a"><i class="demo-icon icon-minimize-outline">&#xe82a;</i> <span class="i-name">icon-minimize-outline</span><span class="i-code">0xe82a</span></div>
+        <div class="the-icons span3" title="Code: 0xe82b"><i class="demo-icon icon-minus-fill">&#xe82b;</i> <span class="i-name">icon-minus-fill</span><span class="i-code">0xe82b</span></div>
+        <div class="the-icons span3" title="Code: 0xe82c"><i class="demo-icon icon-minus-outline">&#xe82c;</i> <span class="i-name">icon-minus-outline</span><span class="i-code">0xe82c</span></div>
+        <div class="the-icons span3" title="Code: 0xe82d"><i class="demo-icon icon-move-fill">&#xe82d;</i> <span class="i-name">icon-move-fill</span><span class="i-code">0xe82d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe82e"><i class="demo-icon icon-move-outline">&#xe82e;</i> <span class="i-name">icon-move-outline</span><span class="i-code">0xe82e</span></div>
+        <div class="the-icons span3" title="Code: 0xe82f"><i class="demo-icon icon-news-fill">&#xe82f;</i> <span class="i-name">icon-news-fill</span><span class="i-code">0xe82f</span></div>
+        <div class="the-icons span3" title="Code: 0xe830"><i class="demo-icon icon-news-outline">&#xe830;</i> <span class="i-name">icon-news-outline</span><span class="i-code">0xe830</span></div>
+        <div class="the-icons span3" title="Code: 0xe831"><i class="demo-icon icon-notification-fill">&#xe831;</i> <span class="i-name">icon-notification-fill</span><span class="i-code">0xe831</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe832"><i class="demo-icon icon-notification-outline">&#xe832;</i> <span class="i-name">icon-notification-outline</span><span class="i-code">0xe832</span></div>
+        <div class="the-icons span3" title="Code: 0xe833"><i class="demo-icon icon-pause-fill">&#xe833;</i> <span class="i-name">icon-pause-fill</span><span class="i-code">0xe833</span></div>
+        <div class="the-icons span3" title="Code: 0xe834"><i class="demo-icon icon-pause-outline">&#xe834;</i> <span class="i-name">icon-pause-outline</span><span class="i-code">0xe834</span></div>
+        <div class="the-icons span3" title="Code: 0xe835"><i class="demo-icon icon-pdf-fill">&#xe835;</i> <span class="i-name">icon-pdf-fill</span><span class="i-code">0xe835</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe836"><i class="demo-icon icon-pdf-outline">&#xe836;</i> <span class="i-name">icon-pdf-outline</span><span class="i-code">0xe836</span></div>
+        <div class="the-icons span3" title="Code: 0xe837"><i class="demo-icon icon-person-fill">&#xe837;</i> <span class="i-name">icon-person-fill</span><span class="i-code">0xe837</span></div>
+        <div class="the-icons span3" title="Code: 0xe838"><i class="demo-icon icon-person-outline">&#xe838;</i> <span class="i-name">icon-person-outline</span><span class="i-code">0xe838</span></div>
+        <div class="the-icons span3" title="Code: 0xe839"><i class="demo-icon icon-physician-fill">&#xe839;</i> <span class="i-name">icon-physician-fill</span><span class="i-code">0xe839</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe83a"><i class="demo-icon icon-physician-outline">&#xe83a;</i> <span class="i-name">icon-physician-outline</span><span class="i-code">0xe83a</span></div>
+        <div class="the-icons span3" title="Code: 0xe83b"><i class="demo-icon icon-pie-chart-fill">&#xe83b;</i> <span class="i-name">icon-pie-chart-fill</span><span class="i-code">0xe83b</span></div>
+        <div class="the-icons span3" title="Code: 0xe83c"><i class="demo-icon icon-pie-chart-outline">&#xe83c;</i> <span class="i-name">icon-pie-chart-outline</span><span class="i-code">0xe83c</span></div>
+        <div class="the-icons span3" title="Code: 0xe83d"><i class="demo-icon icon-plus-fill">&#xe83d;</i> <span class="i-name">icon-plus-fill</span><span class="i-code">0xe83d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe83e"><i class="demo-icon icon-plus-outline">&#xe83e;</i> <span class="i-name">icon-plus-outline</span><span class="i-code">0xe83e</span></div>
+        <div class="the-icons span3" title="Code: 0xe83f"><i class="demo-icon icon-ppt-fill">&#xe83f;</i> <span class="i-name">icon-ppt-fill</span><span class="i-code">0xe83f</span></div>
+        <div class="the-icons span3" title="Code: 0xe840"><i class="demo-icon icon-ppt-outline">&#xe840;</i> <span class="i-name">icon-ppt-outline</span><span class="i-code">0xe840</span></div>
+        <div class="the-icons span3" title="Code: 0xe841"><i class="demo-icon icon-printer-fill">&#xe841;</i> <span class="i-name">icon-printer-fill</span><span class="i-code">0xe841</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe842"><i class="demo-icon icon-printer-outline">&#xe842;</i> <span class="i-name">icon-printer-outline</span><span class="i-code">0xe842</span></div>
+        <div class="the-icons span3" title="Code: 0xe843"><i class="demo-icon icon-rating-fill">&#xe843;</i> <span class="i-name">icon-rating-fill</span><span class="i-code">0xe843</span></div>
+        <div class="the-icons span3" title="Code: 0xe844"><i class="demo-icon icon-rating-outline">&#xe844;</i> <span class="i-name">icon-rating-outline</span><span class="i-code">0xe844</span></div>
+        <div class="the-icons span3" title="Code: 0xe845"><i class="demo-icon icon-refresh-fill">&#xe845;</i> <span class="i-name">icon-refresh-fill</span><span class="i-code">0xe845</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe846"><i class="demo-icon icon-refresh-outline">&#xe846;</i> <span class="i-name">icon-refresh-outline</span><span class="i-code">0xe846</span></div>
+        <div class="the-icons span3" title="Code: 0xe847"><i class="demo-icon icon-right-chevron-circle-fill">&#xe847;</i> <span class="i-name">icon-right-chevron-circle-fill</span><span class="i-code">0xe847</span></div>
+        <div class="the-icons span3" title="Code: 0xe848"><i class="demo-icon icon-right-chevron-circle-outline">&#xe848;</i> <span class="i-name">icon-right-chevron-circle-outline</span><span class="i-code">0xe848</span></div>
+        <div class="the-icons span3" title="Code: 0xe849"><i class="demo-icon icon-right-chevron-fill">&#xe849;</i> <span class="i-name">icon-right-chevron-fill</span><span class="i-code">0xe849</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe84a"><i class="demo-icon icon-right-chevron-outline">&#xe84a;</i> <span class="i-name">icon-right-chevron-outline</span><span class="i-code">0xe84a</span></div>
+        <div class="the-icons span3" title="Code: 0xe84b"><i class="demo-icon icon-save-fill">&#xe84b;</i> <span class="i-name">icon-save-fill</span><span class="i-code">0xe84b</span></div>
+        <div class="the-icons span3" title="Code: 0xe84c"><i class="demo-icon icon-save-outline">&#xe84c;</i> <span class="i-name">icon-save-outline</span><span class="i-code">0xe84c</span></div>
+        <div class="the-icons span3" title="Code: 0xe84d"><i class="demo-icon icon-search-fill">&#xe84d;</i> <span class="i-name">icon-search-fill</span><span class="i-code">0xe84d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe84e"><i class="demo-icon icon-search-outline">&#xe84e;</i> <span class="i-name">icon-search-outline</span><span class="i-code">0xe84e</span></div>
+        <div class="the-icons span3" title="Code: 0xe84f"><i class="demo-icon icon-setting-fill">&#xe84f;</i> <span class="i-name">icon-setting-fill</span><span class="i-code">0xe84f</span></div>
+        <div class="the-icons span3" title="Code: 0xe850"><i class="demo-icon icon-setting-outline">&#xe850;</i> <span class="i-name">icon-setting-outline</span><span class="i-code">0xe850</span></div>
+        <div class="the-icons span3" title="Code: 0xe851"><i class="demo-icon icon-share-fill">&#xe851;</i> <span class="i-name">icon-share-fill</span><span class="i-code">0xe851</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe852"><i class="demo-icon icon-share-outline">&#xe852;</i> <span class="i-name">icon-share-outline</span><span class="i-code">0xe852</span></div>
+        <div class="the-icons span3" title="Code: 0xe853"><i class="demo-icon icon-sorting-fill">&#xe853;</i> <span class="i-name">icon-sorting-fill</span><span class="i-code">0xe853</span></div>
+        <div class="the-icons span3" title="Code: 0xe854"><i class="demo-icon icon-sorting-outline">&#xe854;</i> <span class="i-name">icon-sorting-outline</span><span class="i-code">0xe854</span></div>
+        <div class="the-icons span3" title="Code: 0xe855"><i class="demo-icon icon-spark-line-fill">&#xe855;</i> <span class="i-name">icon-spark-line-fill</span><span class="i-code">0xe855</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe856"><i class="demo-icon icon-spark-line-outline">&#xe856;</i> <span class="i-name">icon-spark-line-outline</span><span class="i-code">0xe856</span></div>
+        <div class="the-icons span3" title="Code: 0xe857"><i class="demo-icon icon-spider-chart-fill">&#xe857;</i> <span class="i-name">icon-spider-chart-fill</span><span class="i-code">0xe857</span></div>
+        <div class="the-icons span3" title="Code: 0xe858"><i class="demo-icon icon-spider-chart-outline">&#xe858;</i> <span class="i-name">icon-spider-chart-outline</span><span class="i-code">0xe858</span></div>
+        <div class="the-icons span3" title="Code: 0xe859"><i class="demo-icon icon-survey-checkmark-fill">&#xe859;</i> <span class="i-name">icon-survey-checkmark-fill</span><span class="i-code">0xe859</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe85a"><i class="demo-icon icon-survey-checkmark-outline">&#xe85a;</i> <span class="i-name">icon-survey-checkmark-outline</span><span class="i-code">0xe85a</span></div>
+        <div class="the-icons span3" title="Code: 0xe85b"><i class="demo-icon icon-survey-fill">&#xe85b;</i> <span class="i-name">icon-survey-fill</span><span class="i-code">0xe85b</span></div>
+        <div class="the-icons span3" title="Code: 0xe85c"><i class="demo-icon icon-survey-outline">&#xe85c;</i> <span class="i-name">icon-survey-outline</span><span class="i-code">0xe85c</span></div>
+        <div class="the-icons span3" title="Code: 0xe85d"><i class="demo-icon icon-table-data-fill">&#xe85d;</i> <span class="i-name">icon-table-data-fill</span><span class="i-code">0xe85d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe85e"><i class="demo-icon icon-table-data-outline">&#xe85e;</i> <span class="i-name">icon-table-data-outline</span><span class="i-code">0xe85e</span></div>
+        <div class="the-icons span3" title="Code: 0xe85f"><i class="demo-icon icon-target-fill">&#xe85f;</i> <span class="i-name">icon-target-fill</span><span class="i-code">0xe85f</span></div>
+        <div class="the-icons span3" title="Code: 0xe860"><i class="demo-icon icon-target-outline">&#xe860;</i> <span class="i-name">icon-target-outline</span><span class="i-code">0xe860</span></div>
+        <div class="the-icons span3" title="Code: 0xe861"><i class="demo-icon icon-thumb-down-fill">&#xe861;</i> <span class="i-name">icon-thumb-down-fill</span><span class="i-code">0xe861</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe862"><i class="demo-icon icon-thumb-down-outline">&#xe862;</i> <span class="i-name">icon-thumb-down-outline</span><span class="i-code">0xe862</span></div>
+        <div class="the-icons span3" title="Code: 0xe863"><i class="demo-icon icon-thumb-up-fill">&#xe863;</i> <span class="i-name">icon-thumb-up-fill</span><span class="i-code">0xe863</span></div>
+        <div class="the-icons span3" title="Code: 0xe864"><i class="demo-icon icon-thumb-up-outline">&#xe864;</i> <span class="i-name">icon-thumb-up-outline</span><span class="i-code">0xe864</span></div>
+        <div class="the-icons span3" title="Code: 0xe865"><i class="demo-icon icon-time-fill">&#xe865;</i> <span class="i-name">icon-time-fill</span><span class="i-code">0xe865</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe866"><i class="demo-icon icon-time-outline">&#xe866;</i> <span class="i-name">icon-time-outline</span><span class="i-code">0xe866</span></div>
+        <div class="the-icons span3" title="Code: 0xe867"><i class="demo-icon icon-toggle-fill">&#xe867;</i> <span class="i-name">icon-toggle-fill</span><span class="i-code">0xe867</span></div>
+        <div class="the-icons span3" title="Code: 0xe868"><i class="demo-icon icon-toggle-outline">&#xe868;</i> <span class="i-name">icon-toggle-outline</span><span class="i-code">0xe868</span></div>
+        <div class="the-icons span3" title="Code: 0xe869"><i class="demo-icon icon-up-chevron-circle-fill">&#xe869;</i> <span class="i-name">icon-up-chevron-circle-fill</span><span class="i-code">0xe869</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe86a"><i class="demo-icon icon-up-chevron-circle-outline">&#xe86a;</i> <span class="i-name">icon-up-chevron-circle-outline</span><span class="i-code">0xe86a</span></div>
+        <div class="the-icons span3" title="Code: 0xe86b"><i class="demo-icon icon-up-chevron-fill">&#xe86b;</i> <span class="i-name">icon-up-chevron-fill</span><span class="i-code">0xe86b</span></div>
+        <div class="the-icons span3" title="Code: 0xe86c"><i class="demo-icon icon-up-chevron-outline">&#xe86c;</i> <span class="i-name">icon-up-chevron-outline</span><span class="i-code">0xe86c</span></div>
+        <div class="the-icons span3" title="Code: 0xe86d"><i class="demo-icon icon-upload-fill">&#xe86d;</i> <span class="i-name">icon-upload-fill</span><span class="i-code">0xe86d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe86e"><i class="demo-icon icon-upload-light-fill">&#xe86e;</i> <span class="i-name">icon-upload-light-fill</span><span class="i-code">0xe86e</span></div>
+        <div class="the-icons span3" title="Code: 0xe86f"><i class="demo-icon icon-download-light-outline">&#xe86f;</i> <span class="i-name">icon-download-light-outline</span><span class="i-code">0xe86f</span></div>
+        <div class="the-icons span3" title="Code: 0xe870"><i class="demo-icon icon-upload-outline">&#xe870;</i> <span class="i-name">icon-upload-outline</span><span class="i-code">0xe870</span></div>
+        <div class="the-icons span3" title="Code: 0xe871"><i class="demo-icon icon-uptrend-fill">&#xe871;</i> <span class="i-name">icon-uptrend-fill</span><span class="i-code">0xe871</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe872"><i class="demo-icon icon-uptrend-outline">&#xe872;</i> <span class="i-name">icon-uptrend-outline</span><span class="i-code">0xe872</span></div>
+        <div class="the-icons span3" title="Code: 0xe873"><i class="demo-icon icon-venn-ab-horizontal-fill">&#xe873;</i> <span class="i-name">icon-venn-ab-horizontal-fill</span><span class="i-code">0xe873</span></div>
+        <div class="the-icons span3" title="Code: 0xe874"><i class="demo-icon icon-venn-ab-horizontal-outline">&#xe874;</i> <span class="i-name">icon-venn-ab-horizontal-outline</span><span class="i-code">0xe874</span></div>
+        <div class="the-icons span3" title="Code: 0xe875"><i class="demo-icon icon-venn-ab-vertical-fill">&#xe875;</i> <span class="i-name">icon-venn-ab-vertical-fill</span><span class="i-code">0xe875</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe876"><i class="demo-icon icon-venn-ab-vertical-outline">&#xe876;</i> <span class="i-name">icon-venn-ab-vertical-outline</span><span class="i-code">0xe876</span></div>
+        <div class="the-icons span3" title="Code: 0xe877"><i class="demo-icon icon-venn-abc-fill">&#xe877;</i> <span class="i-name">icon-venn-abc-fill</span><span class="i-code">0xe877</span></div>
+        <div class="the-icons span3" title="Code: 0xe878"><i class="demo-icon icon-venn-abc-outline">&#xe878;</i> <span class="i-name">icon-venn-abc-outline</span><span class="i-code">0xe878</span></div>
+        <div class="the-icons span3" title="Code: 0xe879"><i class="demo-icon icon-venn-abc-reversed-fill">&#xe879;</i> <span class="i-name">icon-venn-abc-reversed-fill</span><span class="i-code">0xe879</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe87a"><i class="demo-icon icon-venn-abc-reversed-outline">&#xe87a;</i> <span class="i-name">icon-venn-abc-reversed-outline</span><span class="i-code">0xe87a</span></div>
+        <div class="the-icons span3" title="Code: 0xe87b"><i class="demo-icon icon-vertical-more-fill">&#xe87b;</i> <span class="i-name">icon-vertical-more-fill</span><span class="i-code">0xe87b</span></div>
+        <div class="the-icons span3" title="Code: 0xe87c"><i class="demo-icon icon-vertical-more-outline">&#xe87c;</i> <span class="i-name">icon-vertical-more-outline</span><span class="i-code">0xe87c</span></div>
+        <div class="the-icons span3" title="Code: 0xe87d"><i class="demo-icon icon-view-fill">&#xe87d;</i> <span class="i-name">icon-view-fill</span><span class="i-code">0xe87d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe87e"><i class="demo-icon icon-view-outline">&#xe87e;</i> <span class="i-name">icon-view-outline</span><span class="i-code">0xe87e</span></div>
+        <div class="the-icons span3" title="Code: 0xe87f"><i class="demo-icon icon-volume-on-fill">&#xe87f;</i> <span class="i-name">icon-volume-on-fill</span><span class="i-code">0xe87f</span></div>
+        <div class="the-icons span3" title="Code: 0xe880"><i class="demo-icon icon-volume-off-fill">&#xe880;</i> <span class="i-name">icon-volume-off-fill</span><span class="i-code">0xe880</span></div>
+        <div class="the-icons span3" title="Code: 0xe881"><i class="demo-icon icon-volume-off-outline">&#xe881;</i> <span class="i-name">icon-volume-off-outline</span><span class="i-code">0xe881</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe882"><i class="demo-icon icon-volume-on-outline">&#xe882;</i> <span class="i-name">icon-volume-on-outline</span><span class="i-code">0xe882</span></div>
+        <div class="the-icons span3" title="Code: 0xe883"><i class="demo-icon icon-volume-up-fill">&#xe883;</i> <span class="i-name">icon-volume-up-fill</span><span class="i-code">0xe883</span></div>
+        <div class="the-icons span3" title="Code: 0xe884"><i class="demo-icon icon-volume-up-outline">&#xe884;</i> <span class="i-name">icon-volume-up-outline</span><span class="i-code">0xe884</span></div>
+        <div class="the-icons span3" title="Code: 0xe885"><i class="demo-icon icon-xls-fill">&#xe885;</i> <span class="i-name">icon-xls-fill</span><span class="i-code">0xe885</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe886"><i class="demo-icon icon-xls-outline">&#xe886;</i> <span class="i-name">icon-xls-outline</span><span class="i-code">0xe886</span></div>
+        <div class="the-icons span3" title="Code: 0xe887"><i class="demo-icon icon-compass-fill">&#xe887;</i> <span class="i-name">icon-compass-fill</span><span class="i-code">0xe887</span></div>
+        <div class="the-icons span3" title="Code: 0xe888"><i class="demo-icon icon-compass-outline">&#xe888;</i> <span class="i-name">icon-compass-outline</span><span class="i-code">0xe888</span></div>
+        <div class="the-icons span3" title="Code: 0xe889"><i class="demo-icon icon-globe-map-fill">&#xe889;</i> <span class="i-name">icon-globe-map-fill</span><span class="i-code">0xe889</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe88a"><i class="demo-icon icon-globe-map-outline">&#xe88a;</i> <span class="i-name">icon-globe-map-outline</span><span class="i-code">0xe88a</span></div>
+        <div class="the-icons span3" title="Code: 0xe88b"><i class="demo-icon icon-link-fill">&#xe88b;</i> <span class="i-name">icon-link-fill</span><span class="i-code">0xe88b</span></div>
+        <div class="the-icons span3" title="Code: 0xe88c"><i class="demo-icon icon-link-outline">&#xe88c;</i> <span class="i-name">icon-link-outline</span><span class="i-code">0xe88c</span></div>
+        <div class="the-icons span3" title="Code: 0xe88d"><i class="demo-icon icon-arrow-left-fill">&#xe88d;</i> <span class="i-name">icon-arrow-left-fill</span><span class="i-code">0xe88d</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe88e"><i class="demo-icon icon-arrow-left-outline">&#xe88e;</i> <span class="i-name">icon-arrow-left-outline</span><span class="i-code">0xe88e</span></div>
+        <div class="the-icons span3" title="Code: 0xe88f"><i class="demo-icon icon-arrow-right-fill">&#xe88f;</i> <span class="i-name">icon-arrow-right-fill</span><span class="i-code">0xe88f</span></div>
+        <div class="the-icons span3" title="Code: 0xe890"><i class="demo-icon icon-arrow-right-outline">&#xe890;</i> <span class="i-name">icon-arrow-right-outline</span><span class="i-code">0xe890</span></div>
+        <div class="the-icons span3" title="Code: 0xe8ef"><i class="demo-icon icon-sorting-ascendant-fill">&#xe8ef;</i> <span class="i-name">icon-sorting-ascendant-fill</span><span class="i-code">0xe8ef</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe8f0"><i class="demo-icon icon-sorting-ascendant-outline">&#xe8f0;</i> <span class="i-name">icon-sorting-ascendant-outline</span><span class="i-code">0xe8f0</span></div>
+        <div class="the-icons span3" title="Code: 0xe8f1"><i class="demo-icon icon-sorting-descendant-fill">&#xe8f1;</i> <span class="i-name">icon-sorting-descendant-fill</span><span class="i-code">0xe8f1</span></div>
+        <div class="the-icons span3" title="Code: 0xe8f2"><i class="demo-icon icon-sorting-descendant-outline">&#xe8f2;</i> <span class="i-name">icon-sorting-descendant-outline</span><span class="i-code">0xe8f2</span></div>
+        <div class="the-icons span3" title="Code: 0xe8f3"><i class="demo-icon icon-arrow-down-fill">&#xe8f3;</i> <span class="i-name">icon-arrow-down-fill</span><span class="i-code">0xe8f3</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe8f4"><i class="demo-icon icon-arrow-down-outline">&#xe8f4;</i> <span class="i-name">icon-arrow-down-outline</span><span class="i-code">0xe8f4</span></div>
+        <div class="the-icons span3" title="Code: 0xe8f5"><i class="demo-icon icon-arrow-up-fill">&#xe8f5;</i> <span class="i-name">icon-arrow-up-fill</span><span class="i-code">0xe8f5</span></div>
+        <div class="the-icons span3" title="Code: 0xe8f6"><i class="demo-icon icon-arrow-up-outline">&#xe8f6;</i> <span class="i-name">icon-arrow-up-outline</span><span class="i-code">0xe8f6</span></div>
+      </div>
+    </div>
+    <div class="container footer">Generated by <a href="http://fontello.com">fontello.com</a></div>
+  </body>
+</html>

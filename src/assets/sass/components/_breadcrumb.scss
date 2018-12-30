@@ -1,0 +1,58 @@
+.a-breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    line-height: 1;
+    border-bottom: 1px solid $breadcrumb-border;
+
+    .a-bread-item {
+        font-family: 'Neue Helvetica';
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: $color-primary;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 20px;
+
+        .appkiticon {
+            font-size: 14px;
+        }
+
+        .a-text-icon {
+            margin-right: 10px;
+            font-size: 13px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.a-current {
+            color: $text-dark;
+            cursor: default;
+
+            .a-text-icon {
+                font-size: 16px;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .a-divider {
+        color: $breadcrumb-divider;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    &.a-breadcrumb-secondary {
+        border-color: $breadcrumb-graybg-border;
+    }
+}

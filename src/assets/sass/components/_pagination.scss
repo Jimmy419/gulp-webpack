@@ -1,189 +1,148 @@
 .a-pagination {
     display: flex;
     align-items: center;
-    /*
-     * baseline component of page size
-     */
-    @at-root {
+    height: 34px;
+    line-height: 34px;
+
+    /*-------------------------------------------------------*
+     * Common styles for children elements of pagination 
+     * .page-link and .page-number
+     *------------------------------------------------------*/
+    .a-page {
+        border-radius: 2px;
+        background-color: $white;
+
+        &:not(:last-child) {
+            margin-right: 1px;
+        }
+    }
+
+    .a-page-number {
+        color: #757575;
+        font-size: 12px;
+        padding: 0 10px 0 5px;
+        display: flex;
+        align-items: center;
+
         .a-current-page {
-            max-width: 48px;
-            color: #424242;
-            text-align: center;
+            color: $text-dark;
+            background-color: #f5f5f5;
+            height: 24px;
+            line-height: 1;
+            text-align: right;
+            font-weight: 500;
+            padding: 0 10px;
             border-radius: 2px;
+
             &:focus {
-                border: 1px solid #d04a02;
+                box-shadow: 0 0 0 2px $color-primary;
             }
         }
-        .a-number {
-            /*
-             * .a-number-[size] classes for different size of page number
-             */
-            &.a-number-sm {
-                font-size: .75rem;
-                line-height: .75rem;
-                .a-current-page {
-                    padding: 5px 0;
-                    height: 24px;
-                    margin-right: 5px;
-                }
-            }
-            &.a-number-md {
-                font-size: .875rem;
-                line-height: .875rem;
-                .a-current-page {
-                    height: 30px;
-                    padding: .5rem 0;
-                    margin-right: 5px;
-                }
-            }
-            &.a-number-lg {
-                font-size: .875rem;
-                line-height: .875rem;
-                .a-current-page {
-                    height: 34px;
-                    padding: .625rem 0;
-                    margin-right: 10px;
-                }
-            }
-            /*
-             * .light, .dark class for input background color
-             */
-            &.light {
-                .a-current-page {
-                    background-color: #ffffff;
-                }
-            }
-            &.dark {
-                .a-current-page {
-                    background-color: #f5f5f5;
-                }
-            }
+
+        span {
+            margin-left: 5px
         }
     }
-    /*
-     * styles for different size and color of pagination
-     */
-    &.a-pagination-sm {
-        >li {
-            height: 34px;
-            margin-right: 1px;
-            border-radius: 2px;
-            &.a-page-link {
-                width: 34px;
-            }
-            &.a-page-number {
-                padding: 5px 10px;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
+
+    .a-page-link {
+        font-size: 10px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #9e9e9e;
+        cursor: pointer;
+
+        &:not(.disabled):hover {
+            background-color: #f5f5f5;
         }
-    }
-    &.a-pagination-lg {
-        >li {
-            height: 50px;
-            margin-right: 1px;
-            &.a-page-link {
-                width: 50px;
-            }
-            &.a-page-number {
-                padding: 10px 10px;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-    &.light {
-        >li {
-            background-color: #ffffff;
-        }
-        .a-page-link {
-            &:hover {
-                background-color: #f5f5f5;
-            }
-            &:active {
-                background-color: #eeeeee;
-            }
-        }
-    }
-    &.dark {
-        >li {
+
+        &:not(.disabled):active {
             background-color: #eeeeee;
         }
-        .a-page-link {
-            &:hover {
-                background-color: #f5f5f5;
+
+        &.disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    /*--------------------------------------------------------*
+     * Dark version of pagination (by default is light version)
+     *-------------------------------------------------------*/
+    &.dark {
+        .a-page {
+            background-color: #eee;
+        }
+
+        .a-page-number {
+            .a-current-page {
+                background-color: $white;
             }
-            &:active {
+        }
+
+        .a-page-link {
+            color: #bdbdbd;
+
+            &:not(.disabled):active {
                 background-color: #e0e0e0;
             }
         }
     }
-    /*
-     * styles for page link (prev/nex button)
-     */
-    .a-page-link {
-        cursor: pointer;
-        position: relative;
-        &:hover {
-            background-color: #f5f5f5;
+
+    /*--------------------------------------------------------*
+     * Large version of pagination (by default is small)
+     *-------------------------------------------------------*/
+    &.a-lg {
+        height: 50px;
+        line-height: 50px;
+
+        .a-page-link {
+            width: 50px;
         }
-        .appkiticon {
-            display: inline-block;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #bdbdbd;
+
+        .a-page-number {
+            padding: 0 10px;
+
+            .a-current-page {
+                height: 30px;
+                font-size: 14px;
+            }
         }
     }
-    /*
-     * styles for carousel pagination
-     */
-    &.a-pagination-carousel {
-        margin-bottom: 0;
-        >li {
-            margin-right: 0;
-            margin-left: 0;
+}
+
+.a-pagination-carousel {
+    display: flex;
+    align-items: center;
+
+    >li {
+        a {
+            display: inline-block;
+            padding: 0;
+            background-color: #bdbdbd;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            margin-right: 5px;
+
+            &.active {
+                background: $color-primary;
+            }
+        }
+
+        &:last-child {
             a {
-                display: inline-block;
-                box-shadow: none;
-                padding: 0;
-                background-color: #bdbdbd;
-                border-radius: 50%;
-                &.active {
-                    background: #d14c00;
-                }
+                margin-right: 0;
             }
         }
-        &.a-pagination-carousel-sm {
-            >li {
-                a {
-                    width: 6px;
-                    height: 6px;
-                    margin-right: 5px;
-                }
-                &:last-child {
-                    a {
-                        margin-right: 0;
-                    }
-                }
-            }
-        }
-        &.a-pagination-carousel-lg {
-            >li {
-                a {
-                    width: 8px;
-                    height: 8px;
-                    margin-right: 10px;
-                }
-                &:last-child {
-                    a {
-                        margin-right: 0;
-                    }
-                }
+    }
+
+    &.a-lg {
+        >li {
+            a {
+                width: 8px;
+                height: 8px;
+                margin-right: 10px;
             }
         }
     }

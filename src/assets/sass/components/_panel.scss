@@ -1,0 +1,12 @@
+.a-panel {
+    //   width: 900px;
+    //   height: 1237px;
+    //   border-radius: 2px;
+    font-size: 14px;
+    @include border-radius(2px);
+    background-color: $color-white;
+
+    .a-pl-84 {
+        padding-left: 84px;
+    }
+}

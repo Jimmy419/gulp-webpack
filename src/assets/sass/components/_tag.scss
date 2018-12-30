@@ -1,0 +1,197 @@
+.a-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 30px;
+    @include border-radius(15px);
+    line-height: 1;
+    font-size: 14px;
+    font-weight: $regular;
+    color: $white;
+    background-color: $color-primary;
+    white-space: nowrap;
+
+    &.a-tag-lg {
+        font-size: 18px;
+        padding: 0 20px;
+        height: 34px;
+        @include border-radius(17px);
+    }
+
+    &.a-tag-sm {
+        font-size: 14px;
+        height: 24px;
+    }
+
+    &.a-tag-pl {
+        padding-left: 7px;
+    }
+
+    label {
+        margin: 0;
+    }
+
+    .a-icon {
+        margin-right: 0;
+        margin-left: auto;
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    &.a-tag-e49 {
+        background-color: $tag-color-e49;
+    }
+
+    &.a-tag-da6 {
+        background-color: $tag-color-da6;
+    }
+
+    &.a-tag-light {
+        background-color: $tag-color-light;
+        color: $color-dark;
+    }
+
+    &.a-tag-df5 {
+        background-color: $tag-color-df5;
+    }
+
+    &.a-tag-warning {
+        background-color: $tag-color-warning;
+        color: $color-dark;
+    }
+
+    &.a-tag-df5-10 {
+        background-color: $tag-color-df5-opacity;
+        color: $color-dark;
+    }
+
+    &.a-tag-primary-10 {
+        background-color: $tag-color-primary-opacity;
+        color: $color-dark;
+    }
+
+    &.a-tag-warning-10 {
+        background-color: $tag-color-warning-opacity;
+        color: $color-dark;
+    }
+
+    &.a-tag-d2e {
+        background-color: $tag-color-d2e;
+        color: $color-dark;
+    }
+
+    &.a-tag-f3d {
+        background-color: $tag-color-f3d;
+        color: $color-dark;
+    }
+
+    &.a-tag-fff {
+        background-color: $tag-color-fff;
+        color: $color-dark;
+    }
+
+    &.a-tag-d3f {
+        background-color: $tag-color-d3f;
+        color: $color-dark;
+    }
+
+    &.a-tag-e5d {
+        background-color: $tag-color-e5d;
+        color: $color-dark;
+    }
+
+    &.a-tag-805 {
+        background-color: $tag-color-805;
+    }
+
+    &.a-tag-1da {
+        background-color: $tag-color-1da;
+    }
+
+    &.a-tag-25b {
+        background-color: $tag-color-25b;
+    }
+
+
+    .a-toggle {
+        &.a-toggle-md {
+            input[type='checkbox'] {
+                &+.a-toggle-mark {
+                    width: 35px;
+                    height: 20px;
+                    border-radius: 12px;
+
+                    .switch {
+                        // width: 14px;
+                        height: 14px;
+
+                        // left: 3px;
+                        &::before {
+                            width: 14px;
+                        }
+                    }
+                }
+
+                &:checked+.a-toggle-mark {
+                    .switch {
+                        // left: calc(100% - 3px);
+                    }
+                }
+
+                &~.a-toggle-text {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &.a-toggle-df5 {
+            input[type='checkbox'] {
+                &+.a-toggle-mark {
+                    .on {
+                        background-color: $tag-color-df5;
+                    }
+                }
+            }
+        }
+
+        &.a-toggle-warning {
+            input[type='checkbox'] {
+                &+.a-toggle-mark {
+                    .on {
+                        background-color: $tag-color-warning;
+                    }
+                }
+            }
+        }
+
+        &.a-toggle-success {
+            input[type='checkbox'] {
+                &+.a-toggle-mark {
+                    .on {
+                        background-color: $tag-color-success;
+                    }
+                }
+            }
+        }
+
+        &.a-toggle-805-16 {
+            input[type='checkbox'] {
+                &+.a-toggle-mark {
+                    .on {
+                        background-color: $tag-color-805-opacity;
+                    }
+                }
+            }
+        }
+
+        &.a-toggle-1bc {
+            input[type='checkbox'] {
+                &+.a-toggle-mark {
+                    .on {
+                        background-color: $tag-color-1bc;
+                    }
+                }
+            }
+        }
+    }
+}

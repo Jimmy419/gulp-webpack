@@ -1,0 +1,53 @@
+.a-files-fold {
+    font-size: 14px;
+    line-height: 1;
+    color: $color-dark;
+    text-align: left;
+
+    .a-icon {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .a-fold-name {
+        padding: 10px 0;
+        cursor: pointer;
+
+        &:not(.collapsed) {
+            .a-icon-opened {
+                display: inline-block;
+            }
+
+            .a-icon-closed {
+                display: none;
+            }
+        }
+
+        &.collapsed {
+            .a-icon-opened {
+                display: none;
+            }
+
+            .a-icon-closed {
+                display: inline-block;
+            }
+        }
+    }
+
+    .a-files-list {
+        padding-left: 20px;
+        cursor: pointer;
+
+        .a-files-list-item {
+            padding: 10px 0;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &.a-files-lg {
+        font-size: 16px;
+    }
+}

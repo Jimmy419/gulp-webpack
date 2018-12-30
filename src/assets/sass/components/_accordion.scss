@@ -1,0 +1,82 @@
+.a-accordion {
+
+    .accordion-title {
+        margin: auto;
+        padding-left: 10px;
+        height: 34px;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.43;
+        letter-spacing: normal;
+        color: $color-dark;
+        background-color: #f5f5f5;
+        cursor: pointer;
+    }
+
+    .accordion-content {
+        overflow: hidden;
+        position: relative;
+        display: none;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+        font-size: 14px;
+        line-height: 1.64;
+        color: $color-757;
+        background-color: #f5f5f5;
+
+        .accordion-body {
+            margin-bottom: 12px;
+        }
+    }
+
+    .accordion-title:hover {
+        background-color: #FAFAFA;
+    }
+
+    .appkiticon {
+        float: right;
+        padding-right: 10px;
+        color: #FA5927;
+        font-size: 12px;
+        line-height: 34px;
+    }
+
+    &.white {
+        .accordion-title {
+            background-color: #ffffff
+        }
+
+        .accordion-content {
+            background-color: #ffffff
+        }
+    }
+
+    &.transparent {
+        .accordion-title {
+            background-color: transparent
+        }
+
+        .accordion-content {
+            background-color: transparent
+        }
+    }
+
+    &.icon-left {
+        .accordion-content {
+            padding-left: 32px;
+        }
+
+        .appkiticon {
+            float: left;
+            display: block;
+        }
+    }
+}
+
+.accordion-contract {
+    background-color: #f5f5f5;
+}
